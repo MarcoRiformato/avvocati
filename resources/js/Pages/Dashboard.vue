@@ -1,172 +1,266 @@
 <template>
 <AppLayout title="Main">
 <div class="bg-base-200 overflow-hidden">
-    <div class="relative isolate pt-14">
-    <!-- Benvenuto -->
-    <div
-    id="benvenuto"
-    class="-mt-20 mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
-        <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-        <div class="flex"></div>
-        <h1 class=" max-w-lg text-4xl font-bold tracking-tight sm:text-6xl">Il tuo nuovo studio legale del futuro</h1>
-        <p class="mt-6 text-lg leading-8">Nuovo sito. Compari più alto su Google. Marketing digitale. Campagne pubblicitarie. Siamo qui per te</p>
-        <div class="mt-10 flex items-center gap-x-6">
-            <a href="#" class="btn btn-primary">Parliamo</a>
-            <a href="#" class="text-sm font-semibold leading-6">Casi studio <span aria-hidden="true">→</span></a>
-        </div>
-        </div>
-        <div class="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
-        <svg viewBox="0 0 366 729" role="img" class="mx-auto w-[22.875rem] max-w-full drop-shadow-xl">
-            <title>App screenshot</title>
-            <defs>
-            <clipPath id="2ade4387-9c63-4fc4-b754-10e687a0d332">
-                <rect width="316" height="684" rx="36" />
-            </clipPath>
-            </defs>
-            <path fill="#4B5563" d="M363.315 64.213C363.315 22.99 341.312 1 300.092 1H66.751C25.53 1 3.528 22.99 3.528 64.213v44.68l-.857.143A2 2 0 0 0 1 111.009v24.611a2 2 0 0 0 1.671 1.973l.95.158a2.26 2.26 0 0 1-.093.236v26.173c.212.1.398.296.541.643l-1.398.233A2 2 0 0 0 1 167.009v47.611a2 2 0 0 0 1.671 1.973l1.368.228c-.139.319-.314.533-.511.653v16.637c.221.104.414.313.56.689l-1.417.236A2 2 0 0 0 1 237.009v47.611a2 2 0 0 0 1.671 1.973l1.347.225c-.135.294-.302.493-.49.607v377.681c0 41.213 22 63.208 63.223 63.208h95.074c.947-.504 2.717-.843 4.745-.843l.141.001h.194l.086-.001 33.704.005c1.849.043 3.442.37 4.323.838h95.074c41.222 0 63.223-21.999 63.223-63.212v-394.63c-.259-.275-.48-.796-.63-1.47l-.011-.133 1.655-.276A2 2 0 0 0 366 266.62v-77.611a2 2 0 0 0-1.671-1.973l-1.712-.285c.148-.839.396-1.491.698-1.811V64.213Z" />
-            <path fill="#343E4E" d="M16 59c0-23.748 19.252-43 43-43h246c23.748 0 43 19.252 43 43v615c0 23.196-18.804 42-42 42H58c-23.196 0-42-18.804-42-42V59Z" />
-            <foreignObject width="316" height="684" transform="translate(24 24)" clip-path="url(#2ade4387-9c63-4fc4-b754-10e687a0d332)">
-            <img src="https://tailwindui.com/img/component-images/mobile-app-screenshot.png" alt="" />
-            </foreignObject>
-        </svg>
-        </div>
+  <div class="relative isolate">
+
+  <!-- Benvenuto -->
+  <div id="benvenuto" class="relative isolate overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+    <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+      <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
     </div>
-    <!-- Sviluppo web -->
-    <div
-    id="servizi"
-    class=" mx-auto max-w-7xl sm:px-6 lg:px-8">
-    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
-        <div class="lg:row-start-2 lg:max-w-md ">
-        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Più clienti. Più qualità.<br />Start using our app today.</h2>
-        <p class="mt-6 text-lg leading-8">Noi ti troviamo i clienti. Te potrai occuparti per ciò che preferisci fare</p>
+    <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Top-Rated [Specialization] Lawyers in [Location]</h1>
+        <p class="mt-6 text-lg leading-8 text-gray-300">Defending Your Rights for Over 20 Years</p>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a href="#" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Get started</a>
+          <a href="#" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
         </div>
-        <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="Product screenshot" class="relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none" width="2432" height="1442" />
-        <div class="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
-        <dl class="max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
-            <div v-for="feature in features" :key="feature.name" class="relative">
-            <dt class="ml-9 inline-block font-semibold text-white">
-                <component :is="feature.icon" class="absolute left-1 top-1 h-5 w-5 text-indigo-500" aria-hidden="true" />
-                {{ feature.name }}
-            </dt>
-            {{ ' ' }}
-            <dd class="inline">{{ feature.description }}</dd>
-            </div>
-        </dl>
-        </div>
+      </div>
     </div>
-    <div class="pointer-events-none absolute left-12 top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-3xl lg:bottom-[-12rem] lg:top-auto lg:translate-y-0 lg:transform-gpu" aria-hidden="true">
-        <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-25" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
+    <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+      <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
+    </div>
+  </div>
+  
+  <!--Logo cloud-->
+  <div class="mx-auto mt-8 max-w-7xl px-6 sm:mt-16 lg:px-8">
+    <h2 class="text-center text-lg font-semibold leading-8 text-white">The world’s most innovative companies use our app</h2>
+    <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg" alt="Transistor" width="158" height="48" />
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg" alt="Reform" width="158" height="48" />
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg" alt="Tuple" width="158" height="48" />
+      <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg" alt="SavvyCal" width="158" height="48" />
+      <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg" alt="Statamic" width="158" height="48" />
+    </div>
+  </div>
+
+  <!-- Settori -->
+  <div class="mt-20 flex flex-wrap justify-center">
+    
+    <div class="card w-full sm:w-1/3 md:w-1/4 lg:w-1/6 py-4 px-2 m-2 bg-base-100 shadow-xl">
+    <figure><img src="https://picsum.photos/200" alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="card-title">Civile</h2>
+      <p>If a dog chews shoes whose shoes does he choose?</p>
     </div>
     </div>
     
-    <!--Second feature-->
+    <div class="card w-full sm:w-1/3 md:w-1/4 lg:w-1/6 py-4 px-2 m-2 bg-base-100 shadow-xl">
+    <figure><img src="https://picsum.photos/200" alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="card-title">Penale</h2>
+      <p>If a dog chews shoes whose shoes does he choose?</p>
+    </div>
+    </div>
+    
+    <div class="card w-full sm:w-1/3 md:w-1/4 lg:w-1/6 py-4 px-2 m-2 bg-base-100 shadow-xl">
+    <figure><img src="https://picsum.photos/200" alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="card-title">Esecuzioni</h2>
+      <p>If a dog chews shoes whose shoes does he choose?</p>
+    </div>
+    </div>
+    
+    <div class="card w-full sm:w-1/3 md:w-1/4 lg:w-1/6 py-4 px-2 m-2 bg-base-100 shadow-xl">
+    <figure><img src="https://picsum.photos/200" alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="card-title">Altro</h2>
+      <p>If a dog chews shoes whose shoes does he choose?</p>
+    </div>
+    </div>
+    
+    <div class="card w-full sm:w-1/3 md:w-1/4 lg:w-1/6 py-4 px-2 m-2 bg-base-100 shadow-xl">
+    <figure><img src="https://picsum.photos/200" alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="card-title">Shoes!</h2>
+      <p>If a dog chews shoes whose shoes does he choose?</p>
+    </div>
+    </div>
+  </div>
 
-  <div class="overflow-hidden py-24 sm:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-        <div class="lg:ml-auto lg:pl-4 lg:pt-4">
-          <div class="lg:max-w-lg">
-            <h2 class="text-base font-semibold leading-7">Deploy faster</h2>
-            <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">A better workflow</p>
-            <p class="mt-6 text-lg leading-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
-            <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
-              <div v-for="feature in features" :key="feature.name" class="relative pl-9">
-                <dt class="inline font-semibold">
-                  <component :is="feature.icon" class="absolute left-1 top-1 h-5 w-5" aria-hidden="true" />
-                  {{ feature.name }}
-                </dt>
-                {{ ' ' }}
-                <dd class="inline">{{ feature.description }}</dd>
-              </div>
-            </dl>
-          </div>
+  <!--Casi studio-->
+  <div class="flex flex-wrap">
+  <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
+    <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
+  <h4 class=" text-[1.63rem] leading-8 font-semibold">Faced 10+ Years in Prison</h4>
+
+  <h5 class="text-stone-400 mt-1.5 uppercase">People Vs. Anna Sorokin</h5>
+
+  <p class=" mt-6 min-h-[11.25rem]">The case was covered by the New York Times, and many major media outlets. Our client was accused of conning the city's wealthy, and had a Netflix special made about her.</p>
+    </div>
+  </div>
+  <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
+    <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
+  <h4 class=" text-[1.63rem] leading-8 font-semibold">Faced 10+ Years in Prison</h4>
+
+  <h5 class="text-stone-400 mt-1.5 uppercase">People Vs. Anna Sorokin</h5>
+
+  <p class=" mt-6 min-h-[11.25rem]">The case was covered by the New York Times, and many major media outlets. Our client was accused of conning the city's wealthy, and had a Netflix special made about her.</p>
+    </div>
+  </div>
+  <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
+    <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
+  <h4 class=" text-[1.63rem] leading-8 font-semibold">Faced 10+ Years in Prison</h4>
+
+  <h5 class="text-stone-400 mt-1.5 uppercase">People Vs. Anna Sorokin</h5>
+
+  <p class=" mt-6 min-h-[11.25rem]">The case was covered by the New York Times, and many major media outlets. Our client was accused of conning the city's wealthy, and had a Netflix special made about her.</p>
+    </div>
+  </div>
+  <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
+    <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
+  <h4 class=" text-[1.63rem] leading-8 font-semibold">Faced 10+ Years in Prison</h4>
+
+  <h5 class="text-stone-400 mt-1.5 uppercase">People Vs. Anna Sorokin</h5>
+
+  <p class=" mt-6 min-h-[11.25rem]">The case was covered by the New York Times, and many major media outlets. Our client was accused of conning the city's wealthy, and had a Netflix special made about her.</p>
+    </div>
+  </div>
+  </div>
+
+  <!--La squadra-->
+  <div class="mx-auto max-w-7xl px-6 sm:mt-20 lg:px-8 flex flex-wrap md:flex-nowrap">
+  <div class="w-full p-4">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Our team</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">Excepturi repudiandae alias ut. Totam aut facilis. Praesentium in neque vel omnis. Eos error odio. Qui fugit voluptatibus eum culpa.</p>
+      </div>
+      <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4">
+        <li v-for="person in team" :key="person.name">
+          <img class="aspect-[14/13] w-full rounded-2xl object-cover" :src="person.imageUrl" alt="" />
+          <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">{{ person.name }}</h3>
+          <p class="text-base leading-7 text-gray-300">{{ person.role }}</p>
+          <p class="text-sm leading-6 text-gray-500">{{ person.location }}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hero section -->
+  <div class="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14">
+    <div class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96" aria-hidden="true" />
+    <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
+        <h1 class="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">We’re a passionate group of people working from around the world to build the future of ecommerce.</h1>
+        <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
+          <p class="text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua. Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</p>
         </div>
-        <div class="flex items-start justify-end lg:order-first">
-          <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" width="2432" height="1442" />
+        <img src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80" alt="" class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36" />
+      </div>
+    </div>
+    <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
+  </div>
+
+  <!-- CTA -->
+  <div class="-mt-20 mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+    <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+      <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Dacci 100 giorni. Sei pronto?</h2>
+      <div class="mt-10 flex items-center justify-center gap-x-6">
+        <a href="#" class="btn btn-primary">Sono pronto</a>
+        <a href="#" class="text-sm font-semibold leading-6 text-white">Casi studio <span aria-hidden="true">→</span></a>
+      </div>
+      <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
+        <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
+        <defs>
+          <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
+            <stop stop-color="#7775D6" />
+            <stop offset="1" stop-color="#E935C1" />
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+  </div>
+
+  <!--Testimonials-->
+  <div class=" py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-xl text-center">
+        <h2 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Testimonials</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">We have worked with thousands of amazing people</p>
+      </div>
+      <div class="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
+        <div class="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
+          <div v-for="testimonial in testimonials" :key="testimonial.author.handle" class="pt-8 sm:inline-block sm:w-full sm:px-4">
+            <figure class="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
+              <blockquote class="">
+                <p>{{ `“${testimonial.body}”` }}</p>
+              </blockquote>
+              <figcaption class="mt-6 flex items-center gap-x-4">
+                <img class="h-10 w-10 rounded-full bg-gray-50" :src="testimonial.author.imageUrl" alt="" />
+                <div>
+                  <div class="font-semibold ">{{ testimonial.author.name }}</div>
+                  <div class="">{{ `@${testimonial.author.handle}` }}</div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Video -->
-  <div class="-mt-20 sm:py-32">
+  <!--Features-->
+  <div class=" py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl sm:text-center">
-        <h2 class="text-base font-semibold leading-7">Everything you need</h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">No server? No problem.</p>
-        <p class="mt-6 text-lg leading-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
-      </div>
-    </div>
-    <div class="relative overflow-hidden pt-16">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <img src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="App screenshot" class="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10" width="2432" height="1442" />
-        <div class="relative" aria-hidden="true">
-          <div class="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-gray-900 pt-[7%]" />
+      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div>
+          <h2 class="text-base font-semibold leading-7 text-indigo-600">Everything you need</h2>
+          <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">All-in-one platform</p>
+          <p class="mt-6 text-base leading-7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
         </div>
+        <dl class="col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 sm:grid-cols-2 lg:gap-y-16">
+          <div v-for="feature in features" :key="feature.name" class="relative pl-9">
+            <dt class="font-semibold">
+              <CheckIcon class="absolute left-0 top-1 h-5 w-5 text-indigo-500" aria-hidden="true" />
+              {{ feature.name }}
+            </dt>
+            <dd class="mt-2">{{ feature.description }}</dd>
+          </div>
+        </dl>
       </div>
-    </div>
-    <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
-      <dl class="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
-        <div v-for="feature in features" :key="feature.name" class="relative pl-9">
-          <dt class="inline font-semibold">
-            <component :is="feature.icon" class="absolute left-1 top-1 h-5 w-5" aria-hidden="true" />
-            {{ feature.name }}
-          </dt>
-          {{ ' ' }}
-          <dd class="inline">{{ feature.description }}</dd>
-        </div>
-      </dl>
     </div>
   </div>
 
-    <!-- Testimonial -->
-    <div 
-    id="testimonials"
-    class="pt-24 sm:pb-24 sm:pt-32 xl:pb-32">
-    <div class="bg-base-200 pb-20 sm:pb-24 xl:pb-0">
-      <div class="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
-        <div class="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
-          <div class="relative aspect-[2/1] h-full md:-mx-8 xl:mx-0 xl:aspect-auto">
-            <img class="absolute inset-0 h-full w-full rounded-2xl bg-gray-800 object-cover shadow-2xl" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80" alt="" />
+  <!--Blog section-->
+  <div class="py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="text-3xl font-bold tracking-tight  sm:text-4xl">From the blog</h2>
+        <p class="mt-2 text-lg leading-8 ">Learn how to grow your business with our expert advice.</p>
+      </div>
+      <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <article v-for="post in posts" :key="post.id" class="flex max-w-xl flex-col items-start justify-between">
+          <div class="flex items-center gap-x-4 text-xs">
+            <time :datetime="post.datetime" class="">{{ post.date }}</time>
+            <a :href="post.category.href" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium  hover:bg-gray-100">{{ post.category.title }}</a>
           </div>
-        </div>
-        <div class="w-full max-w-2xl xl:max-w-none xl:flex-auto xl:px-16 xl:py-24">
-          <figure class="relative isolate pt-6 sm:pt-12">
-            <svg viewBox="0 0 162 128" fill="none" aria-hidden="true" class="absolute left-0 top-0 -z-10 h-32 stroke-white/20">
-              <path id="b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" d="M65.5697 118.507L65.8918 118.89C68.9503 116.314 71.367 113.253 73.1386 109.71C74.9162 106.155 75.8027 102.28 75.8027 98.0919C75.8027 94.237 75.16 90.6155 73.8708 87.2314C72.5851 83.8565 70.8137 80.9533 68.553 78.5292C66.4529 76.1079 63.9476 74.2482 61.0407 72.9536C58.2795 71.4949 55.276 70.767 52.0386 70.767C48.9935 70.767 46.4686 71.1668 44.4872 71.9924L44.4799 71.9955L44.4726 71.9988C42.7101 72.7999 41.1035 73.6831 39.6544 74.6492C38.2407 75.5916 36.8279 76.455 35.4159 77.2394L35.4047 77.2457L35.3938 77.2525C34.2318 77.9787 32.6713 78.3634 30.6736 78.3634C29.0405 78.3634 27.5131 77.2868 26.1274 74.8257C24.7483 72.2185 24.0519 69.2166 24.0519 65.8071C24.0519 60.0311 25.3782 54.4081 28.0373 48.9335C30.703 43.4454 34.3114 38.345 38.8667 33.6325C43.5812 28.761 49.0045 24.5159 55.1389 20.8979C60.1667 18.0071 65.4966 15.6179 71.1291 13.7305C73.8626 12.8145 75.8027 10.2968 75.8027 7.38572C75.8027 3.6497 72.6341 0.62247 68.8814 1.1527C61.1635 2.2432 53.7398 4.41426 46.6119 7.66522C37.5369 11.6459 29.5729 17.0612 22.7236 23.9105C16.0322 30.6019 10.618 38.4859 6.47981 47.558L6.47976 47.558L6.47682 47.5647C2.4901 56.6544 0.5 66.6148 0.5 77.4391C0.5 84.2996 1.61702 90.7679 3.85425 96.8404L3.8558 96.8445C6.08991 102.749 9.12394 108.02 12.959 112.654L12.959 112.654L12.9646 112.661C16.8027 117.138 21.2829 120.739 26.4034 123.459L26.4033 123.459L26.4144 123.465C31.5505 126.033 37.0873 127.316 43.0178 127.316C47.5035 127.316 51.6783 126.595 55.5376 125.148L55.5376 125.148L55.5477 125.144C59.5516 123.542 63.0052 121.456 65.9019 118.881L65.5697 118.507Z" />
-              <use href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" x="86" />
-            </svg>
-            <blockquote class="text-xl font-semibold leading-8 text-white sm:text-2xl sm:leading-9">
-              <p>Una forza inarrestabile. Dal suo arrivo ha svoltato la nostra azienda in 100 giorni. Ha creato un sito, ha creato ed ottimizzato la nostra scheda Google My Business da zero. Ci ha aiutato con la creazioen dei contenuti. </p>
-            </blockquote>
-            <figcaption class="mt-8 text-base">
-              <div class="font-semibold text-white">Pietro Gentili</div>
-              <div class="mt-1 text-gray-400">Presidente Forum Giovani dell' Elba</div>
-            </figcaption>
-          </figure>
-        </div>
+          <div class="group relative">
+            <h3 class="mt-3 text-lg font-semibold leading-6 ">
+              <a :href="post.href">
+                <span class="absolute inset-0" />
+                {{ post.title }}
+              </a>
+            </h3>
+            <p class="mt-5 line-clamp-3 text-sm leading-6 ">{{ post.description }}</p>
+          </div>
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <img :src="post.author.imageUrl" alt="" class="h-10 w-10 rounded-full bg-gray-50" />
+            <div class="text-sm leading-6">
+              <p class="font-semibold ">
+                <a :href="post.author.href">
+                  <span class="absolute inset-0" />
+                  {{ post.author.name }}
+                </a>
+              </p>
+              <p class="">{{ post.author.role }}</p>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
-    </div>
-    <!-- CTA -->
-    <div class="-mt-20 mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-      <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-        <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Dacci 100 giorni. Sei pronto?</h2>
-        <div class="mt-10 flex items-center justify-center gap-x-6">
-          <a href="#" class="btn btn-primary">Sono pronto</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-white">Casi studio <span aria-hidden="true">→</span></a>
-        </div>
-        <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
-          <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
-          <defs>
-            <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
-              <stop stop-color="#7775D6" />
-              <stop offset="1" stop-color="#E935C1" />
-            </radialGradient>
-          </defs>
-        </svg>
-      </div>
-    </div>
+  </div>
 
   <!-- FAQs -->
     <div
@@ -206,6 +300,145 @@ import { ChevronRightIcon } from '@heroicons/vue/20/solid'
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/vue/20/solid'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/vue/24/outline'
+import { CheckIcon } from '@heroicons/vue/20/solid'
+
+const posts = [
+  {
+    id: 1,
+    title: 'Boost your conversion rate',
+    href: '#',
+    description:
+      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+    date: 'Mar 16, 2020',
+    datetime: '2020-03-16',
+    category: { title: 'Marketing', href: '#' },
+    author: {
+      name: 'Michael Foster',
+      role: 'Co-Founder / CTO',
+      href: '#',
+      imageUrl:
+        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  },
+  {
+    id: 1,
+    title: 'Boost your conversion rate',
+    href: '#',
+    description:
+      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+    date: 'Mar 16, 2020',
+    datetime: '2020-03-16',
+    category: { title: 'Marketing', href: '#' },
+    author: {
+      name: 'Michael Foster',
+      role: 'Co-Founder / CTO',
+      href: '#',
+      imageUrl:
+        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  },
+  {
+    id: 1,
+    title: 'Boost your conversion rate',
+    href: '#',
+    description:
+      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+    date: 'Mar 16, 2020',
+    datetime: '2020-03-16',
+    category: { title: 'Marketing', href: '#' },
+    author: {
+      name: 'Michael Foster',
+      role: 'Co-Founder / CTO',
+      href: '#',
+      imageUrl:
+        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  },
+  
+]
+
+const features = [
+  {
+    name: 'Invite team members',
+    description: 'Rerum repellat labore necessitatibus reprehenderit molestiae praesentium.',
+  },
+  { name: 'List view', description: 'Corporis asperiores ea nulla temporibus asperiores non tempore assumenda aut.' },
+  {
+    name: 'Keyboard shortcuts',
+    description: 'In sit qui aliquid deleniti et. Ad nobis sunt omnis. Quo sapiente dicta laboriosam.',
+  },
+  {
+    name: 'Calendars',
+    description: 'Sed rerum sunt dignissimos ullam. Iusto iure occaecati voluptate eligendi fugiat sequi.',
+  },
+  { name: 'Notifications', description: 'Quos inventore harum enim nesciunt. Aut repellat rerum omnis adipisci.' },
+  { name: 'Boards', description: 'Quae sit sunt excepturi fugit veniam voluptatem ipsum commodi.' },
+  {
+    name: 'Reporting',
+    description: 'Eos laudantium repellat sed architecto earum unde incidunt. Illum sit dolores voluptatem.',
+  },
+  {
+    name: 'Mobile app',
+    description: 'Nulla est saepe accusamus nostrum est est. Fugit voluptatum omnis quidem voluptatem.',
+  },
+]
+
+const testimonials = [
+  {
+    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+    author: {
+      name: 'Leslie Alexander',
+      handle: 'lesliealexander',
+      imageUrl:
+        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  },
+  {
+    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+    author: {
+      name: 'Leslie Alexander',
+      handle: 'lesliealexander',
+      imageUrl:
+        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  },
+  {
+    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+    author: {
+      name: 'Leslie Alexander',
+      handle: 'lesliealexander',
+      imageUrl:
+        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  },
+  {
+    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+    author: {
+      name: 'Leslie Alexander',
+      handle: 'lesliealexander',
+      imageUrl:
+        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  },
+  {
+    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+    author: {
+      name: 'Leslie Alexander',
+      handle: 'lesliealexander',
+      imageUrl:
+        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  },
+  {
+    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+    author: {
+      name: 'Leslie Alexander',
+      handle: 'lesliealexander',
+      imageUrl:
+        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  },  
+]
 
 const faqs = [
   {
@@ -215,27 +448,35 @@ const faqs = [
   }
 ]
 
-const features = [
-{
-name: 'Sviluppo web.',
-description: 'Il tuo nuovo sito. In 100 giorni. Esclusiva comunale.',
-icon: CloudArrowUpIcon,
-},
-{
-name: 'Ottimizzazione per le vendite.',
-description: 'Parliamoci chiaro. Un sito bello è un conto. Ma vogliamo un sito che converta bene e che ti garantisca molti clienti',
-icon: CloudArrowUpIcon,
-},
-{
-name: 'Potenziamento SEO e Google My Business.',
-description: 'Comparirai in alto sulle ricerche di Google. Avrai recensioni più alte.',
-icon: LockClosedIcon,
-},
-{
-name: 'Marketing online.',
-description: 'Dalla definizione della tua strategia marketing, alla gestione social o pubblicità su Google. Siamo qui per te',
-icon: ServerIcon,
-},
+const team = [
+  {
+    name: 'Leslie Alexander',
+    role: 'Co-Founder / CEO',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    location: 'Toronto, Canada',
+  },
+  {
+    name: 'Tizio 2',
+    role: 'Co-Founder / CEO',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    location: 'Toronto, Canada',
+  },
+  {
+    name: 'Tizio 3',
+    role: 'Co-Founder / CEO',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    location: 'Toronto, Canada',
+  },
+  {
+    name: 'Tizio 4',
+    role: 'Co-Founder / CEO',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    location: 'Toronto, Canada',
+  },
 ]
 
 const navigation = [
