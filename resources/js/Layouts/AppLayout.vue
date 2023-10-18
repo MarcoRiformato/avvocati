@@ -83,21 +83,24 @@ const scrollToSection = (sectionId) => {
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <NavLink @click="scrollToSection('benvenuto')">
+                    <NavLink>
                         <ApplicationMark class="block h-9 w-auto" />
                     </NavLink>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <NavLink @click="scrollToSection('servizi')">
+                    <NavLink >
                         Servizi
                     </NavLink>
-                    <NavLink @click="scrollToSection('testimonials')">
+                    <NavLink >
                         Testimonianze
                     </NavLink>
-                    <NavLink @click="scrollToSection('faq')">
+                    <NavLink>
                         FAQ
+                    </NavLink>
+                    <NavLink v-if="$page.props.auth.user && $page.props.auth.user.is_admin !== 0" :href="route('admin.admindashboard')" :active="route().current('admin.admindashboard')">
+                        Sezione admin
                     </NavLink>
                 </div>
             </div>
@@ -147,6 +150,14 @@ const scrollToSection = (sectionId) => {
                         </template>
                     </Dropdown>
                 </div>
+                <div v-else class="ml-3 space-x-4">
+                    <Link :href="route('login')" class="">
+                        Accedi
+                    </Link>
+                    <Link :href="route('register')" class="">
+                        Registrati
+                    </Link>
+                    </div>
             </div>
 
             <!-- Hamburger -->
@@ -190,6 +201,12 @@ const scrollToSection = (sectionId) => {
             <ResponsiveNavLink  @click="scrollToSection('faq')">
                 FAQ
             </ResponsiveNavLink>
+            <template v-if="$page.props.auth.user && $page.props.auth.user.is_admin !== 0">
+                <div class="border-t"></div>
+                <ResponsiveNavLink class="text-red-600" :href="route('admin.admindashboard')" :active="route().current('admin.admindashboard')">
+                    Sezione admin
+                </ResponsiveNavLink>
+            </template>
         </div>
 
         <!-- Responsive Settings Options -->
@@ -265,6 +282,14 @@ const scrollToSection = (sectionId) => {
                     </template>
                 </template>
             </div>
+        </div>
+        <div v-else class="mt-3 space-y-1">
+            <ResponsiveNavLink :href="route('login')">
+                Accedi
+            </ResponsiveNavLink>
+            <ResponsiveNavLink :href="route('register')">
+                Registrati
+            </ResponsiveNavLink>
         </div>
     </div>
 </nav>

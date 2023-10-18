@@ -479,12 +479,5 @@ const team = [
   },
 ]
 
-const navigation = [
-    { name: 'Product', href: '#' },
-    { name: 'Features', href: '#' },
-    { name: 'Marketplace', href: '#' },
-    { name: 'Company', href: '#' },
-]
-
 const mobileMenuOpen = ref(false)
 </script>
