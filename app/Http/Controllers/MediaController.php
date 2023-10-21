@@ -3,20 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Inertia\Inertia;
-use App\Models\Article;
-use App\Models\Media;
-class ArticleController extends Controller
+
+class MediaController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $articles = Article::with(['media', 'user'])->orderBy('created_at', 'desc')->get();
-        return Inertia::render('Admin/Articles/Index', [
-            'articles' => $articles
-        ]);
+        //
     }
 
     /**
@@ -24,7 +19,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return Inertia::render('Admin/Articles/Create');
+        //
     }
 
     /**

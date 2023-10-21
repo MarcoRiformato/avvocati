@@ -4,6 +4,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,5 +39,6 @@ Route::middleware([
 Route::middleware(['auth', 'admin'])->group(function () {
 
     Route::get('admin/admindashboard', [AdminController::class, 'index'])->name('admin.admindashboard');
-
+    
+    Route::resource('/articles', ArticleController::class);
 });

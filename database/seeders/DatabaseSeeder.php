@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 use App\Models\User;
-
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Article;
+use App\Models\Category;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
@@ -25,5 +25,9 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('123456789'),
             'is_admin' => '1'
         ]);
+
+        Article::factory()->count(4)->create();
+        Category::factory()->count(2)->create();
+
     }
 }
