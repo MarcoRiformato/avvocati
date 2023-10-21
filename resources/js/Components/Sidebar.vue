@@ -112,7 +112,7 @@ import {
 
   const navigation = [
     { name: 'Home', href: '#', icon: HomeIcon, current: true },
-    { name: 'Articoli', href: '#', icon: ClockIcon, current: false },
+    { name: 'Articoli', href: route('admin.articles.index'), icon: ClockIcon, current: false },
     { name: 'Aree di lavoro', href: '#', icon: ScaleIcon, current: false },
     { name: 'Servizi', href: '#', icon: CreditCardIcon, current: false },
     { name: 'La squadra', href: '#', icon: UserGroupIcon, current: false },

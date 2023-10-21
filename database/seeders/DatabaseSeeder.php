@@ -27,7 +27,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Article::factory()->count(4)->create();
-        Category::factory()->count(2)->create();
+        Category::factory()->count(1)->create();
 
     }
 }
