@@ -15,8 +15,10 @@ class AdminController extends Controller
 
     public function indexArticles()
     {
-        $articles = Article::all();
-        return Inertia::render('Admin/Articles/Index', compact('articles'));
+        $articles = Article::with(['user'])->orderBy('created_at', 'desc')->get();
+        return Inertia::render('Admin/Articles/Index', [
+            'articles' => $articles
+        ]);
     }
     
 }

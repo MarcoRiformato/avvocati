@@ -30,7 +30,7 @@ class ArticleFactory extends Factory
             'slug' => $this->faker->slug,
             'body' => $this->faker->paragraphs(3, true),
             'status' => $this->faker->randomElement(['draft', 'published']),
-            'user_id' => User::factory(), 
+            'user_id' => User::pluck('id')->random(),
             'category_id' => Category::factory(), 
         ];
     }   
