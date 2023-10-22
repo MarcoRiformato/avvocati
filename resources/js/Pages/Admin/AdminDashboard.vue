@@ -1,8 +1,8 @@
 <template>
 <AppLayout title="Admin dashboard">
+<AdminContainer>    
 <div class="min-h-full">  
-    <Sidebar/>
-    <div class="flex flex-1 flex-col lg:pl-64">
+    <div class="flex flex-1 flex-col">
     <main class="flex-1 pb-8">
         <!-- Page header -->
         <div class="bg-gray-800 shadow">
@@ -170,13 +170,14 @@
     </main>
     </div>
 </div>
+</AdminContainer>
 </AppLayout>
 </template>
   
   <script setup>
   import { ref } from 'vue'
   import AppLayout from '@/Layouts/AppLayout.vue';
-  import Sidebar from '@/Components/Sidebar.vue';
+  import AdminContainer from '@/Pages/Admin/AdminContainer.vue';
   import {
     BanknotesIcon,
     BuildingOfficeIcon,
