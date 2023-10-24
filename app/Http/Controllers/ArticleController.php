@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Inertia\Inertia;
 use App\Models\Article;
 use App\Models\Media;
+use Illuminate\Support\Facades\Storage;
+
 class ArticleController extends Controller
 {
     /**
@@ -84,33 +86,79 @@ class ArticleController extends Controller
     public function show($article_id)
     {
         $article = Article::with('media')->find($article_id);
-
+    
+        // Fetch 3 random articles, excluding the current one and with media
+        $randomArticles = Article::where('id', '!=', $article_id)
+            ->with('media')
+            ->inRandomOrder()
+            ->limit(3)
+            ->get();
+    
         return Inertia::render('Articles/Show', [
-            'article' => $article
+            'article' => $article,
+            'randomArticles' => $randomArticles
         ]);
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Article $article)
     {
-        //
+        $article->load('media');
+        return Inertia::render('Admin/Articles/Edit', [
+            'article' => $article
+        ]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Article $article)
     {
-        //
+        $request->validate([
+            'title' => 'nullable|string|max:255',
+            'meta_description' => 'nullable|string|max:255',
+            'slug' => 'nullable|string|unique:articles,slug',
+            'body' => 'nullable|string',
+            'status' => 'nullable|in:draft,published',
+            'category_id' => 'nullable|exists:categories,id',
+            'media_file' => 'nullable|file|mimes:jpg,jpeg,png,gif,webp,mp4,mp3,pdf|max:10240',
+        ]);
+    
+        $article->title = $request->input('title');
+        $article->meta_description = $request->input('meta_description');
+        $article->slug = $request->input('slug');
+        $article->body = $request->input('body');
+        $article->status = $request->input('status');
+        $article->category_id = $request->input('category_id');
+        $article->save();
+    
+        if ($request->hasFile('cover_photo')) {
+            $file = $request->file('cover_photo');
+    
+            // Delete old cover photo if exists
+            if ($article->cover_photo) {
+                Storage::disk('public')->delete($article->cover_photo);
+            }
+    
+            $path = $file->store('cover_photos', 'public');
+    
+            $article->cover_photo = $path;
+            $article->save();
+        }
+    
+        return redirect()->route('admin.articles.index');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy($article_id)
     {
-        //
+        $article = Article::find($article_id);
+        $article->delete();
+
+        return redirect()->route('admin.articles.index');
     }
 }

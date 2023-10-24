@@ -1,8 +1,9 @@
 <template>
-<AppLayout title="Crea nuovo articolo">
+<AppLayout title="Modifica articolo">
 <AdminContainer>
+
 <div class="min-h-full">
-<h1 class="text-4xl p-4">Crea nuovo articolo</h1>
+<h1 class="text-4xl p-4">Modifica articolo</h1>
 <form class="px-8 bg-base-200 pb-8" @submit.prevent="submit" enctype="multipart/form-data">
 <div class="space-y-12">
     <div class="border-b border-white/10 pb-12">
@@ -73,28 +74,52 @@
 </div>
 
 <div class="mt-6 flex items-center justify-between gap-x-6">
-    <button @click="$inertia.visit(route('admin.articles.index'))" type="button" class="btn btn-secondary">Cancel</button>
-    <button @click="submit" type="button" :disabled="form.processing" class="btn btn-primary">Save</button>
-</div>
+        <button @click="destroy" type="button" class="btn btn-error">Cancella</button>
+        <button @click="$inertia.visit(route('admin.articles.index'))" type="button" class="btn btn-secondary">Annulla</button>
+        <button @click="submit" type="submit" :disabled="form.processing" class="btn btn-primary ">Salva</button>
+    </div>
 </form>
 </div>
+
 </AdminContainer>
 </AppLayout>
 </template>
+
 <script setup>
-import { useForm } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import AdminContainer from '@/Pages/Admin/AdminContainer.vue';
+import { useForm } from '@inertiajs/vue3';
+import { ref } from 'vue';
+
+const props = defineProps({
+    article: Object,
+    categories: Array // Assuming you're passing categories from the server
+});
 
 let form = useForm({
-    title: '',
-    meta_description: '',
-    slug: '',
-    body: '',
-    status: 'draft',
-    category_id: null,
-    media_file: null
-})
+    id: props.article.id,
+    title: props.article.title,
+    meta_description: props.article.meta_description,
+    slug: props.article.slug,
+    body: props.article.body,
+    status: props.article.status,
+    category_id: props.article.category_id,
+    cover_photo: null
+});
+
+const imagePreview = ref(null);
+
+const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            imagePreview.value = e.target.result;
+        };
+        reader.readAsDataURL(file);
+        form.cover_photo = file;
+    }
+};
 
 const submit = () => {
     const formData = new FormData();
@@ -103,23 +128,20 @@ const submit = () => {
     formData.append('slug', form.slug);
     formData.append('body', form.body);
     formData.append('status', form.status);
-    if (form.category_id !== null) {
-        formData.append('category_id', form.category_id);
-    }
-    else{
-        form.category_id = 1;
-    }
-    if (form.media_file !== null) {
-        formData.append('media_file', form.media_file);
+    formData.append('category_id', form.category_id);
+
+    if (form.cover_photo) {
+        formData.append('cover_photo', form.cover_photo);
     }
 
-    form.post(route('articles.store'), {
-        body: formData,
-        onSuccess: () => {
-            form.reset();
-        }
+    // You'll need to adjust this based on your actual API route
+    form.post(route('admin.articles.update', { id: props.article.id }), {
+        body: formData
     });
 };
 
+const destroy = () =>{
+        form.delete(route('admin.articles.destroy', {id: props.article.id}));
+    }
 
 </script>

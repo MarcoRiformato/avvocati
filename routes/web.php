@@ -45,5 +45,8 @@ Route::namespace('Admin')->prefix('admin')->middleware(['auth', 'admin'])->group
     Route::get('/articles.index', [AdminController::class, 'indexArticles'])->name('admin.articles.index');
     Route::get('/articles.create', [ArticleController::class, 'create'])->name('admin.articles.create');
     Route::post('/articles/store', [ArticleController::class, 'store'])->name('articles.store');
+    Route::get('/articles.{article}/edit', [ArticleController::class, 'edit'])->name('admin.articles.edit');
+    Route::post('/articles/{article}', [ArticleController::class, 'update'])->name('admin.articles.update');
+    Route::delete('/articles/{article}', [ArticleController::class, 'destroy'])->name('admin.articles.destroy');
 
 });
