@@ -132,12 +132,11 @@ import {
   const navigation = [
     { name: 'Home', href: 'admindashboard', icon: HomeIcon, current: false },
     { name: 'Articoli', href: route('admin.articles.index'), icon: ClockIcon, current: false },
-    { name: 'Aree di lavoro', href: '#', icon: ScaleIcon, current: false },
-    { name: 'Servizi', href: '#', icon: CreditCardIcon, current: false },
+    { name: 'Categorie', href: '#', icon: ScaleIcon, current: false },
     { name: 'La squadra', href: '#', icon: UserGroupIcon, current: false },
     { name: 'Testimonial', href: '#', icon: DocumentChartBarIcon, current: false },
+    { name: 'Casi studio', href: '#', icon: DocumentChartBarIcon, current: false },
     { name: 'FAQ', href: '#', icon: DocumentChartBarIcon, current: false },
-    { name: 'Testimonial', href: '#', icon: DocumentChartBarIcon, current: false },
   ]
   const secondaryNavigation = [
     { name: 'Impostazioni', href: '#', icon: CogIcon },

@@ -36,9 +36,14 @@ Route::middleware([
     })->name('dashboard');
 });
 
+Route::get('articles/{article}', [ArticleController::class, 'show'])->name('articles.show');
+
 Route::namespace('Admin')->prefix('admin')->middleware(['auth', 'admin'])->group(function () {
     
     Route::get('admindashboard', [AdminController::class, 'index'])->name('admin.admindashboard');
 
     Route::get('/articles.index', [AdminController::class, 'indexArticles'])->name('admin.articles.index');
+    Route::get('/articles.create', [ArticleController::class, 'create'])->name('admin.articles.create');
+    Route::post('/articles/store', [ArticleController::class, 'store'])->name('articles.store');
+
 });
