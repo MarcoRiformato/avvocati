@@ -78,6 +78,16 @@ class ArticleController extends Controller
     
         return redirect()->route('admin.articles.index');
     }
+
+    private function determineFileType($mimeType) {
+        if (in_array($mimeType, ['image/jpeg', 'image/png', 'image/gif'])) {
+            return 'image';
+        } elseif (in_array($mimeType, ['video/mp4'])) {
+            return 'video';
+        } else {
+            return 'document';
+        }
+    }
     
 
     /**
