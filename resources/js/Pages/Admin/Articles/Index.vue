@@ -66,8 +66,8 @@
 
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue';
-import Sidebar from '@/Components/Sidebar.vue';
 import AdminContainer from '@/Pages/Admin/AdminContainer.vue';
+import Sidebar from '@/Components/Sidebar.vue';
 
 defineProps({
   articles: Object

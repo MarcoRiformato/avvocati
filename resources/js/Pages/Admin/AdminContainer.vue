@@ -132,7 +132,7 @@ import {
   const navigation = [
     { name: 'Home', href: 'admindashboard', icon: HomeIcon, current: false },
     { name: 'Articoli', href: route('admin.articles.index'), icon: ClockIcon, current: false },
-    { name: 'Categorie', href: '#', icon: ScaleIcon, current: false },
+    { name: 'Categorie', href: route('admin.categories.index'), icon: ScaleIcon, current: false },
     { name: 'La squadra', href: '#', icon: UserGroupIcon, current: false },
     { name: 'Testimonial', href: '#', icon: DocumentChartBarIcon, current: false },
     { name: 'Casi studio', href: '#', icon: DocumentChartBarIcon, current: false },

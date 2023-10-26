@@ -11,8 +11,16 @@ class Category extends Model
     use HasFactory;
     use SoftDeletes;
 
+    protected $table = 'categories';
+    protected $guarded = [];
+
     public function articles()
     {
         return $this->hasMany(Article::class);
+    }
+
+    public function media()
+    {
+        return $this->hasOne(Media::class);
     }
 }
