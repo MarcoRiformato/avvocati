@@ -6,7 +6,8 @@ use Inertia\Inertia;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\CategoryController;
-
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MediaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,9 +33,7 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return Inertia::render('Dashboard');
-    })->name('dashboard');
+    Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
 });
 
 Route::get('articles/{article}', [ArticleController::class, 'show'])->name('articles.show');
@@ -52,6 +51,7 @@ Route::namespace('Admin')->prefix('admin')->middleware(['auth', 'admin'])->group
     Route::get('/articles.{article}/edit', [ArticleController::class, 'edit'])->name('admin.articles.edit');
     Route::post('/articles/{article}', [ArticleController::class, 'update'])->name('admin.articles.update');
     Route::delete('/articles/{article}', [ArticleController::class, 'destroy'])->name('admin.articles.destroy');
+    Route::delete('/articles/{article}/image', [ArticleController::class, 'destroyImage'])->name('admin.articles.destroy.image');
 
     //Categories
     Route::get('/categories.create', [CategoryController::class, 'create'])->name('admin.categories.create');
@@ -59,5 +59,8 @@ Route::namespace('Admin')->prefix('admin')->middleware(['auth', 'admin'])->group
     Route::get('/categories.{category}/edit', [CategoryController::class, 'edit'])->name('admin.categories.edit');
     Route::post('/categories/{category}', [CategoryController::class, 'update'])->name('admin.categories.update');
     Route::delete('/categories/{category}', [CategoryController::class, 'destroy'])->name('admin.categories.destroy');
+    Route::delete('/categproes/{category}/image', [CategoryController::class, 'destroyImage'])->name('admin.categproes.destroy.image');
 
+    
+    Route::delete('/media/{id}', [MediaController::class, 'destroy'])->name('media.destroy');
 });

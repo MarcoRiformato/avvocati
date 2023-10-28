@@ -22,7 +22,7 @@
       <div>
         <div class="-mt-px flex divide-x divide-gray-200">
           <div class="flex w-0 flex-1">
-            <a :href="`mailto:au`" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm font-semibold">
+            <a @click.stop="$inertia.visit(route('admin.categories.edit', category.id))" :href="`mailto:au`" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm font-semibold">
               <EnvelopeIcon class="h-5 w-5" aria-hidden="true" />
               Modifica
             </a>

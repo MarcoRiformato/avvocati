@@ -83,7 +83,7 @@ const scrollToSection = (sectionId) => {
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <NavLink>
+                    <NavLink href="/dashboard">
                         <ApplicationMark class="block h-9 w-auto" />
                     </NavLink>
                 </div>

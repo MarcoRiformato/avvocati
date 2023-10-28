@@ -44,8 +44,13 @@
                             <td class="px-3 py-4 text-sm">
                                 {{ article.status }}
                             </td>
-                            <td class="px-3 py-4 text-sm">
+                            <td
+                            v-if="article.category" 
+                            class="px-3 py-4 text-sm">
                                 {{ article.category.name }}
+                            </td>
+                            <td v-else class="px-3 py-4 text-sm">
+                                Senza categoria
                             </td>
                             <td class="px-3 py-4 text-sm">
                                 {{ new Date(article.created_at).toLocaleDateString() }}

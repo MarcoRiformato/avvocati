@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Media;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class MediaController extends Controller
 {
@@ -28,7 +29,21 @@ class MediaController extends Controller
     
         return back()->with('success', 'File has been uploaded.');
     }
+
+public function destroy($id)
+{
+    dd($id);
+    $media = Media::findOrFail($id);
     
+    // Detach the media from any associated articles
+    $media->articles()->detach();
+    
+    Storage::disk('public')->delete($media->filepath);
+    $media->delete();
+
+    return redirect()->route('admin.categories.index');
+}
+
 
     /**
      * Determine the file type.

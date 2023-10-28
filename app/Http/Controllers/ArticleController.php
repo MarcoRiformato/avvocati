@@ -129,7 +129,7 @@ class ArticleController extends Controller
         $request->validate([
             'title' => 'nullable|string|max:255',
             'meta_description' => 'nullable|string|max:255',
-            'slug' => 'nullable|string|unique:articles,slug',
+            'slug' => 'nullable|string|unique:articles,slug,' . $article->id,
             'body' => 'nullable|string',
             'status' => 'nullable|in:draft,published',
             'category_id' => 'nullable|exists:categories,id',
@@ -144,31 +144,62 @@ class ArticleController extends Controller
         $article->category_id = $request->input('category_id');
         $article->save();
     
-        if ($request->hasFile('cover_photo')) {
-            $file = $request->file('cover_photo');
-    
+        if ($request->hasFile('media_file')) {
+            $file = $request->file('media_file');
+        
             // Delete old cover photo if exists
-            if ($article->cover_photo) {
-                Storage::disk('public')->delete($article->cover_photo);
-            }
-    
-            $path = $file->store('cover_photos', 'public');
-    
-            $article->cover_photo = $path;
-            $article->save();
+            Media::where('article_id', $article->id)->delete();
+        
+            $path = $file->store('media', 'public');
+        
+            $media = new Media();
+            $media->filename = $file->getClientOriginalName();
+            $media->filepath = $path;
+            $media->article_id = $article->id;
+            $media->save();
+        
+            // Attach the media to the article
+            $article->media()->attach($media);
         }
+        
     
         return redirect()->route('admin.articles.index');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy($article_id)
-    {
-        $article = Article::find($article_id);
-        $article->delete();
-
-        return redirect()->route('admin.articles.index');
+/**
+ * Remove the specified resource from storage.
+ */
+public function destroy($article_id)
+{
+    $article = Article::with('media')->find($article_id);
+    
+    if ($article && $article->media) {
+        foreach ($article->media as $media) {
+            Storage::disk('public')->delete($media->filepath);
+            $media->delete();
+        }
     }
+    
+    $article->delete();
+    
+    return redirect()->route('admin.articles.index');
+}
+
+public function destroyImage($article_id)
+{
+    $article = Article::with('media')->find($article_id);
+
+    if ($article && $article->media) {
+        $media = $article->media->first();
+        Storage::disk('public')->delete($media->filepath);
+
+        $media->delete();
+    }
+    
+    return redirect()->back();
+}
+
+
+    
+
 }

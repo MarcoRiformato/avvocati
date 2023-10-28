@@ -19,10 +19,23 @@
             <div class="sm:col-span-3">
                 <label for="cover-photo" class="block font-medium leading-6">Immagine</label>
                 <div class="text-center mt-2">
-                    <input @change="handleFileChange" type="file" class="file-input file-input-bordered file-input-primary  max-w-xs" />
-                    <img v-if="imagePreview" :src="imagePreview" alt="Uploaded Preview" class="mt-4 w-full h-auto" />
+                    <!-- Show input only if there is no existing image and no uploaded preview -->
+                    <input v-if="!props.article.media.length && !imagePreview" @change="handleFileChange" type="file" class="file-input file-input-bordered file-input-primary max-w-xs" />
+                    
+                    <!-- Display the existing image with a delete button -->
+                    <div v-if="props.article.media && props.article.media[0]">
+                        <img :src="'/storage/' + props.article.media[0].filepath" alt="Existing Image" class="mt-4 w-full h-auto" />
+                        <button type="button" @click="deleteImage" class="btn btn-error mt-2">X</button>
+                    </div>
+                    
+                    <!-- Display the uploaded preview with a delete button -->
+                    <div v-if="imagePreview">
+                        <img :src="imagePreview" alt="Uploaded Preview" class="mt-4 w-full h-auto" />
+                        <button @click="deletePreview" class="btn btn-error mt-2">X</button>
+                    </div>
                 </div>
             </div>
+
 
         <!-- Meta Description -->
         <div class="col-span-full">
@@ -90,11 +103,12 @@ import AppLayout from '@/Layouts/AppLayout.vue';
 import AdminContainer from '@/Pages/Admin/AdminContainer.vue';
 import { useForm } from '@inertiajs/vue3';
 import { ref } from 'vue';
+import { Inertia } from '@inertiajs/inertia';
 
 
 const props = defineProps({
     article: Object,
-    categories: Array // Assuming you're passing categories from the server
+    categories: Array 
 });
 
 let form = useForm({
@@ -105,10 +119,28 @@ let form = useForm({
     body: props.article.body,
     status: props.article.status,
     category_id: props.article.category_id,
-    cover_photo: null
+    media_file: null
 });
 
 const imagePreview = ref(null);
+const deletePreview = () => {
+    imagePreview.value = null;
+    form.media_file = null;
+};
+
+const deleteImage = () => {
+    let articleId = props.article.id;
+    console.log(articleId);
+
+    try {
+    Inertia.delete(route('admin.articles.destroy.image', { article: articleId }));
+} catch (error) {
+    console.error("Error deleting image:", error);
+}
+
+};
+
+
 
 const handleFileChange = (event) => {
     const file = event.target.files[0];
@@ -118,7 +150,7 @@ const handleFileChange = (event) => {
             imagePreview.value = e.target.result;
         };
         reader.readAsDataURL(file);
-        form.cover_photo = file;
+        form.media_file = file;
     }
 };
 
@@ -131,8 +163,8 @@ const submit = () => {
     formData.append('status', form.status);
     formData.append('category_id', form.category_id);
 
-    if (form.cover_photo) {
-        formData.append('cover_photo', form.cover_photo);
+    if (form.media_file) {
+        formData.append('media_file', form.media_file);
     }
 
     // You'll need to adjust this based on your actual API route

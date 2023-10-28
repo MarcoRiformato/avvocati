@@ -38,47 +38,24 @@
 
   <!-- Settori -->
   <div class="mt-20 flex flex-wrap justify-center">
-    
-    <div class="card w-full sm:w-1/3 md:w-1/4 lg:w-1/6 py-4 px-2 m-2 bg-base-100 shadow-xl">
-    <figure><img src="https://picsum.photos/200" alt="Shoes" /></figure>
+    <div 
+    v-for="category in categories" 
+    :key="category.id"
+    class="card w-full sm:w-1/3 md:w-1/4 lg:w-1/6 py-4 px-2 m-2 bg-base-100 shadow-xl"
+  >
+    <figure>
+      <img
+      v-if="category.media && category.media.filepath" :src="'/storage/' + category.media.filepath"
+      alt="Category Image" />
+      <img v-else src="https://picsum.photos/300" />
+    </figure>
     <div class="card-body">
-      <h2 class="card-title">Civile</h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-    </div>
-    </div>
-    
-    <div class="card w-full sm:w-1/3 md:w-1/4 lg:w-1/6 py-4 px-2 m-2 bg-base-100 shadow-xl">
-    <figure><img src="https://picsum.photos/200" alt="Shoes" /></figure>
-    <div class="card-body">
-      <h2 class="card-title">Penale</h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-    </div>
-    </div>
-    
-    <div class="card w-full sm:w-1/3 md:w-1/4 lg:w-1/6 py-4 px-2 m-2 bg-base-100 shadow-xl">
-    <figure><img src="https://picsum.photos/200" alt="Shoes" /></figure>
-    <div class="card-body">
-      <h2 class="card-title">Esecuzioni</h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-    </div>
-    </div>
-    
-    <div class="card w-full sm:w-1/3 md:w-1/4 lg:w-1/6 py-4 px-2 m-2 bg-base-100 shadow-xl">
-    <figure><img src="https://picsum.photos/200" alt="Shoes" /></figure>
-    <div class="card-body">
-      <h2 class="card-title">Altro</h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-    </div>
-    </div>
-    
-    <div class="card w-full sm:w-1/3 md:w-1/4 lg:w-1/6 py-4 px-2 m-2 bg-base-100 shadow-xl">
-    <figure><img src="https://picsum.photos/200" alt="Shoes" /></figure>
-    <div class="card-body">
-      <h2 class="card-title">Shoes!</h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
-    </div>
+      <h2 class="card-title">{{ category.name }}</h2>
+      <p>{{ category.description }}</p>
     </div>
   </div>
+</div>
+
 
   <!--Casi studio-->
   <div class="flex flex-wrap">
@@ -301,6 +278,10 @@ import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/vue/20/
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/vue/24/outline'
 import { CheckIcon } from '@heroicons/vue/20/solid'
+
+defineProps({
+  categories: Object
+})
 
 const posts = [
   {
