@@ -22,6 +22,10 @@ class media extends Model
         return $this->belongsToMany(Article::class);
     }
 
+    public function case_studies() {
+        return $this->belongsToMany(CaseStudy::class);
+    }
+
     public function category()
     {
         return $this->belongsTo(Category::class);

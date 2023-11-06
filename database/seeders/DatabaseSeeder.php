@@ -4,6 +4,7 @@ namespace Database\Seeders;
 use App\Models\User;
 use App\Models\Article;
 use App\Models\Category;
+use App\Models\CaseStudy;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
@@ -28,6 +29,6 @@ class DatabaseSeeder extends Seeder
 
         Article::factory()->count(4)->create();
         Category::factory()->count(1)->create();
-
+        CaseStudy::factory()->count(2)->create();
     }
 }

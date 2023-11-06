@@ -36,8 +36,48 @@
     </div>
   </div>
 
-  <!-- Settori -->
-  <div class="mt-20 flex flex-wrap justify-center">
+  <!--Casi studio-->
+  <div class="mt-10 flex flex-wrap">
+  <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
+    <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
+  <h4 class=" text-[1.63rem] leading-8 font-semibold">Faced 10+ Years in Prison</h4>
+
+  <h5 class="text-stone-400 mt-1.5 uppercase">People Vs. Anna Sorokin</h5>
+
+  <p class=" mt-6 min-h-[11.25rem]">The case was covered by the New York Times, and many major media outlets. Our client was accused of conning the city's wealthy, and had a Netflix special made about her.</p>
+    </div>
+  </div>
+  <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
+    <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
+  <h4 class=" text-[1.63rem] leading-8 font-semibold">Faced 10+ Years in Prison</h4>
+
+  <h5 class="text-stone-400 mt-1.5 uppercase">People Vs. Anna Sorokin</h5>
+
+  <p class=" mt-6 min-h-[11.25rem]">The case was covered by the New York Times, and many major media outlets. Our client was accused of conning the city's wealthy, and had a Netflix special made about her.</p>
+    </div>
+  </div>
+  <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
+    <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
+  <h4 class=" text-[1.63rem] leading-8 font-semibold">Faced 10+ Years in Prison</h4>
+
+  <h5 class="text-stone-400 mt-1.5 uppercase">People Vs. Anna Sorokin</h5>
+
+  <p class=" mt-6 min-h-[11.25rem]">The case was covered by the New York Times, and many major media outlets. Our client was accused of conning the city's wealthy, and had a Netflix special made about her.</p>
+    </div>
+  </div>
+  <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
+    <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
+  <h4 class=" text-[1.63rem] leading-8 font-semibold">Faced 10+ Years in Prison</h4>
+
+  <h5 class="text-stone-400 mt-1.5 uppercase">People Vs. Anna Sorokin</h5>
+
+  <p class=" mt-6 min-h-[11.25rem]">The case was covered by the New York Times, and many major media outlets. Our client was accused of conning the city's wealthy, and had a Netflix special made about her.</p>
+    </div>
+  </div>
+  </div>
+
+  <!-- Categorie -->
+  <div class="mt-10 flex flex-wrap justify-center">
     <div 
     v-for="category in categories" 
     :key="category.id"
@@ -52,47 +92,6 @@
     <div class="card-body">
       <h2 class="card-title">{{ category.name }}</h2>
       <p>{{ category.description }}</p>
-    </div>
-  </div>
-</div>
-
-
-  <!--Casi studio-->
-  <div class="flex flex-wrap">
-  <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
-    <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
-  <h4 class=" text-[1.63rem] leading-8 font-semibold">Faced 10+ Years in Prison</h4>
-
-  <h5 class="text-stone-400 mt-1.5 uppercase">People Vs. Anna Sorokin</h5>
-
-  <p class=" mt-6 min-h-[11.25rem]">The case was covered by the New York Times, and many major media outlets. Our client was accused of conning the city's wealthy, and had a Netflix special made about her.</p>
-    </div>
-  </div>
-  <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
-    <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
-  <h4 class=" text-[1.63rem] leading-8 font-semibold">Faced 10+ Years in Prison</h4>
-
-  <h5 class="text-stone-400 mt-1.5 uppercase">People Vs. Anna Sorokin</h5>
-
-  <p class=" mt-6 min-h-[11.25rem]">The case was covered by the New York Times, and many major media outlets. Our client was accused of conning the city's wealthy, and had a Netflix special made about her.</p>
-    </div>
-  </div>
-  <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
-    <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
-  <h4 class=" text-[1.63rem] leading-8 font-semibold">Faced 10+ Years in Prison</h4>
-
-  <h5 class="text-stone-400 mt-1.5 uppercase">People Vs. Anna Sorokin</h5>
-
-  <p class=" mt-6 min-h-[11.25rem]">The case was covered by the New York Times, and many major media outlets. Our client was accused of conning the city's wealthy, and had a Netflix special made about her.</p>
-    </div>
-  </div>
-  <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
-    <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
-  <h4 class=" text-[1.63rem] leading-8 font-semibold">Faced 10+ Years in Prison</h4>
-
-  <h5 class="text-stone-400 mt-1.5 uppercase">People Vs. Anna Sorokin</h5>
-
-  <p class=" mt-6 min-h-[11.25rem]">The case was covered by the New York Times, and many major media outlets. Our client was accused of conning the city's wealthy, and had a Netflix special made about her.</p>
     </div>
   </div>
   </div>
