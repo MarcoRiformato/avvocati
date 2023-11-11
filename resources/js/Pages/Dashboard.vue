@@ -11,11 +11,11 @@
     </div>
     <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
       <div class="text-center">
-        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Top-Rated [Specialization] Lawyers in [Location]</h1>
-        <p class="mt-6 text-lg leading-8 text-gray-300">Defending Your Rights for Over 20 Years</p>
+        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Studio legale Antonio Petrocchi</h1>
+        <p class="mt-6 text-lg leading-8 text-gray-300">Difendiamo i vostri diritti da 3 generazioni</p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
-          <a href="#" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Get started</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
+          <a href="#" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Parliamo</a>
+          <a href="#" class="text-sm font-semibold leading-6 text-white">Scopri di più <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </div>
@@ -26,7 +26,7 @@
   
   <!--Logo cloud-->
   <div class="mx-auto mt-8 max-w-7xl px-6 sm:mt-16 lg:px-8">
-    <h2 class="text-center text-lg font-semibold leading-8 text-white">The world’s most innovative companies use our app</h2>
+    <h2 class="text-center text-lg font-semibold leading-8 text-white">Siamo stati menzionati dai seguenti siti</h2>
     <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
       <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg" alt="Transistor" width="158" height="48" />
       <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg" alt="Reform" width="158" height="48" />
@@ -40,38 +40,41 @@
   <div class="mt-10 flex flex-wrap">
   <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
     <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
-  <h4 class=" text-[1.63rem] leading-8 font-semibold">Faced 10+ Years in Prison</h4>
+  <h4 class=" text-[1.63rem] leading-8 font-semibold">Risoluzione Contrattuale</h4>
 
-  <h5 class="text-stone-400 mt-1.5 uppercase">People Vs. Anna Sorokin</h5>
+  <h5 class="text-stone-400 mt-1.5 uppercase">Il Sogno Imprenditoriale Salvato</h5>
 
-  <p class=" mt-6 min-h-[11.25rem]">The case was covered by the New York Times, and many major media outlets. Our client was accused of conning the city's wealthy, and had a Netflix special made about her.</p>
+  <p class=" mt-6 min-h-[11.25rem]">Un piccolo imprenditore locale ha affrontato la potenziale rovina quando un grossista non ha rispettato i termini di consegna. La nostra azione legale tempestiva ha assicurato il rispetto del contratto e il risarcimento per i danni subiti, permettendo al nostro cliente di continuare la sua attività senza interruzioni.
+</p>
     </div>
   </div>
   <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
     <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
-  <h4 class=" text-[1.63rem] leading-8 font-semibold">Faced 10+ Years in Prison</h4>
+  <h4 class=" text-[1.63rem] leading-8 font-semibold">Custodia Condivisa</h4>
 
-  <h5 class="text-stone-400 mt-1.5 uppercase">People Vs. Anna Sorokin</h5>
+  <h5 class="text-stone-400 mt-1.5 uppercase">Un Nuovo Inizio per la Famiglia Rossi</h5>
 
-  <p class=" mt-6 min-h-[11.25rem]">The case was covered by the New York Times, and many major media outlets. Our client was accused of conning the city's wealthy, and had a Netflix special made about her.</p>
+  <p class=" mt-6 min-h-[11.25rem]">La separazione può mettere a dura prova l'equilibrio familiare. Abbiamo lavorato con dedizione per garantire che sia la madre che il padre potessero continuare a svolgere un ruolo attivo nella vita dei loro figli, raggiungendo un accordo di custodia condivisa che rispecchia al meglio gli interessi di tutte le parti coinvolte.
+</p>
     </div>
   </div>
   <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
     <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
-  <h4 class=" text-[1.63rem] leading-8 font-semibold">Faced 10+ Years in Prison</h4>
+  <h4 class=" text-[1.63rem] leading-8 font-semibold">Difesa dei Diritti dei Lavoratori</h4>
 
-  <h5 class="text-stone-400 mt-1.5 uppercase">People Vs. Anna Sorokin</h5>
+  <h5 class="text-stone-400 mt-1.5 uppercase">Giustizia per un Lavoratore Diligente</h5>
 
-  <p class=" mt-6 min-h-[11.25rem]">The case was covered by the New York Times, and many major media outlets. Our client was accused of conning the city's wealthy, and had a Netflix special made about her.</p>
+  <p class=" mt-6 min-h-[11.25rem]">Un dipendente con anni di servizio alle spalle viene improvvisamente licenziato senza giusta causa. La nostra squadra ha lottato per i suoi diritti, assicurandogli una giusta compensazione e la possibilità di tornare al lavoro o di ricominciare con una solida base economica.
+</p>
     </div>
   </div>
   <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
     <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
-  <h4 class=" text-[1.63rem] leading-8 font-semibold">Faced 10+ Years in Prison</h4>
+  <h4 class=" text-[1.63rem] leading-8 font-semibold">Assoluzione da Accusa di Frode</h4>
 
-  <h5 class="text-stone-400 mt-1.5 uppercase">People Vs. Anna Sorokin</h5>
+  <h5 class="text-stone-400 mt-1.5 uppercase">L'Integrità di un Professionista Difesa con Successo</h5>
 
-  <p class=" mt-6 min-h-[11.25rem]">The case was covered by the New York Times, and many major media outlets. Our client was accused of conning the city's wealthy, and had a Netflix special made about her.</p>
+  <p class=" mt-6 min-h-[11.25rem]">Un imprenditore rispettato si è trovato ingiustamente al centro di un'inchiesta per frode fiscale. La nostra difesa meticolosa ha portato alla luce prove decisive per la sua assoluzione, permettendogli di riprendere le redini della sua vita professionale senza l'ombra di uno scandalo</p>
     </div>
   </div>
   </div>
@@ -81,27 +84,42 @@
     <div 
     v-for="category in categories" 
     :key="category.id"
-    class="card w-full sm:w-1/3 md:w-1/4 lg:w-1/6 py-4 px-2 m-2 bg-base-100 shadow-xl"
+    class="card w-full sm:w-1/3 md:w-1/4 lg:w-1/6 py-4 m-2 bg-base-100 shadow-xl"
   >
     <figure>
       <img
-      v-if="category.media && category.media.filepath" :src="'/storage/' + category.media.filepath"
+      v-if="category.media && category.media.filepath" class="px-2" :src="'/storage/' + category.media.filepath"
       alt="Category Image" />
       <img v-else src="https://picsum.photos/300" />
     </figure>
     <div class="card-body">
       <h2 class="card-title">{{ category.name }}</h2>
-      <p>{{ category.description }}</p>
+      <p v-html="category.description"></p>
     </div>
   </div>
+  </div>
+
+  <!-- Hero section -->
+  <div class="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14">
+    <div class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96" aria-hidden="true" />
+    <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
+        <h1 class="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">Professionisti del Diritto al Servizio della Giustizia e della Verità</h1>
+        <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
+          <p class="text-lg leading-8 text-gray-600">Fondata oltre trent'anni fa nel cuore di Firenze, la nostra società legale si è distinta per l'impegno intransigente nella tutela dei diritti dei cittadini e delle imprese. Con una squadra di avvocati altamente qualificati e un approccio che coniuga tradizione e innovazione, offriamo consulenze legali su misura per navigare la complessità del sistema giuridico italiano</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80" alt="" class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36" />
+      </div>
+    </div>
+    <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
   </div>
 
   <!--La squadra-->
   <div class="mx-auto max-w-7xl px-6 sm:mt-20 lg:px-8 flex flex-wrap md:flex-nowrap">
   <div class="w-full p-4">
       <div class="mx-auto max-w-2xl lg:mx-0">
-        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Our team</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-300">Excepturi repudiandae alias ut. Totam aut facilis. Praesentium in neque vel omnis. Eos error odio. Qui fugit voluptatibus eum culpa.</p>
+        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">La squadra</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">Il team del nostro studio legale è composto da professionisti del diritto con specializzazioni che coprono tutti i settori della giurisprudenza. Avvocati, praticanti e consulenti lavorano in sinergia per fornire soluzioni innovative e strategie vincenti. </p>
       </div>
       <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4">
         <li v-for="person in team" :key="person.name">
@@ -114,23 +132,8 @@
     </div>
   </div>
 
-  <!-- Hero section -->
-  <div class="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14">
-    <div class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96" aria-hidden="true" />
-    <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
-      <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-        <h1 class="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">We’re a passionate group of people working from around the world to build the future of ecommerce.</h1>
-        <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-          <p class="text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua. Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</p>
-        </div>
-        <img src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80" alt="" class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36" />
-      </div>
-    </div>
-    <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
-  </div>
-
   <!-- CTA -->
-  <div class="-mt-20 mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+  <div class="-mt-20 -mb-20 mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
     <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
       <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Dacci 100 giorni. Sei pronto?</h2>
       <div class="mt-10 flex items-center justify-center gap-x-6">
@@ -154,17 +157,17 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-xl text-center">
         <h2 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Testimonials</h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">We have worked with thousands of amazing people</p>
+        <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Abbiamo difeso i diritti di centinaia di persone</p>
       </div>
       <div class="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
         <div class="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
           <div v-for="testimonial in testimonials" :key="testimonial.author.handle" class="pt-8 sm:inline-block sm:w-full sm:px-4">
-            <figure class="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
-              <blockquote class="">
+            <figure class="rounded-2xl bg-secondary-content p-8 text-sm leading-6">
+              <blockquote>
                 <p>{{ `“${testimonial.body}”` }}</p>
               </blockquote>
               <figcaption class="mt-6 flex items-center gap-x-4">
-                <img class="h-10 w-10 rounded-full bg-gray-50" :src="testimonial.author.imageUrl" alt="" />
+                <img class="h-10 w-10 rounded-full bg-secondary-content" :src="testimonial.author.imageUrl" alt="" />
                 <div>
                   <div class="font-semibold ">{{ testimonial.author.name }}</div>
                   <div class="">{{ `@${testimonial.author.handle}` }}</div>
@@ -177,7 +180,7 @@
     </div>
   </div>
 
-  <!--Features-->
+  <!--Features
   <div class=" py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -197,14 +200,16 @@
         </dl>
       </div>
     </div>
-  </div>
+  </div>-->
 
   <!--Blog section-->
-  <div class="py-24 sm:py-32">
+  <div class="py-24 -mt-20 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0">
-        <h2 class="text-3xl font-bold tracking-tight  sm:text-4xl">From the blog</h2>
-        <p class="mt-2 text-lg leading-8 ">Learn how to grow your business with our expert advice.</p>
+        <h2 class="text-3xl font-bold tracking-tight  sm:text-4xl" 
+        @click="$inertia.visit(route('articles.index'))"
+        >Dal nostro blog</h2>
+        <p class="mt-2 text-lg leading-8 ">Leggi le ultime notizie per la giustizia in Italia</p>
       </div>
       <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
         <article v-for="post in posts" :key="post.id" class="flex max-w-xl flex-col items-start justify-between">
@@ -279,7 +284,8 @@ import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/vue/24/outline'
 import { CheckIcon } from '@heroicons/vue/20/solid'
 
 defineProps({
-  categories: Object
+  categories: Object,
+  articles: Object
 })
 
 const posts = [
@@ -461,3 +467,43 @@ const team = [
 
 const mobileMenuOpen = ref(false)
 </script>
+<style>
+.quill-content h1 {
+  font-size: 38px;
+}
+
+.quill-content h2 {
+  font-size: 30px;
+}
+
+.quill-content h3 {
+  font-size: 24px;
+}
+
+.quill-content h4 {
+  font-size: 18px;
+}
+
+.quill-content a {
+  text-decoration: underline;
+  color: blue; /* Or any desired color for links */
+}
+
+.quill-content blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 15px;
+}
+
+.quill-content .ql-align-center {
+  text-align: center;
+}
+
+.quill-content .ql-align-right {
+  text-align: right;
+}
+
+.quill-content .ql-align-left {
+  text-align: left;
+}
+
+</style>

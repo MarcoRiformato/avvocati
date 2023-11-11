@@ -36,7 +36,11 @@ Route::middleware([
     Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
 });
 
+Route::get('articles', [ArticleController::class, 'UserIndex'])->name('articles.index');
 Route::get('articles/{article}', [ArticleController::class, 'show'])->name('articles.show');
+Route::view('/servizi', 'services')->name('services');
+Route::view('/testimonianze', 'testimonials')->name('testimonials');
+Route::view('/faq', 'faq')->name('faq');
 
 Route::namespace('Admin')->prefix('admin')->middleware(['auth', 'admin'])->group(function () {
     

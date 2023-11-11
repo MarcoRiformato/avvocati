@@ -11,8 +11,8 @@
           <p class="mt-6 text-xl leading-8">{{ article.meta_description }}</p>
           <figure class="mt-8">
             <img v-if="article.media && article.media.length > 0" :src="'/storage/' + article.media[0].filepath" class="aspect-video rounded-xl bg-gray-50 object-cover" alt="Article Image" />
-              <p v-if="article.media && article.media.length > 0">Descrizione dell'imagine</p>
-              <p v-else>Nessuna immagine</p>
+            <img v-else src="placeholder.webp" class="aspect-video rounded-xl bg-gray-50 object-cover" alt="Article Image" />
+            <p v-if="article.media && article.media.length > 0">Descrizione dell'imagine</p>
           </figure>
   
           <div class="quill-content">
