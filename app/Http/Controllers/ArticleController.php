@@ -16,7 +16,7 @@ class ArticleController extends Controller
     public function index()
     {
         $articles = Article::with(['media', 'user'])->orderBy('created_at', 'desc')->get();
-        return Inertia::render('Admin/Articles/Index', [
+        return Inertia::render('Articles/Index', [
             'articles' => $articles
         ]);
     }

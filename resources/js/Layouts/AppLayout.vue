@@ -99,6 +99,9 @@ const scrollToSection = (sectionId) => {
                     <NavLink :href="route('faq')">
                         FAQ
                     </NavLink>
+                    <NavLink :href="route('articles.index')">
+                        Notizie
+                    </NavLink>
                     <NavLink v-if="$page.props.auth.user && $page.props.auth.user.is_admin !== 0" :href="route('admin.admindashboard')" :active="route().current('admin.admindashboard')">
                         Sezione admin
                     </NavLink>

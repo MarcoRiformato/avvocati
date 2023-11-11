@@ -10,16 +10,22 @@ use App\Models\Media;
 class HomeController extends Controller
 {
 
-
     public function dashboard()
     {
-        $articles = Article::with(['media', 'user', 'category'])->orderBy('created_at', 'desc')->get();
+        // Get the latest 3 articles
+        $articles = Article::with(['media', 'user', 'category'])
+                    ->orderBy('created_at', 'desc')
+                    ->take(3)
+                    ->get();
+    
+        // Get all categories
         $categories = Category::with('media')->get();
+    
         return Inertia::render('Dashboard', [
             'categories' => $categories,
             'articles' => $articles
         ]);
     }
     
-
+    
 }

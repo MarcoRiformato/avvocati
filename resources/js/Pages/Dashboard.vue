@@ -212,31 +212,21 @@
         <p class="mt-2 text-lg leading-8 ">Leggi le ultime notizie per la giustizia in Italia</p>
       </div>
       <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-        <article v-for="post in posts" :key="post.id" class="flex max-w-xl flex-col items-start justify-between">
+        <article v-for="article in articles" :key="article.id" 
+        @click="$inertia.visit(route('articles.show', article.id))" 
+        class="flex max-w-xl flex-col items-start justify-between">
           <div class="flex items-center gap-x-4 text-xs">
-            <time :datetime="post.datetime" class="">{{ post.date }}</time>
-            <a :href="post.category.href" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium  hover:bg-gray-100">{{ post.category.title }}</a>
+            <time :datetime="article.datetime" class="">{{ article.date }}</time>
+            <a  class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium  hover:bg-gray-100"> article.category.title </a>
           </div>
           <div class="group relative">
             <h3 class="mt-3 text-lg font-semibold leading-6 ">
-              <a :href="post.href">
-                <span class="absolute inset-0" />
-                {{ post.title }}
-              </a>
+              <p>
+              <span class="absolute inset-0" />
+                {{ article.title }}
+            </p>
             </h3>
-            <p class="mt-5 line-clamp-3 text-sm leading-6 ">{{ post.description }}</p>
-          </div>
-          <div class="relative mt-8 flex items-center gap-x-4">
-            <img :src="post.author.imageUrl" alt="" class="h-10 w-10 rounded-full bg-gray-50" />
-            <div class="text-sm leading-6">
-              <p class="font-semibold ">
-                <a :href="post.author.href">
-                  <span class="absolute inset-0" />
-                  {{ post.author.name }}
-                </a>
-              </p>
-              <p class="">{{ post.author.role }}</p>
-            </div>
+            <p class="mt-5 line-clamp-3 text-sm leading-6 ">{{ article.meta_description }}</p>
           </div>
         </article>
       </div>
@@ -284,8 +274,8 @@ import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/vue/24/outline'
 import { CheckIcon } from '@heroicons/vue/20/solid'
 
 defineProps({
-  categories: Object,
-  articles: Object
+  categories: Array,
+  articles: Array
 })
 
 const posts = [

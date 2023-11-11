@@ -27,16 +27,10 @@ Route::get('/', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
+Route::get('/', [HomeController::class, 'dashboard'])->name('dashboard');
+Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified',
-])->group(function () {
-    Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
-});
-
-Route::get('articles', [ArticleController::class, 'UserIndex'])->name('articles.index');
+Route::get('articles', [ArticleController::class, 'index'])->name('articles.index');
 Route::get('articles/{article}', [ArticleController::class, 'show'])->name('articles.show');
 Route::view('/servizi', 'services')->name('services');
 Route::view('/testimonianze', 'testimonials')->name('testimonials');
