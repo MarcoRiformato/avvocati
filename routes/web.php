@@ -8,6 +8,7 @@ use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MediaController;
+use App\Http\Controllers\CaseStudyController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,8 +33,10 @@ Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('dashboard'
 
 Route::get('articles', [ArticleController::class, 'index'])->name('articles.index');
 Route::get('articles/{article}', [ArticleController::class, 'show'])->name('articles.show');
+
+Route::get('cases', [CaseStudyController::class, 'index'])->name('cases.index');
+
 Route::view('/servizi', 'services')->name('services');
-Route::view('/testimonianze', 'testimonials')->name('testimonials');
 Route::view('/faq', 'faq')->name('faq');
 
 Route::namespace('Admin')->prefix('admin')->middleware(['auth', 'admin'])->group(function () {

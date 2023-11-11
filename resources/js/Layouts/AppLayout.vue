@@ -93,8 +93,8 @@ const scrollToSection = (sectionId) => {
                     <NavLink :href="route('services')">
                         Servizi
                     </NavLink>
-                    <NavLink :href="route('testimonials')">
-                        Testimonianze
+                    <NavLink :href="route('cases.index')">
+                        Casi studio
                     </NavLink>
                     <NavLink :href="route('faq')">
                         FAQ
@@ -198,7 +198,7 @@ const scrollToSection = (sectionId) => {
             <ResponsiveNavLink  :href="route('services')">
                 Servizi
             </ResponsiveNavLink>
-            <ResponsiveNavLink  :href="route('testimonials')">
+            <ResponsiveNavLink  :href="route('cases.index')">
                 Testimonianze
             </ResponsiveNavLink>
             <ResponsiveNavLink  :href="route('faq')">

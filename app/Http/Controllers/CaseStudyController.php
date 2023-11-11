@@ -14,9 +14,9 @@ class CaseStudyController extends Controller
      */
     public function index()
     {
-        $case_studies = CaseStudy::with(['media', 'user'])->orderBy('created_at', 'desc')->get();
-        return Inertia::render('Admin/Cases/Index', [
-            'case_studies' => $case_studies
+        $cases = CaseStudy::with(['media', 'user'])->orderBy('created_at', 'desc')->get();
+        return Inertia::render('Cases/Index', [
+            'cases' => $cases
         ]);
     }
 
