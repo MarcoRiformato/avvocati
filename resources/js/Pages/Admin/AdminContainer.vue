@@ -133,7 +133,7 @@ import {
     { name: 'Home', href: 'admindashboard', icon: HomeIcon, current: false },
     { name: 'Articoli (da testare)', href: route('admin.articles.index'), icon: ClockIcon, current: false },
     { name: 'Categorie (modifiche minori)', href: route('admin.categories.index'), icon: ScaleIcon, current: false },
-    { name: 'Casi studio +++', href: '#', icon: DocumentChartBarIcon, current: false },
+    { name: 'Casi studio +++', href: route('admin.cases.index'), icon: DocumentChartBarIcon, current: false },
     { name: 'Testimonial +++', href: '#', icon: DocumentChartBarIcon, current: false },
     { name: 'La squadra (aspetti)', href: '#', icon: UserGroupIcon, current: false },
     { name: 'FAQ (aspetti)', href: '#', icon: DocumentChartBarIcon, current: false },

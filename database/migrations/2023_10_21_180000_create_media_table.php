@@ -18,6 +18,7 @@ return new class extends Migration
             $table->enum('filetype', ['image', 'video', 'document']);
             $table->timestamps();
             $table->foreignId('article_id')->nullable()->constrained('articles')->onDelete('cascade');
+            $table->foreignId('case_study_id')->nullable()->constrained('case_studies')->onDelete('cascade');
             $table->foreignId('category_id')->nullable()->constrained('categories')->onDelete('cascade');
         });
     }

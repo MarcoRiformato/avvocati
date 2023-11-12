@@ -45,6 +45,7 @@ Route::namespace('Admin')->prefix('admin')->middleware(['auth', 'admin'])->group
     Route::get('admindashboard', [AdminController::class, 'index'])->name('admin.admindashboard');
     Route::get('/articles.index', [AdminController::class, 'indexArticles'])->name('admin.articles.index');
     Route::get('/categories.index', [AdminController::class, 'indexCategories'])->name('admin.categories.index');
+    Route::get('/cases.index', [AdminController::class, 'indexCases'])->name('admin.cases.index');
 
     //Articles routes
     Route::get('/articles.create', [ArticleController::class, 'create'])->name('admin.articles.create');
@@ -61,6 +62,14 @@ Route::namespace('Admin')->prefix('admin')->middleware(['auth', 'admin'])->group
     Route::post('/categories/{category}', [CategoryController::class, 'update'])->name('admin.categories.update');
     Route::delete('/categories/{category}', [CategoryController::class, 'destroy'])->name('admin.categories.destroy');
     Route::delete('/categproes/{category}/image', [CategoryController::class, 'destroyImage'])->name('admin.categproes.destroy.image');
+
+    //Cases routes
+    Route::get('/cases.create', [CaseStudyController::class, 'create'])->name('admin.cases.create');
+    Route::post('/cases/store', [CaseStudyController::class, 'store'])->name('admin.cases.store');
+    Route::get('/cases.{article}/edit', [CaseStudyController::class, 'edit'])->name('admin.cases.edit');
+    Route::post('/cases/{article}', [CaseStudyController::class, 'update'])->name('admin.cases.update');
+    Route::delete('/cases/{article}', [CaseStudyController::class, 'destroy'])->name('admin.cases.destroy');
+    Route::delete('/cases/{article}/image', [CaseStudyController::class, 'destroyImage'])->name('admin.cases.destroy.image');
 
     
     Route::delete('/media/{id}', [MediaController::class, 'destroy'])->name('media.destroy');

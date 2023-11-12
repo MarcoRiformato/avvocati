@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Inertia\Inertia;
 use App\Models\Article;
 use App\Models\Category;
+use App\Models\CaseStudy;
 
 class AdminController extends Controller
 {
@@ -26,6 +27,12 @@ class AdminController extends Controller
     {
         $categories = Category::all();
         return Inertia::render('Admin/Categories/Index', compact('categories'));
+    }
+
+    public function indexCases()
+    {
+        $cases = CaseStudy::all();
+        return Inertia::render('Admin/Cases/Index', compact('cases'));
     }
     
     

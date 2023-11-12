@@ -33,7 +33,50 @@ class CaseStudyController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Validation Rules
+        $validatedData = $request->validate([
+            'title' => 'nullable|string|max:255',
+            'meta_description' => 'nullable|string|max:255',
+            'slug' => 'nullable|string|unique:case_studies,slug',
+            'body' => 'nullable|string',
+            'status' => 'nullable|in:draft,published',
+            'category_id' => 'nullable|exists:categories,id',
+            'media_file' => 'nullable|file|mimes:jpg,jpeg,png,gif,webp,mp4,mp3,pdf',
+        ]);
+
+        if ($validatedData['category_id'] !== null) {
+            $caseData['category_id'] = $validatedData['category_id'];
+        }
+    
+        // Create New Case study
+        $case_study = CaseStudy::create([
+            'title' => $validatedData['title'],
+            'meta_description' => $validatedData['meta_description'],
+            'slug' => $validatedData['slug'],
+            'body' => $validatedData['body'],
+            'status' => $validatedData['status'],
+            'category_id' => $validatedData['category_id']
+        ]);
+    
+        // Corrected media upload handling
+        if ($request->hasFile('media_file')) {
+            $file = $request->file('media_file');
+            $path = $file->store('media', 'public');
+
+            $media = new Media([
+                'filepath' => $path,
+                'filetype' => $this->determineFileType($file->getClientMimeType()),
+                'filename' => $file->getClientOriginalName(),
+                'case_study_id' => $file->getClientOriginalName(),
+                'case_study_id' => $case_study->id,
+            ]);
+
+            $media->save();
+            $case_study->media()->attach($media);
+        }
+
+    
+        return redirect()->route('admin.cases.index');
     }
 
     private function determineFileType($mimeType) {
