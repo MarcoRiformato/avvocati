@@ -162,42 +162,41 @@ class ArticleController extends Controller
             $article->media()->attach($media);
         }
         
-    
         return redirect()->route('admin.articles.index');
     }
 
 /**
  * Remove the specified resource from storage.
  */
-public function destroy($article_id)
-{
-    $article = Article::with('media')->find($article_id);
-    
-    if ($article && $article->media) {
-        foreach ($article->media as $media) {
+    public function destroy($article_id)
+    {
+        $article = Article::with('media')->find($article_id);
+        
+        if ($article && $article->media) {
+            foreach ($article->media as $media) {
+                Storage::disk('public')->delete($media->filepath);
+                $media->delete();
+            }
+        }
+        
+        $article->delete();
+        
+        return redirect()->route('admin.articles.index');
+    }
+
+    public function destroyImage($article_id)
+    {
+        $article = Article::with('media')->find($article_id);
+
+        if ($article && $article->media) {
+            $media = $article->media->first();
             Storage::disk('public')->delete($media->filepath);
+
             $media->delete();
         }
+        
+        return redirect()->back();
     }
-    
-    $article->delete();
-    
-    return redirect()->route('admin.articles.index');
-}
-
-public function destroyImage($article_id)
-{
-    $article = Article::with('media')->find($article_id);
-
-    if ($article && $article->media) {
-        $media = $article->media->first();
-        Storage::disk('public')->delete($media->filepath);
-
-        $media->delete();
-    }
-    
-    return redirect()->back();
-}
 
 
     

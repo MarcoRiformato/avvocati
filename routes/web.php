@@ -66,10 +66,10 @@ Route::namespace('Admin')->prefix('admin')->middleware(['auth', 'admin'])->group
     //Cases routes
     Route::get('/cases.create', [CaseStudyController::class, 'create'])->name('admin.cases.create');
     Route::post('/cases/store', [CaseStudyController::class, 'store'])->name('admin.cases.store');
-    Route::get('/cases.{article}/edit', [CaseStudyController::class, 'edit'])->name('admin.cases.edit');
-    Route::post('/cases/{article}', [CaseStudyController::class, 'update'])->name('admin.cases.update');
-    Route::delete('/cases/{article}', [CaseStudyController::class, 'destroy'])->name('admin.cases.destroy');
-    Route::delete('/cases/{article}/image', [CaseStudyController::class, 'destroyImage'])->name('admin.cases.destroy.image');
+    Route::get('/cases.{case}/edit', [CaseStudyController::class, 'edit'])->name('admin.cases.edit');
+    Route::post('/cases/{case_study}', [CaseStudyController::class, 'update'])->name('admin.cases.update');
+    Route::delete('/cases/{case}', [CaseStudyController::class, 'destroy'])->name('admin.cases.destroy');
+    Route::delete('/cases/{case_study}/{caseId}', [CaseStudyController::class, 'destroyImage'])->name('admin.cases.destroy.image');
 
     
     Route::delete('/media/{id}', [MediaController::class, 'destroy'])->name('media.destroy');

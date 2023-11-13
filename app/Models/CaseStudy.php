@@ -20,6 +20,6 @@ class CaseStudy extends Model
     }
 
     public function media() {
-        return $this->belongsToMany(Media::class);
+        return $this->hasOne(Media::class);
     }    
 }
