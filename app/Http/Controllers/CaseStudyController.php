@@ -15,7 +15,7 @@ class CaseStudyController extends Controller
      */
     public function index()
     {
-        $cases = CaseStudy::with(['media', 'user'])->orderBy('created_at', 'desc')->get();
+        $cases = CaseStudy::with(['media', 'category'])->orderBy('created_at', 'desc')->get();
         return Inertia::render('Cases/Index', [
             'cases' => $cases
         ]);
@@ -110,11 +110,19 @@ class CaseStudyController extends Controller
      */
     public function show($case_id)
     {
-        $case_study = CaseStudy::with('media')->find($case_id);
-        $categories = Category::all();
+    
+        // Fetch 3 random articles, excluding the current one and with media
+        $randomCases = CaseStudy::where('id', '!=', $case_id)
+            ->with('media')
+            ->inRandomOrder()
+            ->limit(3)
+            ->get();
+
+        $case_study = CaseStudy::with('media', 'category')->find($case_id);
+        //$categories = Category::all();
         return Inertia::render('Cases/Show', [
             'case_study' => $case_study,
-            'categories' => $categories
+            'randomCases' => $randomCases
         ]);
     }
 
