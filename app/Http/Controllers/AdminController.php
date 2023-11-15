@@ -7,6 +7,7 @@ use Inertia\Inertia;
 use App\Models\Article;
 use App\Models\Category;
 use App\Models\CaseStudy;
+use App\Models\Testimonial;
 
 class AdminController extends Controller
 {
@@ -33,6 +34,12 @@ class AdminController extends Controller
     {
         $cases = CaseStudy::all();
         return Inertia::render('Admin/Cases/Index', compact('cases'));
+    }
+
+    public function indexTestimonials()
+    {
+        $testimonials = Testimonial::all();
+        return Inertia::render('Admin/Testimonials/Index', compact('testimonials'));
     }
     
     

@@ -5,6 +5,7 @@ use App\Models\User;
 use App\Models\Article;
 use App\Models\Category;
 use App\Models\CaseStudy;
+use App\Models\Testimonial;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
@@ -27,8 +28,9 @@ class DatabaseSeeder extends Seeder
             'is_admin' => '1'
         ]);
 
-        Article::factory()->count(4)->create();
+        Article::factory()->count(2)->create();
         Category::factory()->count(1)->create();
         CaseStudy::factory()->count(2)->create();
+        Testimonial::factory()->count(3)->create();
     }
 }

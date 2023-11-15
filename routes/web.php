@@ -9,6 +9,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\CaseStudyController;
+use App\Http\Controllers\TestimonialController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -47,6 +48,7 @@ Route::namespace('Admin')->prefix('admin')->middleware(['auth', 'admin'])->group
     Route::get('/articles.index', [AdminController::class, 'indexArticles'])->name('admin.articles.index');
     Route::get('/categories.index', [AdminController::class, 'indexCategories'])->name('admin.categories.index');
     Route::get('/cases.index', [AdminController::class, 'indexCases'])->name('admin.cases.index');
+    Route::get('/testimonials.index', [AdminController::class, 'indexTestimonials'])->name('admin.testimonials.index');
 
     //Articles routes
     Route::get('/articles.create', [ArticleController::class, 'create'])->name('admin.articles.create');
@@ -71,7 +73,14 @@ Route::namespace('Admin')->prefix('admin')->middleware(['auth', 'admin'])->group
     Route::post('/cases/{case_study}', [CaseStudyController::class, 'update'])->name('admin.cases.update');
     Route::delete('/cases/{case}', [CaseStudyController::class, 'destroy'])->name('admin.cases.destroy');
     Route::delete('/cases/{case_study}/{caseId}', [CaseStudyController::class, 'destroyImage'])->name('admin.cases.destroy.image');
-
+    
+    //Testimonials routes
+    Route::get('/testimonials.create', [TestimonialController::class, 'create'])->name('admin.testimonials.create');
+    Route::post('/testimonials/store', [TestimonialController::class, 'store'])->name('testimonials.store');
+    Route::get('/testimonials.{testimonial}/edit', [TestimonialController::class, 'edit'])->name('admin.testimonials.edit');
+    Route::post('/testimonials/{testimonial}', [TestimonialController::class, 'update'])->name('admin.testimonials.update');
+    Route::delete('/testimonials/{testimonial}', [TestimonialController::class, 'destroy'])->name('admin.testimonials.destroy');
+    Route::delete('/testimonials/{testimonial}/image', [TestimonialController::class, 'destroyImage'])->name('admin.testimonials.destroy.image');
     
     Route::delete('/media/{id}', [MediaController::class, 'destroy'])->name('media.destroy');
 });
