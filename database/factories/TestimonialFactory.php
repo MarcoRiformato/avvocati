@@ -20,7 +20,7 @@ class TestimonialFactory extends Factory
             'clientName' => $this->faker->word,
             'body' => $this->faker->slug,
             'organization' => 'Un imprenditore locale',
-            'filepath' => 'placeholder.webp',
+            'filepath' => '',
         ];
     }
 }

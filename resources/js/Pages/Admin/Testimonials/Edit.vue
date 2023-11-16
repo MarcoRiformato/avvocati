@@ -13,7 +13,7 @@
                 <div class="sm:col-span-3">
                     <label for="title" class="block font-medium leading-6">Nome</label>
                     <div class="mt-2">
-                        <input v-model="form.name" type="text" placeholder="Scrivi il titolo" class=" input input-bordered input-primary  max-w-xs" />
+                        <input v-model="form.clientName" type="text" placeholder="Scrivi il titolo" class=" input input-bordered input-primary  max-w-xs" />
                     </div>
                 </div>
                 <div class="sm:col-span-3">
@@ -23,7 +23,7 @@
                         <input v-if="!props.testimonial.filepath && !imagePreview" @change="handleFileChange" type="file" class="file-input file-input-bordered file-input-primary max-w-xs" />
                         
                         <!-- Display the existing image with a delete button -->
-                        <div v-if="props.testimonial.filepath && props.testimonial.filepath">
+                        <div v-if="props.testimonial.filepath">
                             <img :src="'/storage/' + props.testimonial.filepath" alt="Existing Image" class="mt-4 w-full h-auto" />
                             <button type="button" @click="deleteImage" class="btn btn-error mt-2">X</button>
                         </div>
@@ -84,7 +84,7 @@ const props = defineProps({
 
 let form = useForm({
     id: props.testimonial.id,
-    name: props.testimonial.name,
+    clientName: props.testimonial.clientName,
     organization: props.testimonial.organization,
     body: props.testimonial.body,
     filepath: null
@@ -122,7 +122,7 @@ const handleFileChange = (event) => {
 
 const submit = () => {
     const formData = new FormData();
-    formData.append('name', form.name);
+    formData.append('clientName', form.clientName);
     formData.append('body', form.body);
     formData.append('organization', form.organization);
 

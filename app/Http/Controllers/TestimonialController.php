@@ -81,10 +81,47 @@ class TestimonialController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
-    {
-        //
+    public function update(Request $request, Testimonial $testimonial)
+{
+    // Validation Rules
+    $validatedData = $request->validate([
+        'clientName' => 'nullable|string|max:255',
+        'body' => 'nullable|string',
+        'organization' => 'nullable|string|max:255',
+        'filepath' => 'nullable|file|mimes:jpg,jpeg,png,gif,webp,mp4,mp3,pdf|max:10240',
+    ]);
+
+    // Check if a new image file is uploaded
+    if ($request->hasFile('filepath')) {
+        // Delete the old image file if it exists
+        if ($testimonial->filepath) {
+            Storage::disk('public')->delete($testimonial->filepath);
+        }
+
+        // Store the new image file
+        $file = $request->file('filepath');
+        $filepath = $file->store('media', 'public');
+
+        // Update the testimonial with the new image filepath and other data
+        $testimonial->update([
+            'clientName' => $validatedData['clientName'] ?? $testimonial->clientName,
+            'body' => $validatedData['body'],
+            'organization' => $validatedData['organization'],
+            'filepath' => $filepath,
+        ]);
+    } else {
+        // Update the testimonial without changing the image filepath
+        $testimonial->update([
+            'clientName' => $validatedData['clientName'] ?? $testimonial->clientName,
+            'body' => $validatedData['body'],
+            'organization' => $validatedData['organization'],
+        ]);
     }
+
+    return redirect()->route('admin.testimonials.index');
+}
+
+    
 
     /**
      * Remove the specified resource from storage.
