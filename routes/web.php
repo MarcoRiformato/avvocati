@@ -76,7 +76,7 @@ Route::namespace('Admin')->prefix('admin')->middleware(['auth', 'admin'])->group
     
     //Testimonials routes
     Route::get('/testimonials.create', [TestimonialController::class, 'create'])->name('admin.testimonials.create');
-    Route::post('/testimonials/store', [TestimonialController::class, 'store'])->name('testimonials.store');
+    Route::post('/testimonials/store', [TestimonialController::class, 'store'])->name('admin.testimonials.store');
     Route::get('/testimonials.{testimonial}/edit', [TestimonialController::class, 'edit'])->name('admin.testimonials.edit');
     Route::post('/testimonials/{testimonial}', [TestimonialController::class, 'update'])->name('admin.testimonials.update');
     Route::delete('/testimonials/{testimonial}', [TestimonialController::class, 'destroy'])->name('admin.testimonials.destroy');

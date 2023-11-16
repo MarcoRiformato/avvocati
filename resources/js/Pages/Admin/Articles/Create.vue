@@ -85,7 +85,9 @@
 import { useForm } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import AdminContainer from '@/Pages/Admin/AdminContainer.vue';
+import { ref } from 'vue';
 
+const imagePreview = ref(null);
 const handleFileChange = (event) => {
   form.media_file = event.target.files[0];
 };

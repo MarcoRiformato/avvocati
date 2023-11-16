@@ -24,7 +24,7 @@
                         
                         <!-- Display the existing image with a delete button -->
                         <div v-if="props.testimonial.filepath && props.testimonial.filepath">
-                            <img :src="props.testimonial.filepath" alt="Existing Image" class="mt-4 w-full h-auto" />
+                            <img :src="'/storage/' + props.testimonial.filepath" alt="Existing Image" class="mt-4 w-full h-auto" />
                             <button type="button" @click="deleteImage" class="btn btn-error mt-2">X</button>
                         </div>
                         

@@ -17,7 +17,7 @@ class TestimonialFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->word,
+            'clientName' => $this->faker->word,
             'body' => $this->faker->slug,
             'organization' => 'Un imprenditore locale',
             'filepath' => 'placeholder.webp',

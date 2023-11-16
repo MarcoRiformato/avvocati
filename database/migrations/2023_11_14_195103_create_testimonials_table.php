@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('testimonials', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->nullable();
+            $table->string('clientName')->nullable();
             $table->text('body')->nullable();
             $table->string('organization')->nullable(); 
             $table->string('filepath')->nullable(); 

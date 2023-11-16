@@ -27,9 +27,9 @@
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-200">
-                        <tr :testimonial="testimonial" @click="$inertia.visit(route('testimonials.show', testimonial.id))" v-for="testimonial in testimonials" :key="testimonial.id">
+                        <tr :testimonial="testimonial" v-for="testimonial in testimonials" :key="testimonial.id">
                             <td class="py-4 pl-4 pr-3 text-sm font-medium sm:pl-0 truncate" style="max-width: 200px;">
-                                {{ testimonial.name }}
+                                {{ testimonial.clientName }}
                             </td>
                             <td class="hidden md:table-cell px-3 py-4 text-sm">
                                 <div class="flex items-center">
