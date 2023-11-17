@@ -161,16 +161,16 @@
       </div>
       <div class="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
         <div class="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
-          <div v-for="testimonial in testimonials" :key="testimonial.author.handle" class="pt-8 sm:inline-block sm:w-full sm:px-4">
+          <div v-for="testimonial in testimonials" :key="testimonial.id" class="pt-8 sm:inline-block sm:w-full sm:px-4">
             <figure class="rounded-2xl bg-secondary-content p-8 text-sm leading-6">
               <blockquote>
-                <p>{{ `“${testimonial.body}”` }}</p>
+                <p v-html="testimonial.body"></p>
               </blockquote>
               <figcaption class="mt-6 flex items-center gap-x-4">
-                <img class="h-10 w-10 rounded-full bg-secondary-content" :src="testimonial.author.imageUrl" alt="" />
+                <img class="h-10 w-10 rounded-full bg-secondary-content" :src="'/storage/' + testimonial.filepath" alt="" />
                 <div>
-                  <div class="font-semibold ">{{ testimonial.author.name }}</div>
-                  <div class="">{{ `@${testimonial.author.handle}` }}</div>
+                  <div class="font-semibold ">{{ testimonial.name }}</div>
+                  <div class="">{{ `${testimonial.organization}` }}</div>
                 </div>
               </figcaption>
             </figure>
@@ -275,7 +275,8 @@ import { CheckIcon } from '@heroicons/vue/20/solid'
 
 defineProps({
   categories: Array,
-  articles: Array
+  articles: Array,
+  testimonials: Array
 })
 
 const posts = [
@@ -357,63 +358,6 @@ const features = [
     name: 'Mobile app',
     description: 'Nulla est saepe accusamus nostrum est est. Fugit voluptatum omnis quidem voluptatem.',
   },
-]
-
-const testimonials = [
-  {
-    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
-    author: {
-      name: 'Leslie Alexander',
-      handle: 'lesliealexander',
-      imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },
-  {
-    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
-    author: {
-      name: 'Leslie Alexander',
-      handle: 'lesliealexander',
-      imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },
-  {
-    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
-    author: {
-      name: 'Leslie Alexander',
-      handle: 'lesliealexander',
-      imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },
-  {
-    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
-    author: {
-      name: 'Leslie Alexander',
-      handle: 'lesliealexander',
-      imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },
-  {
-    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
-    author: {
-      name: 'Leslie Alexander',
-      handle: 'lesliealexander',
-      imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },
-  {
-    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
-    author: {
-      name: 'Leslie Alexander',
-      handle: 'lesliealexander',
-      imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },  
 ]
 
 const faqs = [

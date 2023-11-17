@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Article;
+use App\Models\Testimonial;
 use Inertia\Inertia;
 use App\Models\Media;
 
@@ -20,10 +21,13 @@ class HomeController extends Controller
     
         // Get all categories
         $categories = Category::with('media')->get();
+
+        $testimonials = Testimonial::get();
     
         return Inertia::render('Dashboard', [
             'categories' => $categories,
-            'articles' => $articles
+            'articles' => $articles,
+            'testimonials' => $testimonials
         ]);
     }
     

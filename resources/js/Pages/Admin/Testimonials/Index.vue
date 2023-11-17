@@ -34,7 +34,7 @@
                             <td class="hidden md:table-cell px-3 py-4 text-sm">
                                 <div class="flex items-center">
                                     <div class="h-11 w-11 flex-shrink-0">
-                                        <img class="rounded-full" :src="'https://picsum.photos/100'" />
+                                        <img class="rounded-full" :src="'/storage/' + testimonial.filepath" />
                                     </div>
                                     <div class="ml-3">
                                         
