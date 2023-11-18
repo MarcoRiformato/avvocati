@@ -18,7 +18,7 @@
             <div>
               <div class="flex items-center gap-x-4 text-xs">
                 <time :datetime="caseItem.datetime" class="">{{ caseItem.date }}</time>
-                <a href="" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium  hover:bg-gray-100">caseItem.category.title</a>
+                <!--<a href="" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium  hover:bg-gray-100">caseItem.category.title</a>-->
               </div>
               <div class="group relative max-w-xl">
                 <h3 class="mt-3 text-lg font-semibold leading-6  group-hover:">

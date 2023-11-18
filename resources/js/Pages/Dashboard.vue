@@ -36,50 +36,21 @@
     </div>
   </div>
 
-  <!--Casi studio-->
-  <div class="mt-10 flex flex-wrap">
-  <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
-    <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
-  <h4 class=" text-[1.63rem] leading-8 font-semibold">Risoluzione Contrattuale</h4>
-
-  <h5 class="text-stone-400 mt-1.5 uppercase">Il Sogno Imprenditoriale Salvato</h5>
-
-  <p class=" mt-6 min-h-[11.25rem]">Un piccolo imprenditore locale ha affrontato la potenziale rovina quando un grossista non ha rispettato i termini di consegna. La nostra azione legale tempestiva ha assicurato il rispetto del contratto e il risarcimento per i danni subiti, permettendo al nostro cliente di continuare la sua attività senza interruzioni.
-</p>
+<!-- Casi studio -->
+<div class="mt-10 p-2">
+    <div class="flex flex-wrap -mx-2">
+      <div v-for="caseItem in cases" :key="caseItem.id" class="w-full sm:w-1/2 lg:w-1/4 p-2">
+        <div class="border border-zinc-700 p-5" @click="$inertia.visit(route('cases.show', caseItem.id))">
+          <h4 class="text-xl font-semibold">{{ caseItem.title }}</h4>
+          <h5 class="text-stone-400 mt-1 uppercase">{{ caseItem.meta_description }}</h5>
+          <p class="mt-6" v-html="caseItem.body"></p>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
-    <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
-  <h4 class=" text-[1.63rem] leading-8 font-semibold">Custodia Condivisa</h4>
 
-  <h5 class="text-stone-400 mt-1.5 uppercase">Un Nuovo Inizio per la Famiglia Rossi</h5>
 
-  <p class=" mt-6 min-h-[11.25rem]">La separazione può mettere a dura prova l'equilibrio familiare. Abbiamo lavorato con dedizione per garantire che sia la madre che il padre potessero continuare a svolgere un ruolo attivo nella vita dei loro figli, raggiungendo un accordo di custodia condivisa che rispecchia al meglio gli interessi di tutte le parti coinvolte.
-</p>
-    </div>
-  </div>
-  <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
-    <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
-  <h4 class=" text-[1.63rem] leading-8 font-semibold">Difesa dei Diritti dei Lavoratori</h4>
-
-  <h5 class="text-stone-400 mt-1.5 uppercase">Giustizia per un Lavoratore Diligente</h5>
-
-  <p class=" mt-6 min-h-[11.25rem]">Un dipendente con anni di servizio alle spalle viene improvvisamente licenziato senza giusta causa. La nostra squadra ha lottato per i suoi diritti, assicurandogli una giusta compensazione e la possibilità di tornare al lavoro o di ricominciare con una solida base economica.
-</p>
-    </div>
-  </div>
-  <div class="case-study w-full md:w-1/2 lg:w-1/4 p-4">
-    <div class=" border-r-[0.714286px]  float-left text-[0.94rem] leading-5 min-h-[22.50rem] py-6 px-5 border-zinc-700 border-solid">
-  <h4 class=" text-[1.63rem] leading-8 font-semibold">Assoluzione da Accusa di Frode</h4>
-
-  <h5 class="text-stone-400 mt-1.5 uppercase">L'Integrità di un Professionista Difesa con Successo</h5>
-
-  <p class=" mt-6 min-h-[11.25rem]">Un imprenditore rispettato si è trovato ingiustamente al centro di un'inchiesta per frode fiscale. La nostra difesa meticolosa ha portato alla luce prove decisive per la sua assoluzione, permettendogli di riprendere le redini della sua vita professionale senza l'ombra di uno scandalo</p>
-    </div>
-  </div>
-  </div>
-
-  <!-- Categorie -->
+  <!-- Categorie 
   <div class="mt-10 flex flex-wrap justify-center">
     <div 
     v-for="category in categories" 
@@ -97,7 +68,7 @@
       <p v-html="category.description"></p>
     </div>
   </div>
-  </div>
+  </div>-->
 
   <!-- Hero section -->
   <div class="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14">
@@ -180,28 +151,6 @@
     </div>
   </div>
 
-  <!--Features
-  <div class=" py-24 sm:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-        <div>
-          <h2 class="text-base font-semibold leading-7 text-indigo-600">Everything you need</h2>
-          <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">All-in-one platform</p>
-          <p class="mt-6 text-base leading-7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
-        </div>
-        <dl class="col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 sm:grid-cols-2 lg:gap-y-16">
-          <div v-for="feature in features" :key="feature.name" class="relative pl-9">
-            <dt class="font-semibold">
-              <CheckIcon class="absolute left-0 top-1 h-5 w-5 text-indigo-500" aria-hidden="true" />
-              {{ feature.name }}
-            </dt>
-            <dd class="mt-2">{{ feature.description }}</dd>
-          </div>
-        </dl>
-      </div>
-    </div>
-  </div>-->
-
   <!--Blog section-->
   <div class="py-24 -mt-20 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -234,29 +183,30 @@
   </div>
 
   <!-- FAQs -->
-    <div
-    id="faq"
-    class="-mt-20 mx-auto max-w-7xl px-6 sm:py-32 lg:px-8 lg:py-40">
-      <div class="mx-auto max-w-4xl divide-y divide-white/10">
-        <h2 class="text-2xl font-bold leading-10 tracking-tight text-white">Frequently asked questions</h2>
-        <dl class="mt-10 space-y-6 divide-y divide-white/10">
-          <Disclosure as="div" v-for="faq in faqs" :key="faq.question" class="pt-6" v-slot="{ open }">
-            <dt>
-              <DisclosureButton class="flex w-full items-start justify-between text-left text-white">
-                <span class="text-base font-semibold leading-7">{{ faq.question }}</span>
-                <span class="ml-6 flex h-7 items-center">
-                  <PlusSmallIcon v-if="!open" class="h-6 w-6" aria-hidden="true" />
-                  <MinusSmallIcon v-else class="h-6 w-6" aria-hidden="true" />
-                </span>
-              </DisclosureButton>
-            </dt>
-            <DisclosurePanel as="dd" class="mt-2 pr-12">
-              <p class="text-base leading-7 text-gray-300">{{ faq.answer }}</p>
-            </DisclosurePanel>
-          </Disclosure>
-        </dl>
-      </div>
+  <div
+  id="faq"
+  class="-mt-20 mx-auto max-w-7xl px-6 sm:py-32 lg:px-8 lg:py-40">
+    <div class="mx-auto max-w-4xl divide-y divide-white/10">
+      <h2 class="text-2xl font-bold leading-10 tracking-tight text-white">Frequently asked questions</h2>
+      <dl class="mt-10 space-y-6 divide-y divide-white/10">
+        <Disclosure as="div" v-for="faq in faqs" :key="faq.question" class="pt-6" v-slot="{ open }">
+          <dt>
+            <DisclosureButton class="flex w-full items-start justify-between text-left text-white">
+              <span class="text-base font-semibold leading-7">{{ faq.question }}</span>
+              <span class="ml-6 flex h-7 items-center">
+                <PlusSmallIcon v-if="!open" class="h-6 w-6" aria-hidden="true" />
+                <MinusSmallIcon v-else class="h-6 w-6" aria-hidden="true" />
+              </span>
+            </DisclosureButton>
+          </dt>
+          <DisclosurePanel as="dd" class="mt-2 pr-12">
+            <p class="text-base leading-7 text-gray-300">{{ faq.answer }}</p>
+          </DisclosurePanel>
+        </Disclosure>
+      </dl>
     </div>
+  </div>
+    
   </div>
 </div>
 </AppLayout>
@@ -276,89 +226,9 @@ import { CheckIcon } from '@heroicons/vue/20/solid'
 defineProps({
   categories: Array,
   articles: Array,
-  testimonials: Array
+  testimonials: Array,
+  cases: Array
 })
-
-const posts = [
-  {
-    id: 1,
-    title: 'Boost your conversion rate',
-    href: '#',
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    category: { title: 'Marketing', href: '#' },
-    author: {
-      name: 'Michael Foster',
-      role: 'Co-Founder / CTO',
-      href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },
-  {
-    id: 1,
-    title: 'Boost your conversion rate',
-    href: '#',
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    category: { title: 'Marketing', href: '#' },
-    author: {
-      name: 'Michael Foster',
-      role: 'Co-Founder / CTO',
-      href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },
-  {
-    id: 1,
-    title: 'Boost your conversion rate',
-    href: '#',
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    category: { title: 'Marketing', href: '#' },
-    author: {
-      name: 'Michael Foster',
-      role: 'Co-Founder / CTO',
-      href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },
-  
-]
-
-const features = [
-  {
-    name: 'Invite team members',
-    description: 'Rerum repellat labore necessitatibus reprehenderit molestiae praesentium.',
-  },
-  { name: 'List view', description: 'Corporis asperiores ea nulla temporibus asperiores non tempore assumenda aut.' },
-  {
-    name: 'Keyboard shortcuts',
-    description: 'In sit qui aliquid deleniti et. Ad nobis sunt omnis. Quo sapiente dicta laboriosam.',
-  },
-  {
-    name: 'Calendars',
-    description: 'Sed rerum sunt dignissimos ullam. Iusto iure occaecati voluptate eligendi fugiat sequi.',
-  },
-  { name: 'Notifications', description: 'Quos inventore harum enim nesciunt. Aut repellat rerum omnis adipisci.' },
-  { name: 'Boards', description: 'Quae sit sunt excepturi fugit veniam voluptatem ipsum commodi.' },
-  {
-    name: 'Reporting',
-    description: 'Eos laudantium repellat sed architecto earum unde incidunt. Illum sit dolores voluptatem.',
-  },
-  {
-    name: 'Mobile app',
-    description: 'Nulla est saepe accusamus nostrum est est. Fugit voluptatum omnis quidem voluptatem.',
-  },
-]
 
 const faqs = [
   {

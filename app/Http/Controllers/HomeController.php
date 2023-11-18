@@ -5,8 +5,10 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Article;
 use App\Models\Testimonial;
+use App\Models\CaseStudy;
 use Inertia\Inertia;
 use App\Models\Media;
+use PhpParser\Node\Stmt\Case_;
 
 class HomeController extends Controller
 {
@@ -21,13 +23,14 @@ class HomeController extends Controller
     
         // Get all categories
         $categories = Category::with('media')->get();
-
         $testimonials = Testimonial::get();
+        $cases = CaseStudy::get();
     
         return Inertia::render('Dashboard', [
             'categories' => $categories,
             'articles' => $articles,
-            'testimonials' => $testimonials
+            'testimonials' => $testimonials,
+            'cases' => $cases
         ]);
     }
     
