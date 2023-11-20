@@ -249,8 +249,8 @@ social: [
     <footer class="bg-base-200 -mt-12">
     <div class="mx-auto max-w-7xl -mt-30 overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
         <div class="mt-10 flex justify-center space-x-10">
-                <!-- Settings Dropdown -->
-                <div v-if="$page.props.auth.user" class="ml-3 relative">
+        <!-- Settings Dropdown -->
+        <div v-if="$page.props.auth.user" class="ml-3 relative">
             <Dropdown align="right" width="48">
                 <template #trigger>
                     <button v-if="$page.props.jetstream.managesProfilePhotos" class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition">

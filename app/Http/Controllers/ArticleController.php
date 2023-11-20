@@ -36,8 +36,8 @@ class ArticleController extends Controller
     {
         // Validation Rules
         $validatedData = $request->validate([
-            'title' => 'nullable|string|max:255',
-            'meta_description' => 'nullable|string|max:255',
+            'title' => 'nullable|string',
+            'meta_description' => 'nullable|string',
             'slug' => 'nullable|string|unique:articles,slug',
             'body' => 'nullable|string',
             'status' => 'nullable|in:draft,published',
@@ -127,8 +127,8 @@ class ArticleController extends Controller
     public function update(Request $request, Article $article)
     {
         $request->validate([
-            'title' => 'nullable|string|max:255',
-            'meta_description' => 'nullable|string|max:255',
+            'title' => 'nullable|string',
+            'meta_description' => 'nullable|string',
             'slug' => 'nullable|string|unique:articles,slug,' . $article->id,
             'body' => 'nullable|string',
             'status' => 'nullable|in:draft,published',

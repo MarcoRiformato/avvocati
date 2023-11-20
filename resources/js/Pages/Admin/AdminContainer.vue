@@ -135,14 +135,12 @@ import {
     { name: 'Categorie (modifiche minori)', href: route('admin.categories.index'), icon: ScaleIcon, current: false },
     { name: 'Casi studio (manca deleteImage)', href: route('admin.cases.index'), icon: DocumentChartBarIcon, current: false },
     { name: 'Testimonial +++', href: route('admin.testimonials.index'), icon: DocumentChartBarIcon, current: false },
-    { name: 'La squadra (aspetti)', href: 'admin.teams.index', icon: UserGroupIcon, current: false },
-    { name: 'FAQ (aspetti)', href: 'admin.faqs.index', icon: DocumentChartBarIcon, current: false },
-  ]
+  ]/*
   const secondaryNavigation = [
     { name: 'Impostazioni', href: '#', icon: CogIcon },
     { name: 'Aiuto', href: '#', icon: QuestionMarkCircleIcon },
     { name: 'Privacy', href: '#', icon: ShieldCheckIcon },
-  ]
+  ]*/
 const sidebarOpen = ref(false)
 
 </script>

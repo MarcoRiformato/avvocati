@@ -10,9 +10,20 @@
           <h1 class="mt-2 text-3xl font-bold tracking-tight  sm:text-4xl">{{ case_study.title }}</h1>
           <p class="mt-6 text-xl leading-8">{{ case_study.meta_description }}</p>
           <figure class="mt-8">
-            <img v-if="case_study.media" :src="'/storage/' + case_study.media.filepath" class="aspect-video rounded-xl bg-gray-50 object-cover" alt="case_study Image" />
-            <img v-else src="placeholder.webp" class="aspect-video rounded-xl bg-gray-50 object-cover" alt="case_study Image" />
-            <p v-if="case_study.media">Descrizione dell'imagine</p>
+            <img 
+              v-if="case_study.media && case_study.media.length > 0" :src="'/storage/' + case_study.media[0].filepath" 
+              style="width: 100%; height: auto; object-fit: cover; aspect-ratio: 16 / 9;" 
+              class="rounded-xl bg-gray-50" 
+              alt="Article Image" 
+            />
+            <img 
+              v-else 
+              src="placeholder.webp" 
+              style="width: 100%; height: auto; object-fit: cover; aspect-ratio: 16 / 9;" 
+              class="rounded-xl bg-gray-50" 
+              alt="Article Image" 
+            />
+            <!-- <p v-if="case_study.media && case_study.media.length > 0">Descrizione dell'imagine</p> -->
           </figure>
   
           <div class="quill-content">
