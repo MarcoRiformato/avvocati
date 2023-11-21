@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('case_studies', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->nullable()->nullable();
+            $table->string('title')->nullable();
             $table->string('meta_description')->nullable();
             $table->string('slug')->nullable();
             //$table->string('canonical_url')->nullable();

@@ -65,9 +65,9 @@ class CaseStudyController extends Controller
         
             // Delete old media if exists
             $existingMedia = $case_study->media;
-            if ($existingMedia) {
-                Storage::delete('public/' . $existingMedia->filepath);
-                $existingMedia->delete();
+            foreach ($existingMedia as $mediaItem) {
+                Storage::delete('public/' . $mediaItem->filepath);
+                $mediaItem->delete();
             }
         
             // Determine the correct ENUM value for the filetype
@@ -89,6 +89,8 @@ class CaseStudyController extends Controller
             ]);
         
             $media->save();
+
+            $case_study->media()->sync([$media->id]);
         }
 
     
@@ -131,8 +133,7 @@ class CaseStudyController extends Controller
      */
     public function edit(CaseStudy $case_study, $id)
     {
-        $case_study = CaseStudy::findOrFail($id);
-        $case_study->load('media');
+        $case_study = CaseStudy::with('media')->find($id);
         return Inertia::render('Admin/Cases/Edit', [
             'case_study' => $case_study
         ]);
@@ -167,9 +168,9 @@ class CaseStudyController extends Controller
         
             // Delete old media if exists
             $existingMedia = $case_study->media;
-            if ($existingMedia) {
-                Storage::delete('public/' . $existingMedia->filepath);
-                $existingMedia->delete();
+            foreach ($existingMedia as $mediaItem) {
+                Storage::delete('public/' . $mediaItem->filepath);
+                $mediaItem->delete();
             }
         
             // Determine the correct ENUM value for the filetype
@@ -179,18 +180,19 @@ class CaseStudyController extends Controller
             } elseif (str_contains($fileType, 'video')) {
                 $fileType = 'video';
             } else {
-                $fileType = 'document'; // default to 'document'
+                $fileType = 'document';
             }
         
-            // Save the new media file
             $media = new Media([
                 'filename' => $file->getClientOriginalName(),
                 'filepath' => $path,
-                'filetype' => $fileType, // Use the ENUM value determined above
-                'case_study_id' => $case_study->id, // Set the foreign key
+                'filetype' => $fileType, 
+                'case_study_id' => $case_study->id, 
             ]);
-        
             $media->save();
+
+            $case_study->media()->sync([$media->id]);
+
         }
         
     
@@ -206,9 +208,11 @@ class CaseStudyController extends Controller
     {
         $case_study = CaseStudy::findOrFail($case_id);
         
-        if ($case_study->media) {
-            Storage::disk('public')->delete($case_study->media->filepath);
-            $case_study->media->delete();
+        // Delete old media if exists
+        $existingMedia = $case_study->media;
+        foreach ($existingMedia as $mediaItem) {
+            Storage::delete('public/' . $mediaItem->filepath);
+            $mediaItem->delete();
         }
         
         $case_study->delete();
@@ -220,9 +224,11 @@ class CaseStudyController extends Controller
     {
         $case_study = CaseStudy::with('media')->findOrFail($case_id);
     
-        if ($case_study->media) {
-            Storage::disk('public')->delete($case_study->media->filepath);
-            $case_study->media->delete();
+        // Delete old media if exists
+        $existingMedia = $case_study->media;
+        foreach ($existingMedia as $mediaItem) {
+            Storage::delete('public/' . $mediaItem->filepath);
+            $mediaItem->delete();
         }
         
         return redirect()->back();

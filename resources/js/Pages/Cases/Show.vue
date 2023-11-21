@@ -1,6 +1,32 @@
 <template>
 <AppLayout title="Mostra caso">
-    <div>
+<div style="max-width: 71.88rem;" class="text-stone-100 text-base justify-between px-8 flex w-full m-auto">
+<div class="order-2 pt-36 w-[32.2669%]">
+  <ul class="list-none">
+    <li class="pb-5 list-item">
+      <p class="pb-7 text-center"><img src="https://osborneslaw.com/wp-content/uploads/2023/10/Firm-Logo-2.jpg" class="w-72 h-64" /></p>
+      <p class="pb-7 text-center"><strong class="font-bold">“Lo studio Petrocchi offre assistenza legale di alto livello. Sono le persone giuste, al momento giusto”
+      </strong></p>
+    </li>
+    <li class="pb-5 list-item">
+      <p class="pb-7 text-center"><img src="https://osborneslaw.com/wp-content/uploads/2021/05/Leading-Firm-2.jpg" class="w-36 h-52" /></p>
+      <p class="pb-7 text-center"><strong class="font-bold">“Osbornes has incredible strength in depth across every area of family law. Areas of expertise include unravelling complicated trusts and handling pre-acquired wealth, to Children Act proceedings and advising on the financial provision for children.”</strong></p>
+    </li>
+    <li class="pb-5 list-item">
+      <p class="pb-7 text-center">
+        <a href="https://www.familylawawards.com/" class="underline"><img src="https://osborneslaw.com/wp-content/uploads/2021/09/Law-Firm-of-the-Year-London-e1631022330689.jpg" class="cursor-pointer w-72 h-52" /></a>
+      </p>
+    </li>
+    <li class="pb-5 list-item">
+      <p class="pb-7 text-center">
+        <a href="https://resolution.org.uk/" class="underline"><img src="https://osborneslaw.com/wp-content/uploads/2021/05/Resolution-Collaborative-logo-300x215-copy.png" class="cursor-pointer w-72 h-48" /></a>
+      </p>
+    </li>
+  </ul>
+
+  <div class="object-cover"><iframe src="https://www.devdigital.com/media/blog/News_262.jpg" class="object-cover w-80 h-80"></iframe></div>
+</div>
+<div>
         <div class=" px-6 py-8 lg:px-8">
       <div class="mx-auto max-w-3xl text-base leading-7 ">
   
@@ -82,6 +108,8 @@
   </div>
 </div>
 </div>
+</div>
+
 </AppLayout>
 </template>
 <script setup>

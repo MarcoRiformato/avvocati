@@ -36,12 +36,6 @@
                             </a>
                         </div>
                         <div class="mt-6 pt-6">
-                        <div class="space-y-1 px-2">
-                            <a v-for="item in secondaryNavigation" :key="item.name" :href="item.href" class="group flex items-center rounded-md px-2 py-2 text-base font-medium text-cyan-100 hover:bg-cyan-600 hover:text-white">
-                            <component :is="item.icon" class="mr-4 h-6 w-6 text-cyan-200" aria-hidden="true" />
-                            {{ item.name }}
-                            </a>
-                        </div>
                         </div>
                     </nav>
                     </DialogPanel>
@@ -68,14 +62,6 @@
                     <component :is="item.icon" class="mr-4 h-6 w-6 flex-shrink-0 text-cyan-200" aria-hidden="true" />
                     {{ item.name }}
                     </a>
-                </div>
-                <div class="mt-6 pt-6">
-                    <div class="space-y-1 px-2">
-                    <a v-for="item in secondaryNavigation" :key="item.name" :href="item.href" class="group flex items-center rounded-md px-2 py-2 text-sm font-medium leading-6 text-cyan-100 hover:bg-cyan-600 hover:text-white">
-                        <component :is="item.icon" class="mr-4 h-6 w-6 text-cyan-200" aria-hidden="true" />
-                        {{ item.name }}
-                    </a>
-                    </div>
                 </div>
                 </nav>
             </div>
@@ -135,12 +121,7 @@ import {
     { name: 'Categorie (modifiche minori)', href: route('admin.categories.index'), icon: ScaleIcon, current: false },
     { name: 'Casi studio (manca deleteImage)', href: route('admin.cases.index'), icon: DocumentChartBarIcon, current: false },
     { name: 'Testimonial +++', href: route('admin.testimonials.index'), icon: DocumentChartBarIcon, current: false },
-  ]/*
-  const secondaryNavigation = [
-    { name: 'Impostazioni', href: '#', icon: CogIcon },
-    { name: 'Aiuto', href: '#', icon: QuestionMarkCircleIcon },
-    { name: 'Privacy', href: '#', icon: ShieldCheckIcon },
-  ]*/
+  ]
 const sidebarOpen = ref(false)
 
 </script>

@@ -15,9 +15,9 @@ class media extends Model
         return $this->belongsToMany(Article::class);
     }
 
-    public function case_study() {
-        return $this->belongsTo(CaseStudy::class);
-    }    
+    public function case_studies() {
+        return $this->belongsToMany(CaseStudy::class, 'case_study_media');
+    }       
 
     public function category()
     {

@@ -20,13 +20,14 @@
                     <label for="cover-photo" class="block font-medium leading-6">Immagine</label>
                     <div class="text-center mt-2">
                         <!-- Show input only if there is no existing image and no uploaded preview -->
-                        <input v-if="!props.case_study.media && !imagePreview" @change="handleFileChange" type="file" class="file-input file-input-bordered file-input-primary max-w-xs" />
+                        <input v-if="!props.case_study.media.length && !imagePreview" @change="handleFileChange" type="file" class="file-input file-input-bordered file-input-primary max-w-xs" />
                         
                         <!-- Display the existing image with a delete button -->
-                        <div v-if="props.case_study.media && props.case_study.media">
-                            <img :src="'/storage/' + props.case_study.media.filepath" alt="Existing Image" class="mt-4 w-full h-auto" />
+                        <div v-if="props.case_study.media.length">
+                            <img :src="'/storage/' + props.case_study.media[0].filepath" alt="Existing Image" class="mt-4 w-full h-auto" />
                             <button type="button" @click="deleteImage" class="btn btn-error mt-2">X</button>
                         </div>
+
                         
                         <!-- Display the uploaded preview with a delete button -->
                         <div v-if="imagePreview">
