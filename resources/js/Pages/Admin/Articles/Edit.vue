@@ -108,7 +108,7 @@ import { Inertia } from '@inertiajs/inertia';
 
 const props = defineProps({
     article: Object,
-    categories: Array 
+    categories: Array
 });
 
 let form = useForm({

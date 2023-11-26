@@ -46,13 +46,13 @@
                 </div>
             </div>
     
-            <!-- Slug -->
+            <!-- Slug 
             <div class="col-span-full">
                 <label for="slug" class="block font-medium leading-6">Slug</label>
                 <div class="mt-2">
                     <input v-model="form.slug" type="text" placeholder="Enter unique slug" class="input input-bordered input-primary w-full max-w-xs" />
                 </div>
-            </div>
+            </div>-->
     
             <!-- Body -->
             <div class="col-span-full">

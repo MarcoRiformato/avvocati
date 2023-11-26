@@ -107,20 +107,16 @@ import {
     XMarkIcon,
   } from '@heroicons/vue/24/outline'
   import {
-    BanknotesIcon,
-    BuildingOfficeIcon,
-    CheckCircleIcon,
-    ChevronDownIcon,
-    ChevronRightIcon,
-    MagnifyingGlassIcon,
+    NewspaperIcon, TagIcon, BriefcaseIcon, UsersIcon, RectangleGroupIcon
   } from '@heroicons/vue/20/solid'
 
   const navigation = [
     { name: 'Home', href: 'admindashboard', icon: HomeIcon, current: false },
-    { name: 'Articoli (da testare)', href: route('admin.articles.index'), icon: ClockIcon, current: false },
-    { name: 'Categorie (modifiche minori)', href: route('admin.categories.index'), icon: ScaleIcon, current: false },
-    { name: 'Casi studio (manca deleteImage)', href: route('admin.cases.index'), icon: DocumentChartBarIcon, current: false },
-    { name: 'Testimonial +++', href: route('admin.testimonials.index'), icon: DocumentChartBarIcon, current: false },
+    { name: 'Articoli', href: route('admin.articles.index'), icon: NewspaperIcon, current: false },
+    { name: 'Categorie', href: route('admin.categories.index'), icon: TagIcon, current: false },
+    { name: 'Casi studio', href: route('admin.cases.index'), icon: BriefcaseIcon, current: false },
+    { name: 'Servizi', href: route('admin.services.index'), icon: RectangleGroupIcon, current: false },
+    { name: 'Testimonial', href: route('admin.testimonials.index'), icon: UsersIcon, current: false },
   ]
 const sidebarOpen = ref(false)
 

@@ -1,9 +1,63 @@
 <template>
   <AppLayout title="Leggi articolo">
-  <div class="bg-base-200">
-        <div class=" px-6 py-8 lg:px-8">
+  <div style="max-width: 71.88rem;" class="text-stone-100 text-base justify-between px-8 flex w-full m-auto">
+  <div class="order-2 pt-3 w-[32.2669%]">
+    <ul class="list-none">
+      <li class="list-item">
+        <p class="pb-7 text-center"><img src="https://osborneslaw.com/wp-content/uploads/2023/10/Firm-Logo-2.jpg" class="w-72 h-64" /></p>
+        <p class="pb-7 text-center"><strong class="font-bold">“Lo studio offre assistenza legale di alto livello. Sono le persone giuste, al momento giusto”
+        </strong></p>
+      </li>
+      <form action="#" method="POST" class="px-6 lg:px-6 py-4 my-4 bg-neutral rounded-md">
+        <p class="text-info text-2xl pb-4">Richiedi consulenza gratuita, senza impegno</p>
+        <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+            <div>
+              <label for="first-name" class="block text-sm font-semibold leading-6 text-white">Nome</label>
+              <div class="mt-2.5">
+                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" />
+              </div>
+            </div>
+            <div>
+              <label for="last-name" class="block text-sm font-semibold leading-6 text-white">Cognome</label>
+              <div class="mt-2.5">
+                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" />
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="email" class="block text-sm font-semibold leading-6 text-white">Email</label>
+              <div class="mt-2.5">
+                <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" />
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="phone-number" class="block text-sm font-semibold leading-6 text-white">Numero di telefono</label>
+              <div class="mt-2.5">
+                <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" />
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="message" class="block text-sm font-semibold leading-6 text-white">Messaggio</label>
+              <div class="mt-2.5">
+                <textarea name="message" id="message" rows="4" class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" />
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 flex justify-end">
+            <button type="submit" class="btn btn-primary">Richiedi informazioni</button>
+          </div>
+        </div>
+      </form>
+      <li class="pb-5 list-item">
+        <p class="pb-7 text-center">
+          <a href="https://www.familylawawards.com/" class="underline"><img src="https://osborneslaw.com/wp-content/uploads/2021/09/Law-Firm-of-the-Year-London-e1631022330689.jpg" class="cursor-pointer w-72 h-52" /></a>
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <div class=" px-6 py-8 lg:px-8">
       <div class="mx-auto max-w-3xl text-base leading-7 ">
-  
         <hr/>
         <div class="bg-gray-800 light:bg-red-200 p-4">
           <p class="text-base font-semibold leading-7 text-indigo-600">Dal nostro blog</p>
@@ -32,8 +86,7 @@
         </div>
       </div>
     </div>
-  
-    <div class="flex flex-wrap justify-between md:space-x-4 space-y-2 md:space-y-0 px-8">
+  <div class="flex flex-wrap justify-between md:space-x-4 space-y-2 md:space-y-0 px-8">
     <button 
     @click="shareOnFacebook"
     class="btn btn-secondary w-full md:w-auto">
@@ -52,36 +105,35 @@
     class="btn btn-accent w-full md:w-auto">
       Copia indirizzo
       <svg fill="#000000" height="16" width="16" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-     viewBox="0 0 352.804 352.804" xml:space="preserve">
+      viewBox="0 0 352.804 352.804" xml:space="preserve">
   <g>
     <path d="M318.54,57.282h-47.652V15c0-8.284-6.716-15-15-15H34.264c-8.284,0-15,6.716-15,15v265.522c0,8.284,6.716,15,15,15h47.651
       v42.281c0,8.284,6.716,15,15,15H318.54c8.284,0,15-6.716,15-15V72.282C333.54,63.998,326.824,57.282,318.54,57.282z
-       M49.264,265.522V30h191.623v27.282H96.916c-8.284,0-15,6.716-15,15v193.24H49.264z M303.54,322.804H111.916V87.282H303.54V322.804
+        M49.264,265.522V30h191.623v27.282H96.916c-8.284,0-15,6.716-15,15v193.24H49.264z M303.54,322.804H111.916V87.282H303.54V322.804
       z"/>
   </g>
   </svg>
     </button>
-  </div>
-  
+  </div> 
 <div class="px-8">
-  <div class="divider"></div> 
-  <p class="leading-7 mt-6 mb-6 text-indigo-600 ">Leggi anche...</p>
-  <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
-  <div 
-      v-for="randomArticle in randomArticles" 
-      :key="randomArticle.id" 
-      class="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4 cursor-pointer" 
-      @click="$inertia.visit(route('articles.show', randomArticle.id))"
-  >
-    <img v-if="randomArticle.media && randomArticle.media.length > 0" :src="'/storage/' + randomArticle.media[0].filepath" class="h-32 w-full object-cover rounded-xl" alt="Article Image" />
-    <div>
-      <h4 class="text-lg font-bold">{{ randomArticle.title }}</h4>
-      <p class="mt-1">{{ randomArticle.extract }}</p>
-    </div>
-  </div>
+<div class="divider"></div> 
+<p class="leading-7 mt-6 mb-6 text-indigo-600 ">Leggi anche...</p>
+<div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
+<div 
+    v-for="randomCase in randomCases" 
+    :key="randomCase.id" 
+    class="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4 cursor-pointer" 
+    @click="$inertia.visit(route('articles.show', randomCase.id))"
+>
+  <img v-if="randomCase.media" :src="'/storage/' + randomCase.media.filepath" class="h-32 w-full object-cover rounded-xl" alt="Article Image" />
+  <div>
+    <h4 class="text-lg font-bold">{{ randomCase.title }}</h4>
+    <p class="mt-1">{{ randomCase.extract }}</p>
   </div>
 </div>
-  
+</div>
+</div>
+</div>
 </div>
 </AppLayout>
 </template>
@@ -110,7 +162,7 @@ const copyLinkToClipboard = () => {
 
 defineProps({
   article: Object,
-  randomArticles: Object
+  randomCases: Object
 })
 
 </script>

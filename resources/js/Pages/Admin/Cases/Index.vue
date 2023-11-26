@@ -18,7 +18,6 @@
                         <tr>
                             <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold sm:pl-0" style="max-width: 200px;">Titolo</th>
                             <th scope="col" class="hidden md:table-cell px-3 py-3.5 text-left text-sm font-semibold">Immagine</th>
-                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold">Stato</th>
                             <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold">Categoria</th>
                             <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold">Data</th>
                             <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-0">
@@ -40,9 +39,6 @@
                                         
                                     </div>
                                 </div>
-                            </td>
-                            <td class="px-3 py-4 text-sm">
-                                {{ caseItem.status }}
                             </td>
                             <td
                             v-if="caseItem.category" 

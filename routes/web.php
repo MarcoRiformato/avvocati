@@ -9,6 +9,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\CaseStudyController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TestimonialController;
 /*
 |--------------------------------------------------------------------------
@@ -38,6 +39,9 @@ Route::get('articles/{article}', [ArticleController::class, 'show'])->name('arti
 Route::get('cases', [CaseStudyController::class, 'index'])->name('cases.index');
 Route::get('cases/{caseItem}', [CaseStudyController::class, 'show'])->name('cases.show');
 
+//Route::get('cases', [ServiceController::class, 'index'])->name('services.index');
+Route::get('services/{service}', [CaseStudyController::class, 'show'])->name('services.show');
+
 Route::view('/servizi', 'services')->name('services');
 Route::view('/faq', 'faq')->name('faq');
 
@@ -48,6 +52,7 @@ Route::namespace('Admin')->prefix('admin')->middleware(['auth', 'admin'])->group
     Route::get('/articles.index', [AdminController::class, 'indexArticles'])->name('admin.articles.index');
     Route::get('/categories.index', [AdminController::class, 'indexCategories'])->name('admin.categories.index');
     Route::get('/cases.index', [AdminController::class, 'indexCases'])->name('admin.cases.index');
+    Route::get('/services.index', [AdminController::class, 'indexServices'])->name('admin.services.index');
     Route::get('/testimonials.index', [AdminController::class, 'indexTestimonials'])->name('admin.testimonials.index');
 
     //Articles routes
@@ -73,6 +78,14 @@ Route::namespace('Admin')->prefix('admin')->middleware(['auth', 'admin'])->group
     Route::post('/cases/{case_study}', [CaseStudyController::class, 'update'])->name('admin.cases.update');
     Route::delete('/cases/{case}', [CaseStudyController::class, 'destroy'])->name('admin.cases.destroy');
     Route::delete('/cases/{case_study}/{caseId}', [CaseStudyController::class, 'destroyImage'])->name('admin.cases.destroy.image');
+
+    //Services routes
+    Route::get('/services.create', [ServiceController::class, 'create'])->name('admin.services.create');
+    Route::post('/services/store', [ServiceController::class, 'store'])->name('admin.services.store');
+    Route::get('/services.{service}/edit', [ServiceController::class, 'edit'])->name('admin.services.edit');
+    Route::post('/services/{service}', [ServiceController::class, 'update'])->name('admin.services.update');
+    Route::delete('/services/{service}', [ServiceController::class, 'destroy'])->name('admin.services.destroy');
+    Route::delete('/services/{service}/image', [ServiceController::class, 'destroyImage'])->name('admin.services.destroy.image');
     
     //Testimonials routes
     Route::get('/testimonials.create', [TestimonialController::class, 'create'])->name('admin.testimonials.create');

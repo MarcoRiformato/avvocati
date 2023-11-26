@@ -2,7 +2,7 @@
 <AppLayout title="Gestisci testimonial">
 <AdminContainer>
 
-  <div class="min-h-full">
+<div class="min-h-full">
     <div class="flex flex-1 flex-col">
         <div class=" px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col sm:flex-row sm:items-center">

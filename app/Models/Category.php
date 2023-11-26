@@ -19,6 +19,11 @@ class Category extends Model
         return $this->hasMany(Article::class);
     }
 
+    public function services()
+    {
+        return $this->hasMany(Service::class);
+    }
+
     public function media()
     {
         return $this->hasOne(Media::class);

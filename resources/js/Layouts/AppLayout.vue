@@ -65,6 +65,11 @@ social: [
 ],
 }
 
+function openCalendlyPopup(event) {
+  event.preventDefault();
+  Calendly.initPopupWidget({ url: 'https://calendly.com/marco-riformato/incontro-di-valutazione' });
+}
+
 </script>
 
 <template>
@@ -78,7 +83,7 @@ social: [
         <div class="container mx-auto flex justify-between items-center hidden sm:flex">
     
         <div class="flex-shrink-0 flex items-center" @click="$inertia.visit(route('dashboard'))">
-            <img src="https://picsum.photos/200/50" alt="Logo">
+            <img src="logomariorossi.png" height="50" width="200" alt="Logo">
         </div>
     
         <NavLink class="text-xl" :href="route('articles.index')">
@@ -96,7 +101,7 @@ social: [
                 🔍
             </button>
           </div>
-          <button href="#" class="btn btn-primary">Contattaci</button>
+          <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Contattaci</button>
           <div class="py-2">Chiamaci 📞<br /><b>+39 388 568 6658</b></div>
         </div>
       </div>
