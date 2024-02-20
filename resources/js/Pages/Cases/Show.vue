@@ -1,16 +1,16 @@
 <template>
 <AppLayout title="Mostra caso">
-<div style="max-width: 71.88rem;" class="text-stone-100 text-base justify-between px-8 flex w-full m-auto">
+<div style="max-width: 71.88rem;" class="text-stone-100 text-base justify-between flex w-full m-auto">
 <div class="order-2 pt-36 w-[32.2669%]">
   <ul class="list-none">
     <li class="pb-5 list-item">
-      <p class="pb-7 text-center"><img src="https://osborneslaw.com/wp-content/uploads/2023/10/Firm-Logo-2.jpg" class="w-72 h-64" /></p>
+      <p class="pb-7 text-center"><img src="https://www.thelawyersglobal.org/assets/images/badges/round/TLG-Legal-Award-Badge-2020@0.75x.png" class="w-72 h-64" /></p>
       <p class="pb-7 text-center"><strong class="font-bold">“Lo studio offre assistenza legale di alto livello. Sono le persone giuste, al momento giusto”
       </strong></p>
     </li>
     <li class="pb-5 list-item">
-      <p class="pb-7 text-center"><img src="https://osborneslaw.com/wp-content/uploads/2021/05/Leading-Firm-2.jpg" class="w-36 h-52" /></p>
-      <p class="pb-7 text-center"><strong class="font-bold">“Osbornes has incredible strength in depth across every area of family law. Areas of expertise include unravelling complicated trusts and handling pre-acquired wealth, to Children Act proceedings and advising on the financial provision for children.”</strong></p>
+      <p class="pb-7 text-center"><img src="https://www.soluzione-risarcimento.com/wp-content/uploads/2022/05/pas_premio_il_sole_24_ore_sigillo_2022.jpg" class="w-68 h-30" /></p>
+      <p class="pb-7 text-center"><strong class="font-bold">"Non posso che elogiare lo Studio Legale Rossi. Ho avuto bisogno di loro in diverse occasioni e sono sempre stati le persone giuste al momento giusto, dimostrando una vasta esperienza accumulata nel corso di tre generazioni di attività dello studio. Non potrei raccomandarli abbastanza!”</strong></p>
     </li>
     <li class="pb-5 list-item">
       <p class="pb-7 text-center">
@@ -25,7 +25,7 @@
   </ul>
 </div>
 <div>
-  <div class=" px-6 py-8 lg:px-8">
+  <div class="py-8">
     <div class="mx-auto max-w-3xl text-base leading-7 ">
       <hr/>
       <div class="bg-gray-800 light:bg-red-200 p-4">

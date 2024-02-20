@@ -7,11 +7,13 @@ import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
+import CustomHeader from '@/Components/CustomHeader.vue';
 import { defineComponent, h } from 'vue'
 
 import {
     MagnifyingGlassIcon
   } from '@heroicons/vue/24/outline'
+import Flyout from '@/Components/Flyout.vue';
 
 defineProps({
 title: String,
@@ -80,31 +82,30 @@ function openCalendlyPopup(event) {
     
     <div class="bg-base-200">
         <nav class="sticky top-0 z-50 border-b border-gray-100 bg-base-200 py-1">
+
         <div class="container mx-auto flex justify-between items-center hidden sm:flex">
-    
-        <div class="flex-shrink-0 flex items-center" @click="$inertia.visit(route('dashboard'))">
-            <img src="logomariorossi.png" height="50" width="200" alt="Logo">
-        </div>
-    
-        <NavLink class="text-xl" :href="route('articles.index')">
-            Articoli
-        </NavLink>
+            <div class="flex-shrink-0 flex items-center" @click="$inertia.visit(route('dashboard'))">
+                <img src="logomariorossi.png" height="50" width="200" alt="Logo">
+            </div>
+        
+            <NavLink class="text-xl" :href="route('services.index')">
+                Aree di attività
+            </NavLink>
 
-        <NavLink class="text-xl" :href="route('cases.index')">
-            Casi studio
-        </NavLink>
+            <NavLink class="text-xl" >
+                Chi siamo
+            </NavLink>
 
-        <div class="space-x-12 flex items-center">
-          <div class="flex items-center hidden lg:flex">
-            <input type="search" placeholder="Cerca" class="hidden sm:block px-4 py-2 rounded-full text-black">
-            <button class="ml-2 text-xl">
-                🔍
-            </button>
-          </div>
-          <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Contattaci</button>
-          <div class="py-2">Chiamaci 📞<br /><b>+39 388 568 6658</b></div>
+            <NavLink class="text-xl" :href="route('articles.index')">
+                Blog
+            </NavLink>
+
+            <div class="space-x-12 flex items-center">
+
+            <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Contattaci</button>
+            <div class="py-2">Chiamaci 📞<br /><b>+39 010 541259</b></div>
+            </div>
         </div>
-      </div>
     
       <div class="hidden sm:flex sm:items-center sm:ml-6">
     
@@ -143,9 +144,7 @@ function openCalendlyPopup(event) {
                 <ResponsiveNavLink  :href="route('articles.index')">
                     Articoli
                 </ResponsiveNavLink>
-                <ResponsiveNavLink  :href="route('cases.index')">
-                    Casi studio
-                </ResponsiveNavLink>
+
                 <template v-if="$page.props.auth.user && $page.props.auth.user.is_admin !== 0">
                     <div class="border-t"></div>
                     <ResponsiveNavLink class="text-red-600" :href="route('admin.admindashboard')" :active="route().current('admin.admindashboard')">
@@ -245,12 +244,13 @@ function openCalendlyPopup(event) {
             <slot name="header" />
         </div>
     </header>
-    
+    <CustomHeader/>
     <!-- Page Content -->
     <main>
         <slot />
     </main>
     </div>
+    
     <footer class="bg-base-200 -mt-12">
     <div class="mx-auto max-w-7xl -mt-30 overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
         <div class="mt-10 flex justify-center space-x-10">

@@ -147,7 +147,6 @@ class CaseStudyController extends Controller
         $validatedData = $request->validate([
             'title' => 'nullable|string|max:255',
             'meta_description' => 'nullable|string|max:255',
-            'slug' => 'nullable|string|unique:case_studies,slug,' . $case_study->id,
             'body' => 'nullable|string',
             'status' => 'nullable|in:draft,published',
             'category_id' => 'nullable|exists:categories,id',

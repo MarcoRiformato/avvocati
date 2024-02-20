@@ -39,7 +39,7 @@ Route::get('articles/{article}', [ArticleController::class, 'show'])->name('arti
 Route::get('cases', [CaseStudyController::class, 'index'])->name('cases.index');
 Route::get('cases/{caseItem}', [CaseStudyController::class, 'show'])->name('cases.show');
 
-//Route::get('cases', [ServiceController::class, 'index'])->name('services.index');
+Route::get('cases', [ServiceController::class, 'index'])->name('services.index');
 Route::get('services/{service}', [CaseStudyController::class, 'show'])->name('services.show');
 
 Route::view('/servizi', 'services')->name('services');

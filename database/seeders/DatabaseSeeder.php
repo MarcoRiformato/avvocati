@@ -64,7 +64,6 @@ class DatabaseSeeder extends Seeder
 
         Article::factory()->count(2)->create();
         Category::factory()->count(1)->create();
-        CaseStudy::factory()->count(2)->create();
         Testimonial::factory()->count(3)->create();
         Service::factory()->count(3)->create();
     }
