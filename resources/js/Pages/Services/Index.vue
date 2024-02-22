@@ -1,33 +1,47 @@
 <template>
-  <AppLayout>
+  <AppLayout title="Indice attività">
   <div class="container mx-auto px-4 py-6">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <!-- Main content area for cards -->
       <div class="md:col-span-2 space-y-6">
         <!-- Card 1 -->
-        <div class="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.secondaryIndex'))" >
           <div class="md:w-1/3">
             <img class="object-cover w-full h-48" src="placeholder.webp" alt="Diritto di Famiglia">
           </div>
           <div class="p-4">
-            <h3 class="text-lg font-semibold text-info">Diritto di Famiglia</h3>
-            <p class="mt-2">
-              L'avvocato Barbara D'Angelo si occupa in prevalenza di diritto di famiglia, separazione, divorzio, affidamento dei figli ed altre controversie afferenti la sfera familiare.
+            <h3 class="text-lg font-semibold text-info">Appalti pubblici e privati</h3>
+            <p class="mt-2">              
+              Gestiamo contenziosi su atti di gara e aggiudicazioni davanti a Tribunali Amministrativi e Consiglio di Stato, offrendo consulenza per tutte le fasi di gara e esecuzione di appalti e concessioni. Supportiamo nella redazione di documenti, assistenza contrattuale, e consulenza su Partenariato Pubblico Privato e procedure ANAC.
             </p>
-            <button class="btn btn-success mt-2" @click="$inertia.visit(route('services.secondary'))">Assistenza legale nella separazione, nel divorzio e nelle vertenze familiari</button>
+            <button class="btn btn-success mt-2" @click="$inertia.visit(route('services.secondary'))">Assistenza legale per appalti pubblici e privati</button>
           </div>
         </div>
         <!-- Card 2 -->
-        <div class="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.secondaryIndex'))">
           <div class="md:w-1/3">
             <img class="object-cover w-full h-48" src="placeholder.webp" alt="Tutela dei minori e delle persone fragili">
           </div>
           <div class="p-4">
-            <h3 class="text-lg font-semibold text-info">Tutela dei minori e delle persone fragili</h3>
+            <h3 class="text-lg font-semibold text-info">Edilizia</h3>
             <p class="mt-2">
-              Amministrazione di sostegno, interdizione, trust e vincoli sul patrimonio, affidamento familiare, adozione, riconoscimento del figlio, protezione contro la violenza domestica.
+              Affrontiamo controversie su permessi di costruire e autorizzazioni paesaggistiche, offrendo consulenza per la redazione di documenti procedimentali e gestendo i rapporti con le amministrazioni in fase pre-contenziosa.
             </p>
-            <button class="btn btn-success mt-2">Assistenza legale a tutela dei minori e delle persone fragili</button>
+            <button class="btn btn-success mt-2">Assistenza legale per edilizia</button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.secondaryIndex'))">
+          <div class="md:w-1/3">
+            <img class="object-cover w-full h-48" src="placeholder.webp" alt="Tutela dei minori e delle persone fragili">
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-info">Contratti e obbligazioni</h3>
+            <p class="mt-2">
+              Assistenza e consulenza in materia di contrattualistica, con particolare riferimento alla redazione, all'interpretazione, all'adempimento e all'esecuzione dei contratti e alle azioni a tutela dei contraenti
+            </p>
+            <button class="btn btn-success mt-2">Assistenza legale per contratti e obbligazioni</button>
           </div>
         </div>
       </div>
@@ -35,7 +49,7 @@
       <!-- Sidebar for contact information and form -->
       <div class="bg-gray-800 text-white p-4 rounded-lg shadow-lg">
         <h2 class="text-xl font-bold mb-4">Se desideri un parere o hai bisogno di assistenza legale, contattaci!</h2>
-        <p class="mb-4">Telefona al n. <strong>051 237070</strong> oppure compila il form</p>
+        <p class="mb-4">Telefona al n. <strong>010 541259</strong> oppure compila il form</p>
         <form class="space-y-4">
           <div>
             <label for="name" class="block text-sm font-bold">Nome</label>

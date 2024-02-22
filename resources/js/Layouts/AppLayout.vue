@@ -102,8 +102,8 @@ function openCalendlyPopup(event) {
 
             <div class="space-x-12 flex items-center">
 
-            <button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Contattaci</button>
-            <div class="py-2">Chiamaci 📞<br /><b>+39 010 541259</b></div>
+            <!--<button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Contattaci</button>-->
+            <div class="py-2">Chiamaci 📞<br /><b>010 541259</b></div>
             </div>
         </div>
     
@@ -244,7 +244,6 @@ function openCalendlyPopup(event) {
             <slot name="header" />
         </div>
     </header>
-    <CustomHeader/>
     <!-- Page Content -->
     <main>
         <slot />
@@ -252,7 +251,7 @@ function openCalendlyPopup(event) {
     </div>
     
     <footer class="bg-base-200 -mt-12">
-    <div class="mx-auto max-w-7xl -mt-30 overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+    <div class="mx-auto max-w-7xl overflow-hidden px-6 py-16 lg:px-8">
         <div class="mt-10 flex justify-center space-x-10">
         <!-- Settings Dropdown -->
         <div v-if="$page.props.auth.user" class="ml-3 relative">

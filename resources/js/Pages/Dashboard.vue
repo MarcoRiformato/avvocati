@@ -5,18 +5,18 @@
 
   <!-- Benvenuto -->
   <div id="benvenuto" class="relative isolate overflow-hidden -mt-20">
-    <img src="interior.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+    <img src="interior.webp" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
     <div class="absolute inset-0 bg-black opacity-50 -z-10"></div>
     <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
       <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
     </div>
-    <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+    <div class="mx-auto max-w-2xl py-32">
       <div class="text-center p-4 rounded">
     <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">
-      Studio legale<br/>Avv. Giusppe Inglese
+      Studio legale<br/>Avv. Giuseppe Inglese
     </h1>
     <p class="mt-6 text-lg leading-8 text-gray-300" style="text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);">
-      Assistenza legale specializzata
+      Diritto amministrativo & civile
     </p>
     <div class="mt-10 flex items-center justify-center gap-x-6">
       <a href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Prenota consulenza</a>
@@ -34,29 +34,43 @@
       <!-- Main content area for cards -->
       <div class="md:col-span-2 space-y-6">
         <!-- Card 1 -->
-        <div class="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.secondaryIndex'))" >
           <div class="md:w-1/3">
-            <img class="object-cover w-full h-48" src="placeholder.webp" alt="Diritto di Famiglia">
+            <img class="object-cover w-full h-48" src="https://lh3.googleusercontent.com/proxy/B-WVZlpBTv9BnbL9rkJSLL3nQaeUTNmeCKSW9EfBYXfY-uzyqiKkXnmI5HMk8XnlKA9cLnQuky8vq7w_wwZQskpNfUHD" alt="Diritto di Famiglia">
           </div>
           <div class="p-4">
-            <h3 class="text-lg font-semibold text-info">Diritto di Famiglia</h3>
-            <p class="mt-2">
-              L'avvocato Barbara D'Angelo si occupa in prevalenza di diritto di famiglia, separazione, divorzio, affidamento dei figli ed altre controversie afferenti la sfera familiare.
+            <h3 class="text-lg font-semibold text-info">Appalti pubblici e privati</h3>
+            <p class="mt-2">              
+              Gestiamo contenziosi su atti di gara e aggiudicazioni davanti a Tribunali Amministrativi e Consiglio di Stato, offrendo consulenza per tutte le fasi di gara e esecuzione di appalti e concessioni. Supportiamo nella redazione di documenti, assistenza contrattuale, e consulenza su Partenariato Pubblico Privato e procedure ANAC.
             </p>
-            <button class="btn btn-success mt-2" @click="$inertia.visit(route('services.secondary'))">Assistenza legale nella separazione, nel divorzio e nelle vertenze familiari</button>
+            <button class="btn btn-success mt-2" @click="$inertia.visit(route('services.secondary'))">Assistenza legale per appalti pubblici e privati</button>
           </div>
         </div>
         <!-- Card 2 -->
-        <div class="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.secondaryIndex'))">
           <div class="md:w-1/3">
-            <img class="object-cover w-full h-48" src="placeholder.webp" alt="Tutela dei minori e delle persone fragili">
+            <img class="object-cover w-full h-48" src="https://lh3.googleusercontent.com/proxy/B-WVZlpBTv9BnbL9rkJSLL3nQaeUTNmeCKSW9EfBYXfY-uzyqiKkXnmI5HMk8XnlKA9cLnQuky8vq7w_wwZQskpNfUHD" alt="Tutela dei minori e delle persone fragili">
           </div>
           <div class="p-4">
-            <h3 class="text-lg font-semibold text-info">Tutela dei minori e delle persone fragili</h3>
+            <h3 class="text-lg font-semibold text-info">Edilizia</h3>
             <p class="mt-2">
-              Amministrazione di sostegno, interdizione, trust e vincoli sul patrimonio, affidamento familiare, adozione, riconoscimento del figlio, protezione contro la violenza domestica.
+              Affrontiamo controversie su permessi di costruire e autorizzazioni paesaggistiche, offrendo consulenza per la redazione di documenti procedimentali e gestendo i rapporti con le amministrazioni in fase pre-contenziosa.
             </p>
-            <button class="btn btn-success mt-2">Assistenza legale a tutela dei minori e delle persone fragili</button>
+            <button class="btn btn-success mt-2">Assistenza legale per edilizia</button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.secondaryIndex'))">
+          <div class="md:w-1/3">
+            <img class="object-cover w-full h-48" src="https://lh3.googleusercontent.com/proxy/B-WVZlpBTv9BnbL9rkJSLL3nQaeUTNmeCKSW9EfBYXfY-uzyqiKkXnmI5HMk8XnlKA9cLnQuky8vq7w_wwZQskpNfUHD" alt="Tutela dei minori e delle persone fragili">
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-info">Contratti e obbligazioni</h3>
+            <p class="mt-2">
+              Assistenza e consulenza in materia di contrattualistica, con particolare riferimento alla redazione, all'interpretazione, all'adempimento e all'esecuzione dei contratti e alle azioni a tutela dei contraenti
+            </p>
+            <button class="btn btn-success mt-2">Assistenza legale per contratti e obbligazioni</button>
           </div>
         </div>
       </div>
@@ -64,7 +78,7 @@
       <!-- Sidebar for contact information and form -->
       <div class="bg-gray-800 text-white p-4 rounded-lg shadow-lg">
         <h2 class="text-xl font-bold mb-4">Se desideri un parere o hai bisogno di assistenza legale, contattaci!</h2>
-        <p class="mb-4">Telefona al n. <strong>051 237070</strong> oppure compila il form</p>
+        <p class="mb-4">Telefona al n. <strong>010 541259</strong> oppure compila il form</p>
         <form class="space-y-4">
           <div>
             <label for="name" class="block text-sm font-bold">Nome</label>
@@ -82,7 +96,7 @@
             <label for="message" class="block text-sm font-bold">Messaggio</label>
             <textarea id="message" rows="4" class="w-full p-2 rounded bg-gray-700 border border-gray-600" placeholder="Il tuo messaggio"></textarea>
           </div>
-          <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+          <button type="submit" class="w-full btn-success text-white font-bold py-2 px-4 rounded">
             Richiedi informazioni
           </button>
         </form>
@@ -91,19 +105,18 @@
   </div>
 
   <!--Logo cloud-->
-  <div class="mx-auto mt-8 max-w-7xl px-6 sm:mt-16 lg:px-8">
-    <h2 class="text-center text-lg font-semibold leading-8 text-white">Siamo stati menzionati dai seguenti siti</h2>
-    <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg" alt="Transistor" width="158" height="48" />
-      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg" alt="Reform" width="158" height="48" />
-      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg" alt="Tuple" width="158" height="48" />
-      <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg" alt="SavvyCal" width="158" height="48" />
-      <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg" alt="Statamic" width="158" height="48" />
+  <div class="mx-auto max-w-7xl px-6 sm:mt-8 lg:px-8 py-12">
+    <h2 class="text-center text-lg font-semibold leading-8 text-white">Parlano di noi</h2>
+    <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4 bg-white p-4 rounded-md">
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://theitalianseagroup.com/wp-content/uploads/2019/09/logo-Il-Tirreno.png" alt="Transistor" width="300" height="100" />
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://www.filodiritto.com/themes/custom/webit/images/logo-20.png" alt="Reform" width="158" height="48" />
+      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Il_Sole_24_Ore.svg/2560px-Il_Sole_24_Ore.svg.png" alt="Tuple" width="158" height="48" />
+      <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="https://www.cristianocremonini.com/wp-content/uploads/2017/12/la-repubblica-logo-copia.jpg" alt="SavvyCal" width="158" height="48" />
     </div>
   </div>
-  
-    <!--Blog section-->
-    <div class="py-20">
+
+  <!--Blog section-->
+  <div class="py-20">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl text-center">
         <h2 class="text-3xl font-bold tracking-tight text-info sm:text-4xl">Notizie & aggiornamenti</h2>
@@ -146,20 +159,20 @@
     </div>
   </div>-->
   
-  <!-- Us 
-  <div class="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-indigo-100/20 -mt-20">
+  <!-- Us -->
+  <div class="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-indigo-100/20">
     <div class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96" aria-hidden="true" />
-    <div class="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
+    <div class="mx-auto max-w-7xl px-6 py-8 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-        <h1 class="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">Professionisti del Diritto al Servizio della Giustizia e della Verità</h1>
+        <h1 class="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">Professionisti del settore</h1>
         <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-          <p class="text-lg leading-8 text-gray-600">Fondata oltre trent'anni fa nel cuore di Firenze, la nostra società legale si è distinta per l'impegno intransigente nella tutela dei diritti dei cittadini e delle imprese. </p>
+          <p class="text-lg leading-8 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
         </div>
         <img src="us.webp" alt="" class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36" />
       </div>
     </div>
     <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
-  </div>-->
+  </div>
   
   <!--La squadra
   <div class="mx-auto max-w-7xl sm:mt-20 flex flex-wrap md:flex-nowrap">
@@ -179,6 +192,32 @@
     </div>
   </div>-->
 
+  <!--Testimonials-->
+  <div class="py-8">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-xl text-center">
+        <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Abbiamo difeso i diritti di centinaia di persone</p>
+      </div>
+      <div class="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
+        <div class="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
+          <div v-for="testimonial in testimonials" :key="testimonial.id" class="pt-8 sm:inline-block sm:w-full sm:px-4">
+            <figure class="rounded-2xl bg-secondary-content p-8 text-sm leading-6">
+              <blockquote>
+                <p v-html="testimonial.body"></p>
+              </blockquote>
+              <figcaption class="mt-6 flex items-center gap-x-4">
+                <img class="h-10 w-10 rounded-full bg-secondary-content" src="https://www.hagopsphotography.com/wp-content/uploads/2021/09/corporate-male-headshot.jpg" />
+                <div>
+                  <div class="">{{ `${testimonial.organization}` }}</div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- CTA -->
   <div class="-mt-20 -mb-20 mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
     <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
@@ -196,32 +235,6 @@
           </radialGradient>
         </defs>
       </svg>
-    </div>
-  </div>
-
-  <!--Testimonials-->
-  <div class="">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-xl text-center">
-        <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Abbiamo difeso i diritti di centinaia di persone</p>
-      </div>
-      <div class="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
-        <div class="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
-          <div v-for="testimonial in testimonials" :key="testimonial.id" class="pt-8 sm:inline-block sm:w-full sm:px-4">
-            <figure class="rounded-2xl bg-secondary-content p-8 text-sm leading-6">
-              <blockquote>
-                <p v-html="testimonial.body"></p>
-              </blockquote>
-              <figcaption class="mt-6 flex items-center gap-x-4">
-                <img class="h-10 w-10 rounded-full bg-secondary-content" :src="'/storage/' + testimonial.filepath" alt="" />
-                <div>
-                  <div class="">{{ `${testimonial.organization}` }}</div>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -276,7 +289,7 @@ defineProps({
 const posts = [
   {
     id: 1,
-    title: 'Boost your conversion rate',
+    title: 'Commodi placeat repudiandae placeat enim.',
     href: '#',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
@@ -285,17 +298,10 @@ const posts = [
     date: 'Mar 16, 2020',
     datetime: '2020-03-16',
     category: { title: 'Marketing', href: '#' },
-    author: {
-      name: 'Michael Foster',
-      role: 'Co-Founder / CTO',
-      href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
   },
   {
     id: 2,
-    title: 'Boost your conversion rate',
+    title: 'Commodi placeat repudiandae placeat enim.',
     href: '#',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
@@ -304,17 +310,10 @@ const posts = [
     date: 'Mar 16, 2020',
     datetime: '2020-03-16',
     category: { title: 'Marketing', href: '#' },
-    author: {
-      name: 'Michael Foster',
-      role: 'Co-Founder / CTO',
-      href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
   },
   {
     id: 3,
-    title: 'Boost your conversion rate',
+    title: 'Commodi placeat repudiandae placeat enim.',
     href: '#',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
@@ -323,40 +322,33 @@ const posts = [
     date: 'Mar 16, 2020',
     datetime: '2020-03-16',
     category: { title: 'Marketing', href: '#' },
-    author: {
-      name: 'Michael Foster',
-      role: 'Co-Founder / CTO',
-      href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
   }
 ]
 
 const testimonials = [
 
   {
-    body: 'La collaborazione con lo studio legale Genovesi ha trasformato il modo in cui la mia azienda affronta le sfide legali. La loro competenza e professionalità nel diritto commerciale e aziendale hanno portato a soluzioni innovative e efficaci.',
-    organization: 'Super important CTO'
+    body: 'La collaborazione con lo studio legale Inglese ha trasformato il modo in cui la mia azienda affronta le sfide legali. La loro competenza e professionalità nel diritto amministrativo e aziendale hanno portato a soluzioni innovative e efficaci.',
+    organization: 'Una azienda'
   },
   {
-    body: 'Come libero professionista, affrontare le questioni legali può essere scoraggiante. Tuttavia, lo studio legale Genovesi mi ha fornito una guida chiara e supporto inestimabile, soprattutto in materia di diritti d autore e contratti. La loro approccio personalizzato e attenzione ai dettagli hanno fatto la differenza. Sono grato per il loro supporto e li raccomando vivamente a chiunque operi come libero professionista',
-    organization: 'Super important CTO'
+    body: 'Come libero professionista, affrontare le questioni legali può essere scoraggiante. Tuttavia, lo studio legale Inglese mi ha fornito una guida chiara e supporto inestimabile, soprattutto in materia di diritti d autore e contratti. La loro approccio personalizzato e attenzione ai dettagli hanno fatto la differenza. Sono grato per il loro supporto e li raccomando vivamente a chiunque operi come libero professionista',
+    organization: 'Una azienda'
   },
   {
-    body: 'Nel settore bancario, affrontare questioni legali complesse è una costante. Lo studio legale Genovesi è stato un partner strategico per la nostra banca, fornendo consulenze di diritto bancario di alto livello. La loro profonda conoscenza del settore e la capacità di anticipare le nostre esigenze hanno reso la nostra collaborazione estremamente fruttuosa. Senza dubbio, Genovesi rappresenta un punto di riferimento nel diritto bancario',
-    organization: 'Rappresentante istituto bancario'
+    body: 'Nel settore edile, affrontare questioni legali complesse è una costante. Lo studio legale Inglese è stato un partner strategico per la nostra banca, fornendo consulenze di diritto edile di alto livello. La loro profonda conoscenza del settore e la capacità di anticipare le nostre esigenze hanno reso la nostra collaborazione estremamente fruttuosa. Senza dubbio, Inglese rappresenta un punto di riferimento nel diritto edile',
+    organization: 'Rappresentante istituto edile'
   },
   {
-    body: 'La collaborazione con lo studio legale Genovesi ha trasformato il modo in cui la mia azienda affronta le sfide legali. La loro competenza e professionalità nel diritto commerciale e aziendale hanno portato a soluzioni innovative e efficaci.',
+    body: 'La collaborazione con lo studio legale Inglese ha trasformato il modo in cui la mia azienda affronta le sfide legali. La loro competenza e professionalità nel diritto amministrativo e aziendale hanno portato a soluzioni innovative e efficaci.',
     organization: 'Un imprenditore locale'
   },
   {
-    body: 'La collaborazione con lo studio legale Genovesi ha trasformato il modo in cui la mia azienda affronta le sfide legali. La loro competenza e professionalità nel diritto commerciale e aziendale hanno portato a soluzioni innovative e efficaci.',
+    body: 'La collaborazione con lo studio legale Inglese ha trasformato il modo in cui la mia azienda affronta le sfide legali. La loro competenza e professionalità nel diritto amministrativo e aziendale hanno portato a soluzioni innovative e efficaci.',
     organization: 'Un imprenditore locale'
   },
   {
-    body: 'La collaborazione con lo studio legale Genovesi ha trasformato il modo in cui la mia azienda affronta le sfide legali. La loro competenza e professionalità nel diritto commerciale e aziendale hanno portato a soluzioni innovative e efficaci.',
+    body: 'La collaborazione con lo studio legale Inglese ha trasformato il modo in cui la mia azienda affronta le sfide legali. La loro competenza e professionalità nel diritto amministrativo e aziendale hanno portato a soluzioni innovative e efficaci.',
     organization: 'Un imprenditore locale'
   },
 

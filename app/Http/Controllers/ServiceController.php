@@ -21,6 +21,11 @@ class ServiceController extends Controller
         ]);
     }
 
+    public function secondaryIndex()
+    {
+        return Inertia::render('Services/SecondaryIndex');
+    }
+
     /**
      * Show the form for creating a new resource.
      */
