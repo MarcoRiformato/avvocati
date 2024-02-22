@@ -141,8 +141,21 @@ function openCalendlyPopup(event) {
         <!-- Responsive Navigation Menu -->
         <div :class="{'block': showingNavigationDropdown, 'hidden': ! showingNavigationDropdown}" class="sm:hidden">
             <div class="pt-2 pb-3 space-y-1">
+
+                <ResponsiveNavLink :href="route('dashboard')">
+                    Home
+                </ResponsiveNavLink>
+
+                <ResponsiveNavLink  :href="route('services.index')">
+                    Aree di attività
+                </ResponsiveNavLink>
+
+                <ResponsiveNavLink >
+                    Chi siamo
+                </ResponsiveNavLink>
+
                 <ResponsiveNavLink  :href="route('articles.index')">
-                    Articoli
+                    Blog
                 </ResponsiveNavLink>
 
                 <template v-if="$page.props.auth.user && $page.props.auth.user.is_admin !== 0">
@@ -227,14 +240,14 @@ function openCalendlyPopup(event) {
                     </template>
                 </div>
             </div>
-            <div v-else class="mt-3 space-y-1">
+            <!--<div v-else class="mt-3 space-y-1">
                 <ResponsiveNavLink :href="route('login')">
                     Accedi
                 </ResponsiveNavLink>
                 <ResponsiveNavLink :href="route('register')">
                     Registrati
                 </ResponsiveNavLink>
-            </div>
+            </div>-->
         </div>
     </nav>
     

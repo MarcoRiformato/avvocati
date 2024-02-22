@@ -7,7 +7,7 @@
         <!-- Card 1 -->
         <div class="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.secondaryIndex'))" >
           <div class="md:w-1/3">
-            <img class="object-cover w-full h-48" src="placeholder.webp" alt="Diritto di Famiglia">
+            <img class="object-cover w-full h-48" src="https://t3.ftcdn.net/jpg/04/45/40/12/360_F_445401212_PEDNESWvENUbesA25i8E42auVqffefxY.jpg" alt="Diritto di Famiglia">
           </div>
           <div class="p-4">
             <h3 class="text-lg font-semibold text-info">Appalti pubblici e privati</h3>
@@ -20,7 +20,7 @@
         <!-- Card 2 -->
         <div class="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.secondaryIndex'))">
           <div class="md:w-1/3">
-            <img class="object-cover w-full h-48" src="placeholder.webp" alt="Tutela dei minori e delle persone fragili">
+            <img class="object-cover w-full h-48" src="https://t3.ftcdn.net/jpg/04/45/40/12/360_F_445401212_PEDNESWvENUbesA25i8E42auVqffefxY.jpg" alt="Tutela dei minori e delle persone fragili">
           </div>
           <div class="p-4">
             <h3 class="text-lg font-semibold text-info">Edilizia</h3>
@@ -34,7 +34,7 @@
         <!-- Card 3 -->
         <div class="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.secondaryIndex'))">
           <div class="md:w-1/3">
-            <img class="object-cover w-full h-48" src="placeholder.webp" alt="Tutela dei minori e delle persone fragili">
+            <img class="object-cover w-full h-48" src="https://t3.ftcdn.net/jpg/04/45/40/12/360_F_445401212_PEDNESWvENUbesA25i8E42auVqffefxY.jpg" alt="Tutela dei minori e delle persone fragili">
           </div>
           <div class="p-4">
             <h3 class="text-lg font-semibold text-info">Contratti e obbligazioni</h3>
