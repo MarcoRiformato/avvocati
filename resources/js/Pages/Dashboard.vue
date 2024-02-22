@@ -36,7 +36,7 @@
         <!-- Card 1 -->
         <div class="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.secondaryIndex'))" >
           <div class="md:w-1/3">
-            <img class="object-cover w-full h-48" src="https://lh3.googleusercontent.com/proxy/B-WVZlpBTv9BnbL9rkJSLL3nQaeUTNmeCKSW9EfBYXfY-uzyqiKkXnmI5HMk8XnlKA9cLnQuky8vq7w_wwZQskpNfUHD" alt="Diritto di Famiglia">
+            <img class="object-cover w-full h-48" src="https://www.bcmlawyers.com/wp-content/uploads/2012/09/contract-law.jpg" alt="Diritto di Famiglia">
           </div>
           <div class="p-4">
             <h3 class="text-lg font-semibold text-info">Appalti pubblici e privati</h3>
@@ -49,7 +49,7 @@
         <!-- Card 2 -->
         <div class="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.secondaryIndex'))">
           <div class="md:w-1/3">
-            <img class="object-cover w-full h-48" src="https://lh3.googleusercontent.com/proxy/B-WVZlpBTv9BnbL9rkJSLL3nQaeUTNmeCKSW9EfBYXfY-uzyqiKkXnmI5HMk8XnlKA9cLnQuky8vq7w_wwZQskpNfUHD" alt="Tutela dei minori e delle persone fragili">
+            <img class="object-cover w-full h-48" src="https://www.bcmlawyers.com/wp-content/uploads/2012/09/contract-law.jpg" alt="Tutela dei minori e delle persone fragili">
           </div>
           <div class="p-4">
             <h3 class="text-lg font-semibold text-info">Edilizia</h3>
@@ -63,7 +63,7 @@
         <!-- Card 3 -->
         <div class="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.secondaryIndex'))">
           <div class="md:w-1/3">
-            <img class="object-cover w-full h-48" src="https://lh3.googleusercontent.com/proxy/B-WVZlpBTv9BnbL9rkJSLL3nQaeUTNmeCKSW9EfBYXfY-uzyqiKkXnmI5HMk8XnlKA9cLnQuky8vq7w_wwZQskpNfUHD" alt="Tutela dei minori e delle persone fragili">
+            <img class="object-cover w-full h-48" src="https://www.bcmlawyers.com/wp-content/uploads/2012/09/contract-law.jpg" alt="Tutela dei minori e delle persone fragili">
           </div>
           <div class="p-4">
             <h3 class="text-lg font-semibold text-info">Contratti e obbligazioni</h3>
