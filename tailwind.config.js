@@ -25,6 +25,6 @@ export default {
     plugins: [forms, typography, daisyui],
 
     daisyui: {
-        themes: ['business'],
+        themes: ['corporate'],
     },
 };

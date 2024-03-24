@@ -26,6 +26,46 @@ class ServiceController extends Controller
         return Inertia::render('Services/SecondaryIndex');
     }
 
+    public function appalti()
+    {
+        return Inertia::render('Services/IndexAppalti');
+    }
+
+    public function difesa()
+    {
+        return Inertia::render('Services/IndexDifesa');
+    }
+
+    public function partenariato()
+    {
+        return Inertia::render('Services/IndexPartenariato');
+    }
+
+    public function controversie()
+    {
+        return Inertia::render('Services/IndexControversie');
+    }
+
+    public function stazioni()
+    {
+        return Inertia::render('Services/Detail/Appalti/StazioniAppaltanti');
+    }
+
+    public function imprese()
+    {
+        return Inertia::render('Services/Detail/Appalti/ConsulenzaImprese');
+    }
+
+    public function professionisti()
+    {
+        return Inertia::render('Services/Detail/Appalti/ConsulenzaProfessionisti');
+    }
+
+    public function esecuzione()
+    {
+        return Inertia::render('Services/Detail/Appalti/Esecuzione');
+    }
+
     /**
      * Show the form for creating a new resource.
      */

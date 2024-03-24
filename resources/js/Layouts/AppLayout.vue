@@ -67,10 +67,10 @@ social: [
 ],
 }
 
-function openCalendlyPopup(event) {
+/*function openCalendlyPopup(event) {
   event.preventDefault();
   Calendly.initPopupWidget({ url: 'https://calendly.com/marco-riformato/incontro-di-valutazione' });
-}
+}*/
 
 </script>
 
@@ -80,10 +80,10 @@ function openCalendlyPopup(event) {
     
     <Banner />
     
-    <div class="bg-base-200">
-        <nav class="sticky top-0 z-50 border-b border-gray-100 bg-base-200 py-1">
+    <div>
+        <nav class="sticky top-0 z-50 border-b border-gray-100 bg-secondary ">
 
-        <div class="container mx-auto flex justify-between items-center hidden sm:flex">
+        <div class="container mx-auto flex justify-between items-center hidden sm:flex text-white">
             <div class="flex-shrink-0 flex items-center" @click="$inertia.visit(route('dashboard'))">
                 <img src="logomariorossi.png" height="50" width="200" alt="Logo">
             </div>
@@ -92,12 +92,16 @@ function openCalendlyPopup(event) {
                 Aree di attività
             </NavLink>
 
-            <NavLink class="text-xl" >
-                Chi siamo
+            <NavLink class="text-xl" :href="route('services.index')">
+                Lo studio
             </NavLink>
 
             <NavLink class="text-xl" :href="route('articles.index')">
-                Blog
+                Notizie & aggiornamenti
+            </NavLink>
+
+            <NavLink class="text-xl" >
+                Contatti
             </NavLink>
 
             <div class="space-x-12 flex items-center">
@@ -264,8 +268,8 @@ function openCalendlyPopup(event) {
     </div>
     
     <footer class="bg-base-200 -mt-12">
-    <div class="mx-auto max-w-7xl overflow-hidden px-6 py-16 lg:px-8">
-        <div class="mt-10 flex justify-center space-x-10">
+    <div class="mx-auto max-w-7xl overflow-hidden px-6 py-8">
+        <div class="flex justify-center space-x-10">
         <!-- Settings Dropdown -->
         <div v-if="$page.props.auth.user" class="ml-3 relative">
             <Dropdown align="right" width="48">

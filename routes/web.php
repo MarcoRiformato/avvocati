@@ -40,8 +40,20 @@ Route::get('cases', [CaseStudyController::class, 'index'])->name('cases.index');
 Route::get('cases/{caseItem}', [CaseStudyController::class, 'show'])->name('cases.show');
 
 Route::get('services', [ServiceController::class, 'index'])->name('services.index');
-Route::get('secondary', [ServiceController::class, 'secondaryIndex'])->name('services.secondaryIndex');
+
 Route::get('services/{service}', [ServiceController::class, 'show'])->name('services.show');
+
+//Services index pages
+Route::get('appalti', [ServiceController::class, 'appalti'])->name('services.appalti');
+Route::get('difesa', [ServiceController::class, 'difesa'])->name('services.difesa');
+Route::get('partenariato', [ServiceController::class, 'partenariato'])->name('services.partenariato');
+Route::get('controversie', [ServiceController::class, 'controversie'])->name('services.controversie');
+
+//Appalti
+Route::get('stazioni', [ServiceController::class, 'stazioni'])->name('services.detail.stazioni');
+Route::get('professionisti', [ServiceController::class, 'professionisti'])->name('services.detail.professionisti');
+Route::get('esecuzione', [ServiceController::class, 'esecuzione'])->name('services.detail.esecuzione');
+Route::get('imprese', [ServiceController::class, 'imprese'])->name('services.detail.imprese');
 
 Route::view('/servizi', 'services')->name('services');
 Route::view('/faq', 'faq')->name('faq');

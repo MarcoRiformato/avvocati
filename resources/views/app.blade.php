@@ -27,7 +27,7 @@
         @vite(['resources/js/app.js', "resources/js/Pages/{$page['component']}.vue"])
         @inertiaHead
     </head>
-    <body class="font-sans antialiased theme-business h-full">
+    <body class="font-sans antialiased theme-corporate h-full">
         @inertia
         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     </body>

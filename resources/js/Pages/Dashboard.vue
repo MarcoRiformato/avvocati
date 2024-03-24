@@ -19,7 +19,7 @@
       Diritto amministrativo & civile
     </p>
     <div class="mt-10 flex items-center justify-center gap-x-6">
-      <a href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Prenota consulenza</a>
+      <a href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Chiama subito</a>
     </div>
   </div>
     </div>
@@ -33,70 +33,88 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <!-- Main content area for cards -->
       <div class="md:col-span-2 space-y-6">
+        
         <!-- Card 1 -->
-        <div class="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.secondaryIndex'))" >
+        <div class="flex bg-neutral-content flex-col md:flex-row rounded-lg shadow-lg overflow-hidden py-5" @click="$inertia.visit(route('services.appalti'))" >
           <div class="md:w-1/3">
             <img class="object-cover w-full h-48" src="https://www.bcmlawyers.com/wp-content/uploads/2012/09/contract-law.jpg" alt="Diritto di Famiglia">
           </div>
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-info">Appalti pubblici e privati</h3>
+          <div class="px-4">
+            <h3 class="text-lg font-semibold text-primary">Appalti pubblici e privati</h3>
             <p class="mt-2">              
               Gestiamo contenziosi su atti di gara e aggiudicazioni davanti a Tribunali Amministrativi e Consiglio di Stato, offrendo consulenza per tutte le fasi di gara e esecuzione di appalti e concessioni. Supportiamo nella redazione di documenti, assistenza contrattuale, e consulenza su Partenariato Pubblico Privato e procedure ANAC.
             </p>
-            <button class="btn btn-success mt-2" @click="$inertia.visit(route('services.secondary'))">Assistenza legale per appalti pubblici e privati</button>
+            <button class="btn btn-primary mt-2" @click="$inertia.visit(route('services.appalti'))">Assistenza legale per appalti pubblici e privati</button>
           </div>
         </div>
+
         <!-- Card 2 -->
-        <div class="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.secondaryIndex'))">
+        <div class="flex bg-neutral-content flex-col md:flex-row rounded-lg shadow-lg overflow-hidden py-5" @click="$inertia.visit(route('services.difesa'))">
           <div class="md:w-1/3">
-            <img class="object-cover w-full h-48" src="https://www.bcmlawyers.com/wp-content/uploads/2012/09/contract-law.jpg" alt="Tutela dei minori e delle persone fragili">
+            <img class="object-cover bg-neutral-content w-full h-48" src="https://www.bcmlawyers.com/wp-content/uploads/2012/09/contract-law.jpg" alt="Tutela dei minori e delle persone fragili">
           </div>
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-info">Edilizia</h3>
+          <div class="px-4">
+            <h3 class="text-lg font-semibold text-primary">Assistenza e difesa per enti pubblici, imprese e operatori economici</h3>
             <p class="mt-2">
-              Affrontiamo controversie su permessi di costruire e autorizzazioni paesaggistiche, offrendo consulenza per la redazione di documenti procedimentali e gestendo i rapporti con le amministrazioni in fase pre-contenziosa.
+              Specializzati in contenziosi legati agli appalti pubblici e privati, offriamo assistenza completa davanti ai TAR, Consiglio di Stato, tribunali ordinari, e nelle procedure arbitrali. Gestiamo controversie su legittimità di atti di gara, esecuzione contrattuale, risarcimenti, e procedimenti ANAC, assicurando difesa qualificata ed efficace.
             </p>
-            <button class="btn btn-success mt-2">Assistenza legale per edilizia</button>
+            <button class="btn btn-primary mt-2" @click="$inertia.visit(route('services.difesa'))">Assistenza legale per enti pubblici e imprese</button>
           </div>
         </div>
 
         <!-- Card 3 -->
-        <div class="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.secondaryIndex'))">
+        <div class="flex bg-neutral-content flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.controversie'))">
           <div class="md:w-1/3">
-            <img class="object-cover w-full h-48" src="https://www.bcmlawyers.com/wp-content/uploads/2012/09/contract-law.jpg" alt="Tutela dei minori e delle persone fragili">
+            <img class="object-cover bg-neutral-content w-full h-48" src="https://www.bcmlawyers.com/wp-content/uploads/2012/09/contract-law.jpg" alt="Tutela dei minori e delle persone fragili">
           </div>
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-info">Contratti e obbligazioni</h3>
+          <div class="px-4">
+            <h3 class="text-lg font-semibold text-primary">Soluzioni stragiudiziali per controversie negli appalti pubblici e Collegio Consultivo Tecnico</h3>
             <p class="mt-2">
-              Assistenza e consulenza in materia di contrattualistica, con particolare riferimento alla redazione, all'interpretazione, all'adempimento e all'esecuzione dei contratti e alle azioni a tutela dei contraenti
+              Approccio integrato alla risoluzione delle controversie negli appalti pubblici e assistenza tecnica specializzata. Inclusione di soluzioni stragiudiziali per le controversie, supporto attraverso il Collegio Consultivo Tecnico e facilitazione dell'accordo bonario sulle riserve dell'appaltatore. Competenze volte alla prevenzione dei conflitti e alla loro gestione efficace, garantendo il rispetto degli interessi e degli obiettivi dei progetti
             </p>
-            <button class="btn btn-success mt-2">Assistenza legale per contratti e obbligazioni</button>
+            <button class="btn btn-primary mt-2 mb-4" @click="$inertia.visit(route('services.appalti'))">Assistenza legale per gestione controversie e consulense tecniche</button>
           </div>
         </div>
+
+        <!-- Card 4 -->
+        <div class="flex bg-neutral-content flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.partenariato'))">
+          <div class="md:w-1/3">
+            <img class="object-cover bg-neutral-content w-full h-48" src="https://www.bcmlawyers.com/wp-content/uploads/2012/09/contract-law.jpg" alt="Tutela dei minori e delle persone fragili">
+          </div>
+          <div class="px-4">
+            <h3 class="text-lg font-semibold text-primary">Partenariato Pubblico-Privato e Project Financing</h3>
+            <p class="mt-2">
+              Focalizzazione sulla strutturazione, negoziazione e gestione di accordi di partenariato pubblico-privato (PPP) e operazioni di project financing. Copertura di tutti gli aspetti legali relativi allo sviluppo, finanziamento, realizzazione e gestione di progetti infrastrutturali e di servizio, navigazione delle complessità normative e contrattuali. Competenza in modelli di finanziamento innovativi, valutazione dei rischi e strategie di implementazione.
+            </p>
+            <button class="btn btn-primary mt-2 mb-4" @click="$inertia.visit(route('services.appalti'))">Assistenza legale per partnenariati e project financing</button>
+          </div>
+        </div>
+
+
       </div>
 
       <!-- Sidebar for contact information and form -->
-      <div class="bg-gray-800 text-white p-4 rounded-lg shadow-lg">
-        <h2 class="text-xl font-bold mb-4">Se desideri un parere o hai bisogno di assistenza legale, contattaci!</h2>
+      <div style="height: 600px;" class="bg-neutral-content p-4 rounded-lg shadow-lg " >
+        <h2 class="text-xl font-bold mb-4 text-info">Se desideri un parere o hai bisogno di assistenza legale, contattaci!</h2>
         <p class="mb-4">Telefona al n. <strong>010 541259</strong> oppure compila il form</p>
         <form class="space-y-4">
           <div>
             <label for="name" class="block text-sm font-bold">Nome</label>
-            <input type="text" id="name" class="w-full p-2 rounded bg-gray-700 border border-gray-600" placeholder="Il tuo nome">
+            <input type="text" id="name" class="w-full p-2 rounded border border-gray-600" placeholder="Il tuo nome">
           </div>
           <div>
             <label for="surname" class="block text-sm font-bold">Cognome</label>
-            <input type="text" id="surname" class="w-full p-2 rounded bg-gray-700 border border-gray-600" placeholder="Il tuo cognome">
+            <input type="text" id="surname" class="w-full p-2 rounded border border-gray-600" placeholder="Il tuo cognome">
           </div>
           <div>
             <label for="email" class="block text-sm font-bold">Email</label>
-            <input type="email" id="email" class="w-full p-2 rounded bg-gray-700 border border-gray-600" placeholder="La tua email">
+            <input type="email" id="email" class="w-full p-2 rounded border border-gray-600" placeholder="La tua email">
           </div>
           <div>
             <label for="message" class="block text-sm font-bold">Messaggio</label>
-            <textarea id="message" rows="4" class="w-full p-2 rounded bg-gray-700 border border-gray-600" placeholder="Il tuo messaggio"></textarea>
+            <textarea id="message" rows="4" class="w-full p-2 rounded border border-gray-600" placeholder="Il tuo messaggio"></textarea>
           </div>
-          <button type="submit" class="w-full btn-success text-white font-bold py-2 px-4 rounded">
+          <button type="submit" class="w-full btn-primary text-white font-bold py-2 px-4 rounded">
             Richiedi informazioni
           </button>
         </form>
@@ -105,13 +123,86 @@
   </div>
 
   <!--Logo cloud-->
-  <div class="mx-auto max-w-7xl px-6 sm:mt-8 lg:px-8 py-12">
-    <h2 class="text-center text-lg font-semibold leading-8 text-white">Parlano di noi</h2>
+  <div class="mx-auto max-w-7xl px-6 sm:mt-8 lg:px-8 py-8">
+    <h2 class="text-center text-lg font-semibold leading-8 text-secondary">Parlano di noi</h2>
     <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4 bg-white p-4 rounded-md">
-      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://theitalianseagroup.com/wp-content/uploads/2019/09/logo-Il-Tirreno.png" alt="Transistor" width="300" height="100" />
-      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://www.filodiritto.com/themes/custom/webit/images/logo-20.png" alt="Reform" width="158" height="48" />
-      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Il_Sole_24_Ore.svg/2560px-Il_Sole_24_Ore.svg.png" alt="Tuple" width="158" height="48" />
-      <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="https://www.cristianocremonini.com/wp-content/uploads/2017/12/la-repubblica-logo-copia.jpg" alt="SavvyCal" width="158" height="48" />
+      <img class="col-span-2 max-h-20 w-full object-contain lg:col-span-1" src="https://www.genovabluedistrict.com/wp-content/uploads/2021/06/loghi-UniGe-v1.jpg" alt="Transistor" width="300" height="100" />
+      <img class="col-span-2 max-h-20 w-full object-contain lg:col-span-1" src="https://yt3.googleusercontent.com/ytc/AIdro_kvzMZlgrwXZuQfbxRMdmvukOyWgl_tcl9arl2Sgw=s900-c-k-c0x00ffffff-no-rj" alt="Reform" width="158" height="48" />
+      <img class="col-span-2 max-h-20 w-full object-contain lg:col-span-1" src="https://www.federarchitetti.it/wp-content/uploads/2015/10/logo_Federarchitetti-scaled.jpg" alt="Tuple" width="158" height="48" />
+      <img class="col-span-2 max-h-20 w-full object-contain sm:col-start-2 lg:col-span-1" src="aaal.jpg" alt="SavvyCal" width="158" height="48" />
+    </div>
+  </div>
+
+  <!-- Casi studio 
+  <div class="mt-10 p-2">
+    <div class="flex flex-wrap -mx-2">
+      <div v-for="caseItem in cases" :key="caseItem.id" class="w-full sm:w-1/2 lg:w-1/4 p-2">
+        <div class="border border-zinc-700 p-5" @click="$inertia.visit(route('cases.show', caseItem.id))">
+          <h4 class="text-xl font-semibold">{{ caseItem.title }}</h4>
+          <h5 class="text-stone-400 mt-1 uppercase">{{ caseItem.meta_description }}</h5>
+          <p class="mt-6" v-html="caseItem.body"></p>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+  <!--Testimonials-->
+  <div class="py-12">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-xl text-center">
+        <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-primary">I nostri assistiti</p>
+      </div>
+      <div class="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
+        <div class="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
+          <div v-for="testimonial in testimonials" :key="testimonial.id" class="pt-8 sm:inline-block sm:w-full sm:px-4">
+            <figure class="rounded-2xl bg-base-300 p-8 text-sm leading-6">
+              <blockquote>
+                <p v-html="testimonial.body"></p>
+              </blockquote>
+              <figcaption class="mt-6 flex items-center gap-x-4">
+                <img class="h-10 w-10 rounded-full bg-base-300" src="https://www.hagopsphotography.com/wp-content/uploads/2021/09/corporate-male-headshot.jpg" />
+                <div>
+                  <div class="">{{ `${testimonial.organization}` }}</div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Us -->
+  <div class="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-indigo-100/20">
+    <div class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96" aria-hidden="true" />
+    <div class="mx-auto max-w-7xl px-6 py-8 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
+        <h1 class="max-w-2xl text-4xl font-bold tracking-tight text-primary sm:text-6xl lg:col-span-2 xl:col-auto">Professionisti del settore</h1>
+        <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
+          <p class="text-lg leading-8 text-gray-600">
+          Lo Studio Legale Inglese, situato nel cuore di Genova, offre consulenza legale specializzata in diritto amministrativo e civile.<br/><br/> Con una vasta esperienza in appalti pubblici, gestione del territorio e diritto civile, forniamo assistenza strategica in contesti giudiziali e stragiudiziali. Il fondatore, con una solida carriera sin dai primi giorni della pratica forense, è riconosciuto per la sua eccellenza nel diritto contrattuale pubblico e privato.<br/><br/> Partecipa attivamente a convegni e corsi di formazione, dimostrando un impegno costante per l'aggiornamento e l'eccellenza professionale. Questo approccio olistico e innovativo ci rende un punto di riferimento per enti pubblici e aziende private alla ricerca di consulenza legale di alto livello. 
+          </p>
+        </div>
+        <img src="us.webp" alt="" class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36" />
+      </div>
+    </div>
+    <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
+  </div>
+
+  <!--La squadra-->
+  <div class="mx-auto max-w-7xl sm:mt-20 flex flex-wrap md:flex-nowrap">
+  <div class="w-full p-4">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Chi siamo</h2>
+        <p class="mt-6 text-lg leading-8 text-secondary">Il team del nostro studio legale è composto da professionisti del diritto con specializzazioni che coprono tutti i settori della giurisprudenza. Avvocati, praticanti e consulenti lavorano in sinergia per fornire soluzioni innovative e strategie vincenti. </p>
+      </div>
+      <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4">
+        <li v-for="person in team" :key="person.name">
+          <img class="aspect-[14/13] w-full rounded-2xl object-cover" :src="person.imageUrl" alt="" />
+          <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight">{{ person.name }}</h3>
+          <p class="text-base leading-7">{{ person.role }}</p>
+        </li>
+      </ul>
     </div>
   </div>
 
@@ -119,7 +210,7 @@
   <div class="py-20">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-info sm:text-4xl">Notizie & aggiornamenti</h2>
+        <h2 class="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Notizie & aggiornamenti</h2>
       </div>
       <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
         <article v-for="post in posts" :key="post.id" class="flex flex-col items-start justify-between">
@@ -145,125 +236,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Casi studio 
-  <div class="mt-10 p-2">
-    <div class="flex flex-wrap -mx-2">
-      <div v-for="caseItem in cases" :key="caseItem.id" class="w-full sm:w-1/2 lg:w-1/4 p-2">
-        <div class="border border-zinc-700 p-5" @click="$inertia.visit(route('cases.show', caseItem.id))">
-          <h4 class="text-xl font-semibold">{{ caseItem.title }}</h4>
-          <h5 class="text-stone-400 mt-1 uppercase">{{ caseItem.meta_description }}</h5>
-          <p class="mt-6" v-html="caseItem.body"></p>
-        </div>
-      </div>
-    </div>
-  </div>-->
-  
-  <!-- Us -->
-  <div class="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-indigo-100/20">
-    <div class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96" aria-hidden="true" />
-    <div class="mx-auto max-w-7xl px-6 py-8 lg:px-8">
-      <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-        <h1 class="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">Professionisti del settore</h1>
-        <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-          <p class="text-lg leading-8 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.
-            Aut cupiditate eveniet consequatur est non aperiam et. Inventore rerum inventore voluptate sit numquam rerum et cupiditate.<br/><br/> In et qui placeat illum. Dolore quam beatae voluptatem in quasi adipisci consequatur nemo. Hic laborum aut sed a nihil exercitationem reprehenderit incidunt.<br/><br/> Vero ex et voluptatem. Qui in aut harum qui. Vel veniam corporis saepe dolorum. Sit aut quo aut qui esse fugiat qui. Aut cupiditate eveniet consequatur est non aperiam et. Inventore rerum inventore voluptate sit numquam rerum et cupiditate. In et qui placeat illum. 
-          </p>
-        </div>
-        <img src="us.webp" alt="" class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36" />
-      </div>
-    </div>
-    <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
-  </div>
-  
-  <!--La squadra
-  <div class="mx-auto max-w-7xl sm:mt-20 flex flex-wrap md:flex-nowrap">
-  <div class="w-full p-4">
-      <div class="mx-auto max-w-2xl lg:mx-0">
-        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Chi siamo</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-300">Il team del nostro studio legale è composto da professionisti del diritto con specializzazioni che coprono tutti i settori della giurisprudenza. Avvocati, praticanti e consulenti lavorano in sinergia per fornire soluzioni innovative e strategie vincenti. </p>
-      </div>
-      <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4">
-        <li v-for="person in team" :key="person.name">
-          <img class="aspect-[14/13] w-full rounded-2xl object-cover" :src="person.imageUrl" alt="" />
-          <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">{{ person.name }}</h3>
-          <p class="text-base leading-7 text-gray-300">{{ person.role }}</p>
-          <p class="text-sm leading-6 text-gray-500">{{ person.location }}</p>
-        </li>
-      </ul>
-    </div>
-  </div>-->
-
-  <!--Testimonials-->
-  <div class="py-8">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-xl text-center">
-        <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Abbiamo difeso i diritti di centinaia di persone</p>
-      </div>
-      <div class="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
-        <div class="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
-          <div v-for="testimonial in testimonials" :key="testimonial.id" class="pt-8 sm:inline-block sm:w-full sm:px-4">
-            <figure class="rounded-2xl bg-secondary-content p-8 text-sm leading-6">
-              <blockquote>
-                <p v-html="testimonial.body"></p>
-              </blockquote>
-              <figcaption class="mt-6 flex items-center gap-x-4">
-                <img class="h-10 w-10 rounded-full bg-secondary-content" src="https://www.hagopsphotography.com/wp-content/uploads/2021/09/corporate-male-headshot.jpg" />
-                <div>
-                  <div class="">{{ `${testimonial.organization}` }}</div>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CTA -->
-  <div class="-mt-20 -mb-20 mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-    <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-      <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Fissa subito un appuntamento</h2>
-      <div class="mt-10 flex items-center justify-center gap-x-6">
-        <a href="#" class="btn btn-primary">Fissa appuntamento</a>
-        <a href="#" class="text-sm font-semibold leading-6 text-white">Casi studio <span aria-hidden="true">→</span></a>
-      </div>
-      <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
-        <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
-        <defs>
-          <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
-            <stop stop-color="#7775D6" />
-            <stop offset="1" stop-color="#E935C1" />
-          </radialGradient>
-        </defs>
-      </svg>
-    </div>
-  </div>
-
-  <!-- FAQs
-  <div
-  id="faq"
-  class="-mt-20 mx-auto max-w-7xl px-6 sm:py-32 lg:px-8 lg:py-40">
-    <div class="mx-auto max-w-4xl divide-y divide-white/10">
-      <h2 class="text-2xl font-bold leading-10 tracking-tight text-white">Frequently asked questions</h2>
-      <dl class="mt-10 space-y-6 divide-y divide-white/10">
-        <Disclosure as="div" v-for="faq in faqs" :key="faq.question" class="pt-6" v-slot="{ open }">
-          <dt>
-            <DisclosureButton class="flex w-full items-start justify-between text-left text-white">
-              <span class="text-base font-semibold leading-7">{{ faq.question }}</span>
-              <span class="ml-6 flex h-7 items-center">
-                <PlusSmallIcon v-if="!open" class="h-6 w-6" aria-hidden="true" />
-                <MinusSmallIcon v-else class="h-6 w-6" aria-hidden="true" />
-              </span>
-            </DisclosureButton>
-          </dt>
-          <DisclosurePanel as="dd" class="mt-2 pr-12">
-            <p class="text-base leading-7 text-gray-300">{{ faq.answer }}</p>
-          </DisclosurePanel>
-        </Disclosure>
-      </dl>
-    </div>
-  </div> -->
     
   </div>
 </div>
@@ -358,21 +330,21 @@ const testimonials = [
 
 const team = [
   {
-    name: 'Leslie Alexander',
-    role: 'Co-Founder / CEO',
+    name: 'Giuseppe Inglese',
+    role: 'Fondatore dello studio',
     imageUrl:
       'law1.webp',
     location: 'Toronto, Canada',
   },
   {
-    name: 'Tizio 2',
+    name: 'Avvocato 2',
     role: 'Co-Founder / CEO',
     imageUrl:
       'law2.webp',
     location: 'Toronto, Canada',
   },
   {
-    name: 'Tizio 3',
+    name: 'Avvocato 3',
     role: 'Co-Founder / CEO',
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
@@ -380,10 +352,10 @@ const team = [
   }
 ]
 
-function openCalendlyPopup(event) {
+/*function openCalendlyPopup(event) {
   event.preventDefault();
   Calendly.initPopupWidget({ url: 'https://calendly.com/marco-riformato/incontro-di-valutazione' });
-}
+}*/
 
 const mobileMenuOpen = ref(false)
 </script>
