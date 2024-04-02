@@ -1,5 +1,5 @@
 <template>
-<AppLayout title="Main">
+<AppLayout title="Avvocato Giuseppe Inglese">
 <div class="bg-base-200 overflow-hidden">
   <div class="relative isolate">
 
@@ -125,11 +125,11 @@
   <!--Logo cloud-->
   <div class="mx-auto max-w-7xl px-6 sm:mt-8 lg:px-8 py-8">
     <h2 class="text-center text-lg font-semibold leading-8 text-secondary">Parlano di noi</h2>
-    <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4 bg-white p-4 rounded-md">
-      <img class="col-span-2 max-h-20 w-full object-contain lg:col-span-1" src="https://www.genovabluedistrict.com/wp-content/uploads/2021/06/loghi-UniGe-v1.jpg" alt="Transistor" width="300" height="100" />
-      <img class="col-span-2 max-h-20 w-full object-contain lg:col-span-1" src="https://yt3.googleusercontent.com/ytc/AIdro_kvzMZlgrwXZuQfbxRMdmvukOyWgl_tcl9arl2Sgw=s900-c-k-c0x00ffffff-no-rj" alt="Reform" width="158" height="48" />
-      <img class="col-span-2 max-h-20 w-full object-contain lg:col-span-1" src="https://www.federarchitetti.it/wp-content/uploads/2015/10/logo_Federarchitetti-scaled.jpg" alt="Tuple" width="158" height="48" />
-      <img class="col-span-2 max-h-20 w-full object-contain sm:col-start-2 lg:col-span-1" src="aaal.jpg" alt="SavvyCal" width="158" height="48" />
+    <div class="mx-auto mt-2 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4 bg-white p-4 rounded-md">
+      <img class="col-span-2 w-full lg:col-span-1 max-h-20" style="object-fit: cover; object-position: center;" src="https://www.genovabluedistrict.com/wp-content/uploads/2021/06/loghi-UniGe-v1.jpg" />
+      <img class="col-span-2 w-full lg:col-span-1 max-h-20" style="object-fit: contain; object-position: center;" src="https://yt3.googleusercontent.com/ytc/AIdro_kvzMZlgrwXZuQfbxRMdmvukOyWgl_tcl9arl2Sgw=s900-c-k-c0x00ffffff-no-rj" />
+      <img class="col-span-2 max-h-20 w-full object-contain lg:col-span-1" src="https://www.federarchitetti.it/wp-content/uploads/2015/10/logo_Federarchitetti-scaled.jpg"/>
+      <img class="col-span-2 max-h-20 w-full object-contain sm:col-start-2 lg:col-span-1" src="aaal.jpg" />
     </div>
   </div>
 
@@ -152,7 +152,7 @@
       <div class="mx-auto max-w-xl text-center">
         <p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl text-primary">I nostri assistiti</p>
       </div>
-      <div class="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
+      <div class="mx-auto mt-8 flow-root max-w-2xl lg:mx-0 lg:max-w-none">
         <div class="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
           <div v-for="testimonial in testimonials" :key="testimonial.id" class="pt-8 sm:inline-block sm:w-full sm:px-4">
             <figure class="rounded-2xl bg-base-300 p-8 text-sm leading-6">
@@ -160,9 +160,8 @@
                 <p v-html="testimonial.body"></p>
               </blockquote>
               <figcaption class="mt-6 flex items-center gap-x-4">
-                <img class="h-10 w-10 rounded-full bg-base-300" src="https://www.hagopsphotography.com/wp-content/uploads/2021/09/corporate-male-headshot.jpg" />
                 <div>
-                  <div class="">{{ `${testimonial.organization}` }}</div>
+                  <div class="italic">{{ `${testimonial.organization}` }}</div>
                 </div>
               </figcaption>
             </figure>
@@ -194,9 +193,8 @@
   <div class="w-full p-4">
       <div class="mx-auto max-w-2xl lg:mx-0">
         <h2 class="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Chi siamo</h2>
-        <p class="mt-6 text-lg leading-8 text-secondary">Il team del nostro studio legale è composto da professionisti del diritto con specializzazioni che coprono tutti i settori della giurisprudenza. Avvocati, praticanti e consulenti lavorano in sinergia per fornire soluzioni innovative e strategie vincenti. </p>
       </div>
-      <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4">
+      <ul role="list" class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4">
         <li v-for="person in team" :key="person.name">
           <img class="aspect-[14/13] w-full rounded-2xl object-cover" :src="person.imageUrl" alt="" />
           <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight">{{ person.name }}</h3>
@@ -212,7 +210,7 @@
       <div class="mx-auto max-w-2xl text-center">
         <h2 class="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Notizie & aggiornamenti</h2>
       </div>
-      <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      <div class="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
         <article v-for="post in posts" :key="post.id" class="flex flex-col items-start justify-between">
           <div class="relative w-full">
             <img :src="post.imageUrl" alt="" class="aspect-[16/9] w-full rounded-2xl object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
