@@ -170,70 +170,37 @@
       </div>
     </div>
   </div>
-  
-  <!-- Us -->
-  <div class="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-indigo-100/20">
-    <div class="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96" aria-hidden="true" />
-    <div class="mx-auto max-w-7xl px-6 py-8 lg:px-8">
-      <div class="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-        <h1 class="max-w-2xl text-4xl font-bold tracking-tight text-primary sm:text-6xl lg:col-span-2 xl:col-auto">Professionisti del settore</h1>
-        <div class="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-          <p class="text-lg leading-8 text-gray-600">
-          Lo Studio Legale Inglese, situato nel cuore di Genova, offre consulenza legale specializzata in diritto amministrativo e civile.<br/><br/> Con una vasta esperienza in appalti pubblici, gestione del territorio e diritto civile, forniamo assistenza strategica in contesti giudiziali e stragiudiziali. Il fondatore, con una solida carriera sin dai primi giorni della pratica forense, è riconosciuto per la sua eccellenza nel diritto contrattuale pubblico e privato.<br/><br/> Partecipa attivamente a convegni e corsi di formazione, dimostrando un impegno costante per l'aggiornamento e l'eccellenza professionale. Questo approccio olistico e innovativo ci rende un punto di riferimento per enti pubblici e aziende private alla ricerca di consulenza legale di alto livello. 
-          </p>
+
+<!--Blog section-->
+<div class="py-20">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Notizie & aggiornamenti</h2>
+    </div>
+    <div class="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      <article v-for="post in posts" :key="post.id" class="flex flex-col items-start justify-between">
+        <div class="relative w-full">
+          <img :src="post.imageUrl" alt="" class="aspect-[16/9] w-full rounded-2xl object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
+          <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
         </div>
-        <img src="us.webp" alt="" class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36" />
-      </div>
-    </div>
-    <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
-  </div>
-
-  <!--La squadra-->
-  <div class="mx-auto max-w-7xl sm:mt-20 flex flex-wrap md:flex-nowrap">
-  <div class="w-full p-4">
-      <div class="mx-auto max-w-2xl lg:mx-0">
-        <h2 class="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Chi siamo</h2>
-      </div>
-      <ul role="list" class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4">
-        <li v-for="person in team" :key="person.name">
-          <img class="aspect-[14/13] w-full rounded-2xl object-cover" :src="person.imageUrl" alt="" />
-          <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight">{{ person.name }}</h3>
-          <p class="text-base leading-7">{{ person.role }}</p>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <!--Blog section-->
-  <div class="py-20">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Notizie & aggiornamenti</h2>
-      </div>
-      <div class="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-        <article v-for="post in posts" :key="post.id" class="flex flex-col items-start justify-between">
-          <div class="relative w-full">
-            <img :src="post.imageUrl" alt="" class="aspect-[16/9] w-full rounded-2xl object-cover sm:aspect-[2/1] lg:aspect-[3/2]" />
-            <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
+        <div class="max-w-xl">
+          <div class="mt-8 flex items-center gap-x-4 text-xs">
+            <time :datetime="post.datetime" class="text-secondary">{{ post.date }}</time>
           </div>
-          <div class="max-w-xl">
-            <div class="mt-8 flex items-center gap-x-4 text-xs">
-              <time :datetime="post.datetime" class="text-secondary">{{ post.date }}</time>
-            </div>
-            <div class="group relative">
-              <h3 class="mt-3 text-lg font-semibold leading-6  group-hover:text-gray-600">
-                <a :href="post.href">
-                  <span class="absolute inset-0" />
-                  {{ post.title }}
-                </a>
-              </h3>
-              <p class="mt-5 line-clamp-3 text-sm leading-6 ">{{ post.description }}</p>
-            </div>
+          <div class="group relative">
+            <h3 class="mt-3 text-lg font-semibold leading-6  group-hover:text-gray-600">
+              <a :href="post.href">
+                <span class="absolute inset-0" />
+                {{ post.title }}
+              </a>
+            </h3>
+            <p class="mt-5 line-clamp-3 text-sm leading-6 ">{{ post.description }}</p>
           </div>
-        </article>
-      </div>
+        </div>
+      </article>
     </div>
   </div>
+</div>
     
   </div>
 </div>
@@ -243,9 +210,6 @@
 <script setup>
 import { ref } from 'vue'
 import AppLayout from '@/Layouts/AppLayout.vue';
-import { Dialog, DialogPanel } from '@headlessui/vue'
-import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
-import { ChevronRightIcon } from '@heroicons/vue/20/solid'
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/vue/20/solid'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/vue/24/outline'

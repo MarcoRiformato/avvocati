@@ -34,13 +34,17 @@ Route::get('/', [HomeController::class, 'dashboard'])->name('/');
 
 Route::get('articles', [ArticleController::class, 'index'])->name('articles.index');
 Route::get('articles/{article}', [ArticleController::class, 'show'])->name('articles.show');
-
 Route::get('cases', [CaseStudyController::class, 'index'])->name('cases.index');
 Route::get('cases/{caseItem}', [CaseStudyController::class, 'show'])->name('cases.show');
-
 Route::get('services', [ServiceController::class, 'index'])->name('services.index');
-
 Route::get('services/{service}', [ServiceController::class, 'show'])->name('services.show');
+
+Route::get('/lo-studio', function () {
+    return Inertia::render('About');
+})->name('about');
+Route::get('/contatti', function () {
+    return Inertia::render('Contacts');
+})->name('contacts');
 
 //Services index pages
 Route::get('appalti', [ServiceController::class, 'appalti'])->name('services.appalti');

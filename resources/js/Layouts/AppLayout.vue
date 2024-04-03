@@ -78,7 +78,7 @@ social: [
                 Aree di attività
             </NavLink>
 
-            <NavLink class="text-xl" :href="route('services.index')">
+            <NavLink class="text-xl" :href="route('about')">
                 Lo studio
             </NavLink>
 
@@ -86,7 +86,7 @@ social: [
                 Notizie & aggiornamenti
             </NavLink>
 
-            <NavLink class="text-xl" >
+            <NavLink class="text-xl" :href="route('contacts')">
                 Contatti
             </NavLink>
 
@@ -146,6 +146,10 @@ social: [
 
                 <ResponsiveNavLink  :href="route('articles.index')">
                     Blog
+                </ResponsiveNavLink>
+
+                <ResponsiveNavLink  :href="route('contacts')">
+                    Contatti
                 </ResponsiveNavLink>
 
                 <template v-if="$page.props.auth.user && $page.props.auth.user.is_admin !== 0">
@@ -253,7 +257,7 @@ social: [
     </main>
     </div>
     
-    <footer class="bg-base-200 -mt-12">
+    <footer class="bg-base-200">
     <div class="mx-auto max-w-7xl overflow-hidden px-6 py-8">
         <div class="flex justify-center space-x-10">
         <!-- Settings Dropdown -->
