@@ -2,7 +2,8 @@
 <AppLayout title="I nostri articoli">
   <div class="mt-4">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl text-center">
+      <p class="text-center text-4xl py-44">Ancora nessun articolo</p>
+      <!--<div class="mx-auto max-w-2xl text-center">
         <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Dal nostro blog</h2>
         <p class="mt-2 text-lg leading-8 ">Mantieniti aggiornato con le ultime novità della legge</p>
       </div>
@@ -30,7 +31,7 @@
             </div>
           </div>
         </article>
-      </div>
+      </div>-->
     </div>
   </div>
 </AppLayout>
