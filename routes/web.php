@@ -30,8 +30,7 @@ Route::get('/', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
-Route::get('/', [HomeController::class, 'dashboard'])->name('dashboard');
-Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
+Route::get('/', [HomeController::class, 'dashboard'])->name('/');
 
 Route::get('articles', [ArticleController::class, 'index'])->name('articles.index');
 Route::get('articles/{article}', [ArticleController::class, 'show'])->name('articles.show');
