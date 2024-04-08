@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-        <title inertia>{{ config('app.name', 'Prova') }}</title>
+        <title inertia>{{ config('app.name', 'Giuseppe Inglese') }}</title>
 
         <!-- Hotjar Tracking Code for Dev -->
         <script>

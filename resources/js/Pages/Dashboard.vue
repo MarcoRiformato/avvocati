@@ -1,5 +1,5 @@
 <template>
-<AppLayout title="Avvocato Giuseppe Inglese">
+<AppLayout title="Consulenza legale in appalti pubblici">
 <div class="bg-base-200 overflow-hidden">
   <div class="relative isolate">
 
