@@ -4,7 +4,7 @@
     <h1 class="text-3xl py-4">Soluzioni stragiudiziali per controversie negli appalti pubblici e Collegio Consultivo Tecnico </h1>
     <div class="divide-y divide-gray-200 overflow-hidden rounded-lg shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0 mx-8 my-4">
     <div
-    @click="navigateToSecondary"
+    @click="$inertia.visit(route(action.href))"
     v-for="(action, actionIdx) in servizi" class="bg-base-200 cursor-pointer" :key="action.title" :class="[actionIdx === 0 ? 'rounded-tl-lg rounded-tr-lg sm:rounded-tr-none' : '', actionIdx === 1 ? 'sm:rounded-tr-lg' : '', actionIdx === servizi.length - 2 ? 'sm:rounded-bl-lg' : '', actionIdx === servizi.length - 1 ? 'rounded-bl-lg rounded-br-lg sm:rounded-bl-none' : '', 'group relative p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500']" 
     
     >
@@ -49,6 +49,7 @@
       icon: PuzzlePieceIcon,
       iconForeground: 'text-teal-700',
       iconBackground: 'bg-teal-50',
+      href: 'stragiudiziali_appalti',
       description: ' Offriamo servizi esperti per la risoluzione stragiudiziale di tali controversie, puntando a soluzioni rapide, efficienti e meno onerose rispetto al tradizionale percorso giudiziario. Attraverso la mediazione, la negoziazione e altri metodi alternativi di risoluzione delle dispute, miriamo a raggiungere accordi vantaggiosi per tutte le parti coinvolte, minimizzando i ritardi e i costi.'
     },
     {
@@ -56,6 +57,7 @@
       icon: Cog6ToothIcon,
       iconForeground: 'text-purple-700',
       iconBackground: 'bg-purple-50',
+      href: 'cct',
       description: 'Forniamo consulenze e perizie di alta qualità per supportare le decisioni in fase di contenzioso o durante la valutazione di complessità progettuali. Attraverso un\'analisi dettagliata e un approccio basato sull\'eccellenza tecnica, contribuiamo a risolvere le questioni in sospeso, assicurando che le opere rispettino gli standard richiesti e le aspettative delle parti.'
     }
   ]

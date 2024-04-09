@@ -2,14 +2,19 @@
     <AppLayout title="Leggi articolo">
     
     <div  class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="md:col-span-2 space-y-6">
+    
+      <div class="md:col-span-2 space-y-6">
         <div class="px-6 lg:px-8">
             <div class="mx-auto max-w-3xl text-base leading-7">
-              <h1 class="mt-2 text-3xl font-bold tracking-tight text-info sm:text-4xl">Fase di esecuzione degli appalti</h1>
+              <h1 class="mt-2 text-3xl font-bold tracking-tight text-info sm:text-4xl">Assistenza Legale nei Procedimenti ANAC</h1>
               <div class="mt-6 max-w-2xl">
-                <p>Il nostro studio è specializzato nell'offrire un'assistenza senza precedenti, che si estende attraverso tutte le fasi dello sviluppo dei progetti. Ci occupiamo di ogni aspetto, dalla gestione delle consegne fino alla conclusione con il collaudo finale, assicurando che ogni dettaglio sia curato alla perfezione. La nostra gamma di servizi comprende la gestione accurata di sospensioni, varianti, e subappalti, nonché la risoluzione di eventuali riserve. Siamo esperti nella contabilità di progetto, nella revisione dei prezzi, nella risoluzione di controversie e nel recesso, garantendo sempre una gestione conforme agli standard più elevati. </p>
-                <p class="py-4">Offriamo inoltre la negoziazione di accordi bonari e transazioni, mirando a risolvere le questioni in modo efficace e vantaggioso per tutte le parti coinvolte. I nostri servizi sono progettati su misura per il Responsabile Unico del Procedimento (RUP), le imprese/operatori economici e i professionisti tecnici, fornendo loro le competenze necessarie per navigare con successo nel complesso panorama dei progetti.</p>
-                <p class="mt-4 mb-16">La nostra promessa è quella di offrire un supporto completo e personalizzato, che permette ai nostri clienti di concentrarsi sulle loro competenze chiave mentre noi ci prendiamo cura di ogni aspetto burocratico e gestionale del progetto. Attraverso la nostra esperienza e dedizione, garantiamo una gestione del progetto efficiente, trasparente e conforme agli standard richiesti, assicurando al contempo il successo e la soddisfazione del cliente.</p>
+                <p>Lo studio legale Giuseppe Inglese è specializzato nell'offrire consulenza e rappresentanza legale di primo livello nei procedimenti davanti all’Autorità Nazionale Anticorruzione (ANAC), distinguendosi per la sua profonda competenza nel settore. Il nostro team, composto da avvocati esperti nelle normative antincorruzione, è dedicato a guidare i clienti attraverso le complessità di questo ambito, garantendo la piena conformità ai regolamenti vigenti e fornendo una difesa efficace e strategica.</p>
+
+                <p class="py-4">Capire e navigare le normative ANAC può essere un compito arduo, ma con lo studio Giuseppe Inglese al vostro fianco, avrete la certezza di un supporto legale che combina conoscenza approfondita delle leggi e esperienza pratica. Siamo impegnati a salvaguardare gli interessi dei nostri clienti, assicurando che ogni azione intrapresa rispetti pienamente le norme e massimizzi le possibilità di successo nel procedimento.</p>
+
+                <p class="py-4">Che si tratti di consulenza preventiva per assicurare la conformità alle norme anticorruzione o di rappresentanza legale in fase di contenzioso, il nostro studio offre soluzioni personalizzate che rispondono alle specifiche esigenze dei nostri clienti. La nostra strategia si basa su un'attenta valutazione del caso, l'elaborazione di una linea difensiva mirata e l'impiego di tattiche legali efficaci, al fine di proteggere i vostri interessi in ogni fase del procedimento ANAC.</p>
+
+                <p class="mt-4 mb-16">Affidandovi allo studio legale Giuseppe Inglese, potrete contare su un partner legale che vi assicura non solo una rappresentanza di eccellenza nei confronti dell’ANAC, ma anche una guida sicura attraverso le sfide legali, per una gestione ottimale delle questioni di conformità e anticorruzione. La nostra missione è offrirvi serenità e sicurezza, consentendovi di concentrarvi sul vostro core business con la certezza che ogni aspetto legale sia gestito al meglio.</p>
               </div>
             </div>
         </div>

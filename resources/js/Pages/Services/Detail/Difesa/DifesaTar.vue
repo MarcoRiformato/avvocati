@@ -2,14 +2,19 @@
     <AppLayout title="Leggi articolo">
     
     <div  class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="md:col-span-2 space-y-6">
+    
+      <div class="md:col-span-2 space-y-6">
         <div class="px-6 lg:px-8">
             <div class="mx-auto max-w-3xl text-base leading-7">
-              <h1 class="mt-2 text-3xl font-bold tracking-tight text-info sm:text-4xl">Fase di esecuzione degli appalti</h1>
+              <h1 class="mt-2 text-3xl font-bold tracking-tight text-info sm:text-4xl">Gestione di Contenziosi presso TAR e Consiglio di Stato</h1>
               <div class="mt-6 max-w-2xl">
-                <p>Il nostro studio è specializzato nell'offrire un'assistenza senza precedenti, che si estende attraverso tutte le fasi dello sviluppo dei progetti. Ci occupiamo di ogni aspetto, dalla gestione delle consegne fino alla conclusione con il collaudo finale, assicurando che ogni dettaglio sia curato alla perfezione. La nostra gamma di servizi comprende la gestione accurata di sospensioni, varianti, e subappalti, nonché la risoluzione di eventuali riserve. Siamo esperti nella contabilità di progetto, nella revisione dei prezzi, nella risoluzione di controversie e nel recesso, garantendo sempre una gestione conforme agli standard più elevati. </p>
-                <p class="py-4">Offriamo inoltre la negoziazione di accordi bonari e transazioni, mirando a risolvere le questioni in modo efficace e vantaggioso per tutte le parti coinvolte. I nostri servizi sono progettati su misura per il Responsabile Unico del Procedimento (RUP), le imprese/operatori economici e i professionisti tecnici, fornendo loro le competenze necessarie per navigare con successo nel complesso panorama dei progetti.</p>
-                <p class="mt-4 mb-16">La nostra promessa è quella di offrire un supporto completo e personalizzato, che permette ai nostri clienti di concentrarsi sulle loro competenze chiave mentre noi ci prendiamo cura di ogni aspetto burocratico e gestionale del progetto. Attraverso la nostra esperienza e dedizione, garantiamo una gestione del progetto efficiente, trasparente e conforme agli standard richiesti, assicurando al contempo il successo e la soddisfazione del cliente.</p>
+                <p>Lo studio legale Giuseppe Inglese si distingue per la sua profonda specializzazione nella gestione di contenziosi davanti al TAR (Tribunale Amministrativo Regionale) e al Consiglio di Stato, offrendo un'assistenza legale senza pari per la risoluzione di dispute legate alla legittimità di atti di gara. Il nostro team di avvocati esperti si dedica con scrupolo alla gestione di casi riguardanti provvedimenti di ammissione, esclusione e aggiudicazione di appalti pubblici e concessioni, assicurando un approccio mirato e strategico per la tutela dei diritti dei nostri clienti.</p>
+
+                <p class="py-4">La nostra priorità è garantire che ogni fase del processo di gara sia svolta in perfetta conformità con le normative vigenti, difendendo con determinazione gli interessi dei nostri clienti. Attraverso un'analisi approfondita delle procedure di gara e l'impiego di strategie legali all'avanguardia, miriamo a identificare e sfruttare ogni possibile via legale per il raggiungimento degli obiettivi dei nostri clienti.</p>
+
+                <p class="py-4">La nostra esperienza comprende la rappresentazione legale in tutti i livelli di contenzioso amministrativo, dalla presentazione di ricorsi al TAR fino alla difesa dei diritti dei nostri clienti presso il Consiglio di Stato. Il nostro impegno è rivolto a garantire che ogni aspetto del contenzioso sia gestito con la massima professionalità e dedizione, offrendo ai nostri clienti la sicurezza di un supporto legale affidabile e di alto livello.</p>
+
+                <p class="mt-4 mb-16">Affidandosi allo studio legale Giuseppe Inglese, i nostri clienti possono contare su un team che li guiderà con competenza attraverso la complessità dei contenziosi amministrativi, assicurando che i loro diritti siano sempre protetti e che le loro posizioni siano difese con la massima efficacia. La nostra missione è trasformare le sfide legali in opportunità, conducendo ogni caso verso il miglior esito possibile.</p>
               </div>
             </div>
         </div>

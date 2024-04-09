@@ -3,60 +3,19 @@
     
     <div  class="grid grid-cols-1 md:grid-cols-3 gap-6">
     
-        <div class="md:col-span-2 space-y-6">
+      <div class="md:col-span-2 space-y-6">
         <div class="px-6 lg:px-8">
             <div class="mx-auto max-w-3xl text-base leading-7">
-              <p class="text-base font-semibold leading-7 text-indigo-600">Introduzione</p>
               <h1 class="mt-2 text-3xl font-bold tracking-tight text-info sm:text-4xl">Consulenza ai professionisti tecnici</h1>
-              <p class="mt-6 text-xl leading-8">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien.</p>
-              <div class="mt-10 max-w-2xl">
-                <p>Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.</p>
-                <ul role="list" class="mt-8 max-w-xl space-y-8 text-white">
-                  <li class="flex gap-x-3">
-                    <CheckCircleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                    <span><strong class="font-semibold text-info">Pellentesque</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</span>
-                  </li>
-                  <li class="flex gap-x-3">
-                    <CheckCircleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                    <span><strong class="font-semibold text-info">Maecenas</strong> Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</span>
-                  </li>
-                  <li class="flex gap-x-3">
-                    <CheckCircleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                    <span><strong class="font-semibold text-info">Eventus</strong> Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</span>
-                  </li>
-                </ul>
-                <p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.</p>
-                <h2 class="mt-16 text-2xl font-bold tracking-tight text-success">Dignissim sed eget risus enim</h2>
-                <p class="mt-6">Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis diam.</p>
-                <figure class="mt-10 border-l border-indigo-600 pl-9">
-                  <blockquote class="font-semibold text-white">
-                    <p>“Vel ultricies morbi odio facilisi ultrices accumsan donec lacus purus. Lectus nibh ullamcorper ac dictum justo in euismod. Risus aenean ut elit massa. In amet aliquet eget cras. Sem volutpat enim tristique.”</p>
-                  </blockquote>
-                  <figcaption class="mt-6 flex gap-x-4">
-                    <img class="h-6 w-6 flex-none rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-                    <div class="text-sm leading-6"><strong class="font-semibold text-white">Maria Hill</strong> – Corte d'Assise</div>
-                  </figcaption>
-                </figure>
-                <p class="mt-10">Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.</p>
-              </div>
-              <figure class="mt-16">
-                <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3" alt="" />
-                <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-white">
-                  <InformationCircleIcon class="mt-0.5 h-5 w-5 flex-none text-white" aria-hidden="true" />
-                  Faucibus commodo massa rhoncus, volutpat.
-                </figcaption>
-              </figure>
-              <div class="mt-16 max-w-2xl">
-                <h2 class="text-2xl font-bold tracking-tight text-success">Conclusione</h2>
-                <p class="mt-6">Purus morbi dignissim senectus mattis adipiscing. Amet, massa quam varius orci dapibus volutpat cras. In amet eu ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut viverra ridiculus non molestie. Gravida quis fringilla amet eget dui tempor dignissim. Facilisis auctor venenatis varius nunc, congue erat ac. Cras fermentum convallis quam.</p>
-                <p class="mt-8">Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.</p>
+              <div class="mt-6 max-w-2xl">
+                <p>Lo studio legale Giuseppe Inglese eccelle nell'offrire consulenze specializzate ai professionisti tecnici, garantendo un supporto completo e ininterrotto per ogni fase dei loro progetti. Dall'iniziale stadio di programmazione e progettazione fino alla direzione e supervisione dei lavori sul campo, il nostro team di esperti fornisce assistenza mirata e competente. La nostra consulenza si estende anche al coordinamento della sicurezza, assicurando che tutte le normative siano rispettate per garantire un ambiente di lavoro sicuro e conforme agli standard vigenti.</p>
+
+                <p class="py-4">La fase finale del progetto, il collaudo, rappresenta un momento cruciale che determina il successo dell'intera operazione. Lo studio Giuseppe Inglese si impegna a condurre collaudi dettagliati e accurati, assicurando che ogni aspetto del progetto sia realizzato secondo le specifiche e che rispetti pienamente le normative applicabili. La nostra presenza e supervisione durante le gare d'appalto aggiunge un ulteriore strato di affidabilità e competenza, permettendo ai nostri clienti di navigare con sicurezza attraverso processi complessi e ottenere i migliori risultati possibili.</p>
+
+                <p class="mt-4 mb-16">La nostra consulenza è progettata per dotare i professionisti tecnici di tutte le risorse e le conoscenze necessarie per portare a termine i loro progetti con successo, efficienza e conformità. Affidandosi allo studio legale Giuseppe Inglese, i nostri clienti possono contare su una partnership affidabile e su un servizio di consulenza che pone le loro esigenze al centro, garantendo risultati eccellenti e la tranquillità di un progetto gestito con la massima professionalità.</p>
               </div>
             </div>
-    
         </div>
-    
-        
-    
         <div class="flex flex-wrap justify-between md:space-x-4 space-y-2 md:space-y-0 px-8">
             <button 
             @click="shareOnFacebook"
@@ -106,47 +65,34 @@
         </div>
         </div>
     
-        <div class="">
-            
-            <li class="list-item">
-            <p class="pb-7 text-center"><img src="https://osborneslaw.com/wp-content/uploads/2023/10/Firm-Logo-2.jpg" class="w-72 h-64" /></p>
-            <p class="pb-7 text-center"><strong class="font-bold">“Lo studio offre assistenza legale di alto livello. Sono le persone giuste, al momento giusto”
-            </strong></p>
-            </li>
-    
-            <div class="bg-gray-800 text-white m-4 p-4 rounded-lg shadow-lg self-start">
-            <h2 class="text-xl font-bold mb-4">Se desideri un parere o hai bisogno di assistenza legale, contattaci!</h2>
-            <p class="mb-4">Telefona al n. <strong>010 541259</strong> oppure compila il form</p>
-            <form class="space-y-4">
-              <div>
-                <label for="name" class="block text-sm font-bold">Nome</label>
-                <input type="text" id="name" class="w-full p-2 rounded bg-gray-700 border border-gray-600" placeholder="Il tuo nome">
-              </div>
-              <div>
-                <label for="surname" class="block text-sm font-bold">Cognome</label>
-                <input type="text" id="surname" class="w-full p-2 rounded bg-gray-700 border border-gray-600" placeholder="Il tuo cognome">
-              </div>
-              <div>
-                <label for="email" class="block text-sm font-bold">Email</label>
-                <input type="email" id="email" class="w-full p-2 rounded bg-gray-700 border border-gray-600" placeholder="La tua email">
-              </div>
-              <div>
-                <label for="message" class="block text-sm font-bold">Messaggio</label>
-                <textarea id="message" rows="4" class="w-full p-2 rounded bg-gray-700 border border-gray-600" placeholder="Il tuo messaggio"></textarea>
-              </div>
-              <button type="submit" class="w-full btn-success text-white font-bold py-2 px-4 rounded">
-                Richiedi informazioni
-              </button>
-            </form>
-            </div>
-    
-            <li class="pb-5 list-item">
-            <p class="pb-7 text-center">
-            <a href="https://www.familylawawards.com/" class="underline"><img src="https://osborneslaw.com/wp-content/uploads/2021/09/Law-Firm-of-the-Year-London-e1631022330689.jpg" class="cursor-pointer w-72 h-52" /></a>
-            </p>
-            </li>
-    
-        </div>
+        <div >
+      <!-- Form laterale -->
+      <div style="height: 600px;" class="bg-neutral-content p-4 my-4 me-4 rounded-lg shadow-lg " >
+        <h2 class="text-xl font-bold mb-4 text-info">Se desideri un parere o hai bisogno di assistenza legale, contattaci!</h2>
+        <p class="mb-4">Telefona al n. <strong>010 541259</strong> oppure compila il form</p>
+        <form class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-bold">Nome</label>
+            <input type="text" id="name" class="w-full p-2 rounded border border-gray-600" placeholder="Il tuo nome">
+          </div>
+          <div>
+            <label for="surname" class="block text-sm font-bold">Cognome</label>
+            <input type="text" id="surname" class="w-full p-2 rounded border border-gray-600" placeholder="Il tuo cognome">
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-bold">Email</label>
+            <input type="email" id="email" class="w-full p-2 rounded border border-gray-600" placeholder="La tua email">
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-bold">Messaggio</label>
+            <textarea id="message" rows="4" class="w-full p-2 rounded border border-gray-600" placeholder="Il tuo messaggio"></textarea>
+          </div>
+          <button type="submit" class="w-full btn-primary text-white font-bold py-2 px-4 rounded">
+            Richiedi informazioni
+          </button>
+        </form>
+      </div>
+  </div>
     
     </div>
     </AppLayout>

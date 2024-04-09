@@ -58,6 +58,49 @@ Route::get('professionisti', [ServiceController::class, 'professionisti'])->name
 Route::get('esecuzione', [ServiceController::class, 'esecuzione'])->name('services.detail.esecuzione');
 Route::get('imprese', [ServiceController::class, 'imprese'])->name('services.detail.imprese');
 
+//Difesa
+Route::get('/contenziosi-tar', function () {
+    return Inertia::render('Services/Detail/Difesa/DifesaTar');
+})->name('difesa_tar');
+
+Route::get('/contenziosi-civili', function () {
+    return Inertia::render('Services/Detail/Difesa/ContenziosiCivili');
+})->name('contenziosi_civili');
+
+Route::get('/arbitrati', function () {
+    return Inertia::render('Services/Detail/Difesa/Arbitrati');
+})->name('arbitrati');
+
+Route::get('/procedimenti-anac', function () {
+    return Inertia::render('Services/Detail/Difesa/ProcedimentiAnac');
+})->name('proc_anac');
+
+//Controversie
+Route::get('/stragiudiziali-appalti', function () {
+    return Inertia::render('Services/Detail/Controversie/StragiudizialiAppalti');
+})->name('stragiudiziali_appalti');
+
+Route::get('/collegio-consultivo-tecnico', function () {
+    return Inertia::render('Services/Detail/Controversie/CCT');
+})->name('cct');
+
+//Partenariato ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Route::get('/arbitrato-appalti', function () {
+    return Inertia::render('Services/Detail/Partenariati/ArbitratoAppalti');
+})->name('arbitrato_appalti');
+
+Route::get('/contenziosi-civili', function () {
+    return Inertia::render('Services/Detail/Partenariati/ContenziosiCivili');
+})->name('contenziosi_civili');
+
+Route::get('/contenziosi-tar', function () {
+    return Inertia::render('Services/Detail/Partenariati/ContenziosiTar');
+})->name('contenziosi_tar');
+
+Route::get('/procedimenti-anac', function () {
+    return Inertia::render('Services/Detail/Partenariati/ProcedimentiAnac');
+})->name('procedimenti_anac');
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Route::view('/servizi', 'services')->name('services');
 Route::view('/faq', 'faq')->name('faq');
 

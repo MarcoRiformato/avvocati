@@ -2,14 +2,19 @@
     <AppLayout title="Leggi articolo">
     
     <div  class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="md:col-span-2 space-y-6">
+    
+      <div class="md:col-span-2 space-y-6">
         <div class="px-6 lg:px-8">
             <div class="mx-auto max-w-3xl text-base leading-7">
-              <h1 class="mt-2 text-3xl font-bold tracking-tight text-info sm:text-4xl">Fase di esecuzione degli appalti</h1>
+              <h1 class="mt-2 text-3xl font-bold tracking-tight text-info sm:text-4xl">Servizi di Arbitrato per Appalti e Lavori Pubblici</h1>
               <div class="mt-6 max-w-2xl">
-                <p>Il nostro studio è specializzato nell'offrire un'assistenza senza precedenti, che si estende attraverso tutte le fasi dello sviluppo dei progetti. Ci occupiamo di ogni aspetto, dalla gestione delle consegne fino alla conclusione con il collaudo finale, assicurando che ogni dettaglio sia curato alla perfezione. La nostra gamma di servizi comprende la gestione accurata di sospensioni, varianti, e subappalti, nonché la risoluzione di eventuali riserve. Siamo esperti nella contabilità di progetto, nella revisione dei prezzi, nella risoluzione di controversie e nel recesso, garantendo sempre una gestione conforme agli standard più elevati. </p>
-                <p class="py-4">Offriamo inoltre la negoziazione di accordi bonari e transazioni, mirando a risolvere le questioni in modo efficace e vantaggioso per tutte le parti coinvolte. I nostri servizi sono progettati su misura per il Responsabile Unico del Procedimento (RUP), le imprese/operatori economici e i professionisti tecnici, fornendo loro le competenze necessarie per navigare con successo nel complesso panorama dei progetti.</p>
-                <p class="mt-4 mb-16">La nostra promessa è quella di offrire un supporto completo e personalizzato, che permette ai nostri clienti di concentrarsi sulle loro competenze chiave mentre noi ci prendiamo cura di ogni aspetto burocratico e gestionale del progetto. Attraverso la nostra esperienza e dedizione, garantiamo una gestione del progetto efficiente, trasparente e conforme agli standard richiesti, assicurando al contempo il successo e la soddisfazione del cliente.</p>
+                <p>Lo studio legale Giuseppe Inglese si pone all'avanguardia nell'offrire soluzioni innovative e strategiche nel settore del Partenariato Pubblico-Privato (PPP) e del Project Financing, nonché servizi di eccellenza nell'arbitrato per appalti e lavori pubblici. Con un approccio basato sull'expertise e sull'adattabilità, il nostro studio è il partner ideale per navigare le complessità di questi ambiti, garantendo risultati ottimali e strategie vincenti.</p>
+
+                <p class="py-4">Nel dinamico contesto dei partenariati pubblico-privati e del project financing, offriamo consulenza legale approfondita per guidare i nostri clienti attraverso ogni fase del processo. Dalla strutturazione degli accordi alla loro negoziazione e implementazione, il nostro obiettivo è massimizzare le opportunità e minimizzare i rischi, sfruttando appieno le potenzialità di finanziamento e realizzazione dei progetti. La nostra profonda conoscenza del settore e l'approccio personalizzato ci permettono di affrontare con sicurezza progetti complessi, assicurando soluzioni innovative che rispondono perfettamente alle esigenze dei nostri clienti.</p>
+
+                <p class="py-4">Quando le controversie emergono, il nostro studio offre servizi di arbitrato di prim'ordine, operando sia come arbitri che come difensori in dispute arbitrali. La nostra specializzazione nei procedimenti gestiti dalla Camera Arbitrale dei Lavori Pubblici e dalle Camere Arbitrali di Milano e Roma ci consente di fornire una rappresentanza legale su misura e altamente competente. Il nostro obiettivo è risolvere le dispute in modo efficace, assicurando ai nostri clienti una gestione delle controversie che sia efficiente e mirata al raggiungimento delle migliori soluzioni possibili.</p>
+
+                <p class="mt-4 mb-16">Con lo studio legale Giuseppe Inglese, i nostri clienti beneficiano di un supporto legale integrato che copre sia le opportunità di sviluppo offerte dal PPP e dal project financing, sia la soluzione di eventuali controversie attraverso l'arbitrato. La nostra esperienza e la nostra dedizione garantiscono un'assistenza legale di alto livello, ideale per affrontare le sfide e cogliere le opportunità in questi ambiti strategici.</p>
               </div>
             </div>
         </div>

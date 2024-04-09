@@ -4,7 +4,7 @@
   <h1 class="text-3xl py-4">Assistenza e difesa per enti pubblici, imprese e operatori economici</h1>
   <div class="divide-y divide-gray-200 overflow-hidden rounded-lg shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0 mx-8 my-4">
   <div
-  @click="navigateToSecondary"
+  @click="$inertia.visit(route(action.href))"
   v-for="(action, actionIdx) in servizi" class="bg-base-200 cursor-pointer" :key="action.title" :class="[actionIdx === 0 ? 'rounded-tl-lg rounded-tr-lg sm:rounded-tr-none' : '', actionIdx === 1 ? 'sm:rounded-tr-lg' : '', actionIdx === servizi.length - 2 ? 'sm:rounded-bl-lg' : '', actionIdx === servizi.length - 1 ? 'rounded-bl-lg rounded-br-lg sm:rounded-bl-none' : '', 'group relative p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500']" 
   
   >
@@ -51,6 +51,7 @@ const servizi = [
     icon: BuildingLibraryIcon,
     iconForeground: 'text-teal-700',
     iconBackground: 'bg-teal-50',
+    href: 'difesa_tar',
     description: 'Specializzati nella risoluzione di controversie legate alla legittimità di atti di gara, nonché di provvedimenti di ammissione, esclusione e aggiudicazione di appalti e concessioni. L\'obiettivo è assicurare che ogni fase del processo di gara sia condotta in piena conformità con la legge, garantendo la tutela dei diritti dei nostri clienti.'
   },
   {
@@ -58,6 +59,7 @@ const servizi = [
     icon: ChatBubbleLeftRightIcon,
     iconForeground: 'text-purple-700',
     iconBackground: 'bg-purple-50',
+    href: 'contenziosi_civili',
     description: 'Forniamo rappresentanza legale di fronte a Tribunale, Corte d\'Appello e Cassazione per controversie che emergono durante l\'esecuzione di appalti pubblici e privati. Incluse problematiche relative all\'adempimento contrattuale, riserve, risoluzione e recesso del contratto, responsabilità per danni e richieste di risarcimento, assicurando una gestione efficace delle vertenze'
   },
   {
@@ -65,6 +67,7 @@ const servizi = [
     icon: HandThumbUpIcon,
     iconForeground: 'text-sky-700',
     iconBackground: 'bg-sky-50',
+    href: 'arbitrati',
     description: 'Il nostro studio offre servizi di arbitrato, agendo sia come arbitri che come difensori in controversie arbitrali. Siamo esperti nei procedimenti gestiti dalla Camera Arbitrale dei Lavori Pubblici e dalle Camere Arbitrali di Milano e Roma, garantendo una rappresentanza legale esperta e su misura per risolvere le dispute in modo efficace.'
   },
   {
@@ -72,6 +75,7 @@ const servizi = [
     icon: MagnifyingGlassIcon,
     iconForeground: 'text-yellow-700',
     iconBackground: 'bg-yellow-50',
+    href: 'proc_anac',
     description: 'Forniamo consulenza e rappresentanza legale specializzata nei procedimenti davanti all’Autorità Nazionale Anticorruzione (ANAC). Il nostro team di esperti guida i clienti attraverso la complessità delle normative di settore, assicurando conformità e una difesa efficace in ogni fase del procedimento.'
   }
 ]

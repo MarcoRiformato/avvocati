@@ -2,14 +2,19 @@
     <AppLayout title="Leggi articolo">
     
     <div  class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="md:col-span-2 space-y-6">
+    
+      <div class="md:col-span-2 space-y-6">
         <div class="px-6 lg:px-8">
             <div class="mx-auto max-w-3xl text-base leading-7">
-              <h1 class="mt-2 text-3xl font-bold tracking-tight text-info sm:text-4xl">Fase di esecuzione degli appalti</h1>
+              <h1 class="mt-2 text-3xl font-bold tracking-tight text-info sm:text-4xl">Collegio Consultivo Tecnico</h1>
               <div class="mt-6 max-w-2xl">
-                <p>Il nostro studio è specializzato nell'offrire un'assistenza senza precedenti, che si estende attraverso tutte le fasi dello sviluppo dei progetti. Ci occupiamo di ogni aspetto, dalla gestione delle consegne fino alla conclusione con il collaudo finale, assicurando che ogni dettaglio sia curato alla perfezione. La nostra gamma di servizi comprende la gestione accurata di sospensioni, varianti, e subappalti, nonché la risoluzione di eventuali riserve. Siamo esperti nella contabilità di progetto, nella revisione dei prezzi, nella risoluzione di controversie e nel recesso, garantendo sempre una gestione conforme agli standard più elevati. </p>
-                <p class="py-4">Offriamo inoltre la negoziazione di accordi bonari e transazioni, mirando a risolvere le questioni in modo efficace e vantaggioso per tutte le parti coinvolte. I nostri servizi sono progettati su misura per il Responsabile Unico del Procedimento (RUP), le imprese/operatori economici e i professionisti tecnici, fornendo loro le competenze necessarie per navigare con successo nel complesso panorama dei progetti.</p>
-                <p class="mt-4 mb-16">La nostra promessa è quella di offrire un supporto completo e personalizzato, che permette ai nostri clienti di concentrarsi sulle loro competenze chiave mentre noi ci prendiamo cura di ogni aspetto burocratico e gestionale del progetto. Attraverso la nostra esperienza e dedizione, garantiamo una gestione del progetto efficiente, trasparente e conforme agli standard richiesti, assicurando al contempo il successo e la soddisfazione del cliente.</p>
+                <p>Nel contesto sempre più complesso degli appalti pubblici e dei grandi progetti infrastrutturali, lo studio legale Giuseppe Inglese si distingue per la fornitura di consulenze e perizie tecniche di alta qualità. Il nostro servizio di Collegio Consultivo Tecnico è progettato per supportare efficacemente i nostri clienti nelle fasi critiche di contenzioso o nella valutazione di complessità progettuali, offrendo un supporto indispensabile per la presa di decisioni informate.</p>
+
+                <p class="py-4">Attraverso un’analisi dettagliata e un approccio che privilegia l’eccellenza tecnica, il nostro team di esperti contribuisce a risolvere le questioni in sospeso, assicurando che le opere realizzate rispettino pienamente gli standard qualitativi richiesti e le aspettative delle parti coinvolte. Il nostro obiettivo è fornire una consulenza che non si limiti alla mera valutazione tecnica, ma che comprenda una visione globale dei progetti, considerando gli aspetti legali, normativi e di conformità.</p>
+
+                <p class="py-4">L’esperienza e la competenza dei nostri professionisti nel Collegio Consultivo Tecnico si traducono in un valore aggiunto significativo per i nostri clienti, permettendo loro di affrontare con sicurezza le sfide tecniche e normative più complesse. Che si tratti di fornire perizie dettagliate per sostenere una posizione in fase di contenzioso, o di valutare preventivamente la fattibilità e la conformità di progetti di grande envergatura, lo studio Giuseppe Inglese assicura una consulenza impeccabile, basata sull’accuratezza, sull’integrità e sulla profonda conoscenza del settore.</p>
+
+                <p class="mt-4 mb-16">Affidandovi allo studio legale Giuseppe Inglese per le vostre esigenze di consulenza tecnica, scegliete un partner che mette a vostra disposizione non solo un’eccellenza tecnica ineguagliabile, ma anche una comprensione approfondita delle dinamiche legali e contrattuali che governano il mondo degli appalti pubblici e dei progetti infrastrutturali.</p>
               </div>
             </div>
         </div>

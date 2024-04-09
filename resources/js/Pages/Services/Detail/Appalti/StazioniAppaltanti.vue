@@ -1,55 +1,60 @@
 <template>
 <AppLayout title="Leggi articolo">
-
 <div  class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
   <div class="md:col-span-2 space-y-6">
   <div class="px-6 lg:px-8">
       <div class="mx-auto max-w-3xl text-base leading-7">
-        <p class="mt-4 text-base font-semibold leading-7 text-indigo-600">Introduzione</p>
-        <h1 class="text-3xl font-bold tracking-tight text-info sm:text-4xl">Consulenza alle stazioni appaltanti</h1>
-        <p class="mt-6 text-xl leading-8">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien.</p>
+        <h1 class="mt-4 text-3xl font-bold tracking-tight text-info sm:text-4xl">Consulenza alle stazioni appaltanti</h1>
+        <p class="mt-6">La gestione delle gare pubbliche rappresenta una sfida complessa per molte aziende, soprattutto per le micro, piccole e medie imprese che cercano di navigare attraverso le procedure di gara. In questo contesto, il supporto legale specializzato emerge come un fattore cruciale per semplificare e ottimizzare l'intero processo. Questo articolo esplora l'importanza di tale supporto nelle gare pubbliche, evidenziando come può facilitare la gestione delle procedure di gara, dalla programmazione e progettazione fino all'aggiudicazione.</p>
         <div class="mt-10 max-w-2xl">
-          <p>Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.</p>
-          <ul role="list" class="mt-8 max-w-xl space-y-8 text-white">
+          <h3 style="border-left-style: dotted;" class="border-l-2 text-lg font-medium pl-3 border-slate-600">Punti Chiave</h3>
+          <ul role="list" class="mt-8 max-w-xl space-y-8">
             <li class="flex gap-x-3">
               <CheckCircleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-              <span><strong class="font-semibold text-content">Pellentesque</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</span>
+              <span> Il supporto legale specializzato fornisce un'assistenza completa al Responsabile Unico del Procedimento (RUP), garantendo una gestione ottimale di tutte le fasi della gara, inclusi aspetti critici come l'esclusione o ammissione dei concorrenti e la verifica dell'anomalia dell'offerta.</span>
             </li>
             <li class="flex gap-x-3">
               <CheckCircleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-              <span><strong class="font-semibold ">Maecenas</strong> Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</span>
-            </li>
-            <li class="flex gap-x-3">
-              <CheckCircleIcon class="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-              <span><strong class="font-semibold ">Eventus</strong> Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</span>
+              <span>La semplificazione delle procedure di gara per le micro, piccole e medie imprese è essenziale per permettere loro di partecipare in modo competitivo. Politiche mirate e il ruolo di enti come Consip sono fondamentali per rendere le gare pubbliche più accessibili.</span>
             </li>
           </ul>
-          <p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.</p>
-          <h2 class="mt-16 text-2xl font-bold tracking-tight text-success">Dignissim sed eget risus enim</h2>
-          <p class="mt-6">Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis diam.</p>
-          <figure class="mt-10 border-l border-indigo-600 pl-9">
-            <blockquote class="font-semibold text-white">
-              <p>“Vel ultricies morbi odio facilisi ultrices accumsan donec lacus purus. Lectus nibh ullamcorper ac dictum justo in euismod. Risus aenean ut elit massa. In amet aliquet eget cras. Sem volutpat enim tristique.”</p>
-            </blockquote>
-            <figcaption class="mt-6 flex gap-x-4">
-              <img class="h-6 w-6 flex-none rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-              <div class="text-sm leading-6"><strong class="font-semibold text-white">Maria Hill</strong> – Corte d'Assise</div>
-            </figcaption>
-          </figure>
-          <p class="mt-10">Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.</p>
+          <h2 class="mt-16 text-2xl font-bold tracking-tight text-success">L'importanza del supporto legale specializzato nelle gare pubbliche</h2>
+          <div>
+            <h3 style="border-left-style: dotted;" class="border-l-2 text-lg font-medium pl-3 border-slate-600 mt-6">Assistenza completa al Responsabile Unico del Procedimento</h3>
+            <p class="py-6">Nel contesto delle gare pubbliche, il ruolo del Responsabile Unico del Procedimento (RUP) è cruciale per garantire la corretta gestione e l'efficienza dell'intero processo. Offriamo una <i>Consulenza Responsabile Unico del Procedimento</i> completa, che copre tutti gli aspetti necessari per supportare il RUP nelle sue funzioni. <b>La nostra assistenza si estende dalla fase iniziale di pianificazione fino all'aggiudicazione finale</b>, assicurando una gestione fluida e conforme alle normative vigenti.</p>
+            <ul class="list-disc ps-8">
+              <li>Assistenza RUP</li>
+              <li>Assistenza tecnica RUP</li>
+            </ul>
+            <p class="py-4">Questi servizi sono progettati per semplificare le procedure e ridurre i carichi di lavoro del RUP, permettendogli di concentrarsi sulle decisioni strategiche. Offriamo inoltre supporto nella gestione delle fasi critiche, come l'ammissione e l'aggiudicazione, per navigare con sicurezza tra le complessità delle gare pubbliche.</p>
+          </div>
+          <div>
+            <h3 style="border-left-style: dotted;" class="border-l-2 text-lg font-medium pl-3 border-slate-600 mt-6">Semplificazione delle procedure di gara per le micro, piccole e medie imprese</h3>
+            <p class="py-6">Nel nostro impegno verso la semplificazione delle procedure di gara, poniamo un'enfasi particolare sulla <i>Redazione atti di gara professionale</i> e sui Servizi esclusione concorrenti gare, strumenti fondamentali per le micro, piccole e medie imprese. Questi servizi non solo facilitano la partecipazione a gare pubbliche, ma assicurano anche una maggiore trasparenza e equità nel processo.</p>
+            <blockquote class="text-gray-900 border-l-2 py-1 px-4 border-slate-200 border-solid bg-slate-50"><p class="my-3.5">La semplificazione delle procedure di gara rappresenta un passo fondamentale verso l'accessibilità e la competitività delle PMI nel mercato delle gare pubbliche.</p></blockquote>
+            <p class="py-4"><b>La nostra esperienza dimostra che un supporto legale specializzato può fare la differenza</b> nella gestione delle gare pubbliche, soprattutto per le imprese di dimensioni ridotte. Abbiamo osservato una crescente necessità di assistenza in questo ambito, evidenziata dalla richiesta di consulenze specifiche e di interventi mirati.</p>
+          </div>
+          <div>
+            <h3 style="border-left-style: dotted;" class="border-l-2 text-lg font-medium pl-3 border-slate-600 mt-6">Gestione legale delle fasi critiche: dall'ammissione all'aggiudicazione</h3>
+            <p class="py-6">Nella gestione delle gare pubbliche, affrontare le fasi critiche richiede un'attenzione particolare. <b>La verifica delle anomalie nelle offerte</b> è un passaggio fondamentale per assicurare la trasparenza e l'equità del processo. I nostri <i>consulenti per l' aggiudicazione degli appalti</i> sono esperti nel rilevare qualsiasi irregolarità, garantendo così una gestione impeccabile dall'ammissione all'aggiudicazione.</p>
+            <p>Esperti in gare d’appalto pubbliche, ci impegniamo a fornire una consulenza completa, dalla progettazione alla gestione delle gare, inclusa la verifica delle anomalie nelle offerte. Questo approccio assicura non solo la partecipazione alla gara ma anche l'incremento delle possibilità di successo.</p>
+            <ul class="list-disc ps-8 pt-4">
+              <li>Servizi di progettazione gare d’appalto</li>
+              <li>Gestione completa gare d’appalto</li>
+              <li>Verifica anomalie offerte gare</li>
+              <li>Consulenti aggiudicazione appalti</li>
+              <li>Esperti in gare d’appalto pubbliche</li>
+            </ul>
+          </div>
         </div>
-        <figure class="mt-16">
-          <img class="aspect-video rounded-xl bg-gray-50 object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3" alt="" />
-          <figcaption class="mt-4 flex gap-x-2 text-sm leading-6 text-white">
-            <InformationCircleIcon class="mt-0.5 h-5 w-5 flex-none text-white" aria-hidden="true" />
-            Faucibus commodo massa rhoncus, volutpat.
-          </figcaption>
-        </figure>
-        <div class="mt-16 max-w-2xl">
-          <h2 class="text-2xl font-bold tracking-tight text-success">Conclusione</h2>
-          <p class="mt-6">Purus morbi dignissim senectus mattis adipiscing. Amet, massa quam varius orci dapibus volutpat cras. In amet eu ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut viverra ridiculus non molestie. Gravida quis fringilla amet eget dui tempor dignissim. Facilisis auctor venenatis varius nunc, congue erat ac. Cras fermentum convallis quam.</p>
-          <p class="mt-8">Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.</p>
+        <h2 class="mt-8 text-2xl font-bold tracking-tight text-success">Conclusione</h2>
+        <p class="py-4">La gestione delle gare pubbliche rappresenta una sfida complessa e articolata, che richiede competenze e conoscenze specialistiche per essere affrontata efficacemente. L'assistenza di uno studio legale specializzato può semplificare notevolmente questo processo, fornendo supporto in tutte le fasi della gara, dalla programmazione alla progettazione, dalla redazione degli atti alla gestione dell'aggiudicazione. Questo tipo di supporto è particolarmente prezioso per le micro, piccole e medie imprese, che spesso trovano difficoltà nell'accedere alle gare pubbliche a causa della loro complessità e delle dimensioni richieste. Grazie all'esperienza e alla specializzazione degli studi legali, è possibile superare queste barriere, garantendo una partecipazione più ampia e equa al mercato degli appalti pubblici. Inoltre, l'adozione di politiche volte a incoraggiare la partecipazione di tutte le imprese, attraverso la riduzione degli importi globali delle gare e la suddivisione in lotti di dimensioni ridotte, rappresenta un ulteriore passo avanti verso un sistema di gare pubbliche più inclusivo e accessibile.</p>
+        <div>
+          <h2 class="mt-8 text-2xl font-bold tracking-tight text-success">Domande frequenti</h2>
+          <h3 style="border-left-style: dotted;" class="border-l-2 text-lg font-medium pl-3 border-slate-600 mt-6">Come può il supporto legale specializzato assistere il Responsabile Unico del Procedimento nelle gare pubbliche?</h3>
+          <p class="pt-2">Lo studio legale fornisce supporto completo al Responsabile Unico del Procedimento (RUP) in tutte le fasi della gara, dalla programmazione e progettazione, redazione degli atti di gara, gestione dell'esclusione o ammissione dei concorrenti, verifica dell'anomalia dell'offerta fino all'intero processo di aggiudicazione. La specializzazione ed esperienza dello studio garantisce un'assistenza legale di ottimo livello.</p>
+          <h3 style="border-left-style: dotted;" class="border-l-2 text-lg font-medium pl-3 border-slate-600 mt-6">Quali politiche sono state messe in campo per favorire la partecipazione delle PMI alle gare pubbliche?</h3>
+          <p class="pt-2">A partire dal 2017, sono state introdotte politiche per incoraggiare la partecipazione di tutte le imprese, in particolare quelle piccole e medie, alle iniziative del Programma acquisti. Questo include la riduzione degli importi globali delle gare, una maggiore suddivisione in lotti di dimensioni ridotte e uno snellimento delle procedure di accreditamento al Mercato elettronico della Pubblica Amministrazione (Mepa), risultando in una crescita del numero dei lotti banditi.</p>
         </div>
       </div>
 
@@ -106,46 +111,33 @@
   </div>
   </div>
 
-  <div class="">
-      
-      <li class="list-item">
-      <p class="pb-7 text-center"><img src="https://osborneslaw.com/wp-content/uploads/2023/10/Firm-Logo-2.jpg" class="w-72 h-64" /></p>
-      <p class="pb-7 text-center"><strong class="font-bold">“Lo studio offre assistenza legale di alto livello. Sono le persone giuste, al momento giusto”
-      </strong></p>
-      </li>
-
-      <div class="bg-gray-800 text-white m-4 p-4 rounded-lg shadow-lg self-start">
-      <h2 class="text-xl font-bold mb-4">Se desideri un parere o hai bisogno di assistenza legale, contattaci!</h2>
-      <p class="mb-4">Telefona al n. <strong>010 541259</strong> oppure compila il form</p>
-      <form class="space-y-4">
-        <div>
-          <label for="name" class="block text-sm font-bold">Nome</label>
-          <input type="text" id="name" class="w-full p-2 rounded bg-gray-700 border border-gray-600" placeholder="Il tuo nome">
-        </div>
-        <div>
-          <label for="surname" class="block text-sm font-bold">Cognome</label>
-          <input type="text" id="surname" class="w-full p-2 rounded bg-gray-700 border border-gray-600" placeholder="Il tuo cognome">
-        </div>
-        <div>
-          <label for="email" class="block text-sm font-bold">Email</label>
-          <input type="email" id="email" class="w-full p-2 rounded bg-gray-700 border border-gray-600" placeholder="La tua email">
-        </div>
-        <div>
-          <label for="message" class="block text-sm font-bold">Messaggio</label>
-          <textarea id="message" rows="4" class="w-full p-2 rounded bg-gray-700 border border-gray-600" placeholder="Il tuo messaggio"></textarea>
-        </div>
-        <button type="submit" class="w-full btn-success text-white font-bold py-2 px-4 rounded">
-          Richiedi informazioni
-        </button>
-      </form>
+  <div >
+      <!-- Form laterale -->
+      <div style="height: 600px;" class="bg-neutral-content p-4 my-4 me-4 rounded-lg shadow-lg " >
+        <h2 class="text-xl font-bold mb-4 text-info">Se desideri un parere o hai bisogno di assistenza legale, contattaci!</h2>
+        <p class="mb-4">Telefona al n. <strong>010 541259</strong> oppure compila il form</p>
+        <form class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-bold">Nome</label>
+            <input type="text" id="name" class="w-full p-2 rounded border border-gray-600" placeholder="Il tuo nome">
+          </div>
+          <div>
+            <label for="surname" class="block text-sm font-bold">Cognome</label>
+            <input type="text" id="surname" class="w-full p-2 rounded border border-gray-600" placeholder="Il tuo cognome">
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-bold">Email</label>
+            <input type="email" id="email" class="w-full p-2 rounded border border-gray-600" placeholder="La tua email">
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-bold">Messaggio</label>
+            <textarea id="message" rows="4" class="w-full p-2 rounded border border-gray-600" placeholder="Il tuo messaggio"></textarea>
+          </div>
+          <button type="submit" class="w-full btn-primary text-white font-bold py-2 px-4 rounded">
+            Richiedi informazioni
+          </button>
+        </form>
       </div>
-
-      <li class="pb-5 list-item">
-      <p class="pb-7 text-center">
-      <a href="https://www.familylawawards.com/" class="underline"><img src="https://osborneslaw.com/wp-content/uploads/2021/09/Law-Firm-of-the-Year-London-e1631022330689.jpg" class="cursor-pointer w-72 h-52" /></a>
-      </p>
-      </li>
-
   </div>
 
 </div>

@@ -2,14 +2,19 @@
     <AppLayout title="Leggi articolo">
     
     <div  class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="md:col-span-2 space-y-6">
+    
+      <div class="md:col-span-2 space-y-6">
         <div class="px-6 lg:px-8">
             <div class="mx-auto max-w-3xl text-base leading-7">
-              <h1 class="mt-2 text-3xl font-bold tracking-tight text-info sm:text-4xl">Fase di esecuzione degli appalti</h1>
+              <h1 class="mt-2 text-3xl font-bold tracking-tight text-info sm:text-4xl">Soluzione Stragiudiziali delle Controversie negli Appalti Pubblici</h1>
               <div class="mt-6 max-w-2xl">
-                <p>Il nostro studio è specializzato nell'offrire un'assistenza senza precedenti, che si estende attraverso tutte le fasi dello sviluppo dei progetti. Ci occupiamo di ogni aspetto, dalla gestione delle consegne fino alla conclusione con il collaudo finale, assicurando che ogni dettaglio sia curato alla perfezione. La nostra gamma di servizi comprende la gestione accurata di sospensioni, varianti, e subappalti, nonché la risoluzione di eventuali riserve. Siamo esperti nella contabilità di progetto, nella revisione dei prezzi, nella risoluzione di controversie e nel recesso, garantendo sempre una gestione conforme agli standard più elevati. </p>
-                <p class="py-4">Offriamo inoltre la negoziazione di accordi bonari e transazioni, mirando a risolvere le questioni in modo efficace e vantaggioso per tutte le parti coinvolte. I nostri servizi sono progettati su misura per il Responsabile Unico del Procedimento (RUP), le imprese/operatori economici e i professionisti tecnici, fornendo loro le competenze necessarie per navigare con successo nel complesso panorama dei progetti.</p>
-                <p class="mt-4 mb-16">La nostra promessa è quella di offrire un supporto completo e personalizzato, che permette ai nostri clienti di concentrarsi sulle loro competenze chiave mentre noi ci prendiamo cura di ogni aspetto burocratico e gestionale del progetto. Attraverso la nostra esperienza e dedizione, garantiamo una gestione del progetto efficiente, trasparente e conforme agli standard richiesti, assicurando al contempo il successo e la soddisfazione del cliente.</p>
+                <p>Lo studio legale Giuseppe Inglese è rinomato per la sua eccellenza nella fornitura di servizi esperti per la soluzione stragiudiziale delle controversie negli appalti pubblici. Comprendiamo l'importanza di risolvere le dispute in modo rapido ed efficiente, evitando il dispendioso e prolungato processo giudiziario. Per questo motivo, ci avvaliamo di tecniche di mediazione, negoziazione e altri metodi alternativi di risoluzione delle dispute (ADR) per ottenere risultati vantaggiosi per tutti i nostri clienti.</p>
+
+                <p class="py-4">Il nostro approccio si concentra sul trovare soluzioni pragmatiche che rispondano alle esigenze di tutte le parti coinvolte, mirando a minimizzare i ritardi e i costi associati alla risoluzione delle controversie. Il nostro team di avvocati esperti lavora a stretto contatto con i clienti per comprendere appieno le loro priorità e obiettivi, elaborando strategie su misura che mirano a salvaguardare gli interessi del cliente, mantenendo al contempo relazioni professionali positive.</p>
+
+                <p class="py-4">Attraverso la nostra esperienza e competenza nelle soluzioni stragiudiziali, siamo in grado di guidare efficacemente i nostri clienti attraverso il processo di negoziazione, aiutandoli a raggiungere accordi equi e soddisfacenti senza il bisogno di ricorrere a vie legali formali. Ci impegniamo a fornire una rappresentanza legale che non solo risolve le controversie in modo efficiente, ma che agisce anche con la massima integrità e trasparenza, garantendo ai nostri clienti una gestione ottimale delle loro questioni legali.</p>
+
+                <p class="mt-4 mb-16">Affidandovi allo studio legale Giuseppe Inglese per la soluzione stragiudiziale delle vostre controversie negli appalti pubblici, scegliete un partner legale che mette la vostra soddisfazione e il vostro successo al primo posto, assicurando processi di risoluzione delle dispute che sono tanto efficaci quanto rispettosi dei vostri tempi e del vostro budget.</p>
               </div>
             </div>
         </div>

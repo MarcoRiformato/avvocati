@@ -2,14 +2,19 @@
     <AppLayout title="Leggi articolo">
     
     <div  class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="md:col-span-2 space-y-6">
+    
+      <div class="md:col-span-2 space-y-6">
         <div class="px-6 lg:px-8">
             <div class="mx-auto max-w-3xl text-base leading-7">
-              <h1 class="mt-2 text-3xl font-bold tracking-tight text-info sm:text-4xl">Fase di esecuzione degli appalti</h1>
+              <h1 class="mt-2 text-3xl font-bold tracking-tight text-info sm:text-4xl">Servizi di Arbitrato per Appalti e Lavori Pubblici</h1>
               <div class="mt-6 max-w-2xl">
-                <p>Il nostro studio è specializzato nell'offrire un'assistenza senza precedenti, che si estende attraverso tutte le fasi dello sviluppo dei progetti. Ci occupiamo di ogni aspetto, dalla gestione delle consegne fino alla conclusione con il collaudo finale, assicurando che ogni dettaglio sia curato alla perfezione. La nostra gamma di servizi comprende la gestione accurata di sospensioni, varianti, e subappalti, nonché la risoluzione di eventuali riserve. Siamo esperti nella contabilità di progetto, nella revisione dei prezzi, nella risoluzione di controversie e nel recesso, garantendo sempre una gestione conforme agli standard più elevati. </p>
-                <p class="py-4">Offriamo inoltre la negoziazione di accordi bonari e transazioni, mirando a risolvere le questioni in modo efficace e vantaggioso per tutte le parti coinvolte. I nostri servizi sono progettati su misura per il Responsabile Unico del Procedimento (RUP), le imprese/operatori economici e i professionisti tecnici, fornendo loro le competenze necessarie per navigare con successo nel complesso panorama dei progetti.</p>
-                <p class="mt-4 mb-16">La nostra promessa è quella di offrire un supporto completo e personalizzato, che permette ai nostri clienti di concentrarsi sulle loro competenze chiave mentre noi ci prendiamo cura di ogni aspetto burocratico e gestionale del progetto. Attraverso la nostra esperienza e dedizione, garantiamo una gestione del progetto efficiente, trasparente e conforme agli standard richiesti, assicurando al contempo il successo e la soddisfazione del cliente.</p>
+                <p>Lo studio legale Giuseppe Inglese si posiziona all'avanguardia nel campo dell'arbitrato per appalti e lavori pubblici, offrendo servizi di rappresentanza legale di alta qualità, sia nel ruolo di arbitri che di difensori. La nostra profonda conoscenza e esperienza ci consentono di operare con maestria nei procedimenti gestiti dalla Camera Arbitrale dei Lavori Pubblici e dalle rinomate Camere Arbitrali di Milano e Roma.</p>
+
+                <p class="py-4">La nostra missione è fornire ai nostri clienti una soluzione alternativa e altamente efficace per la risoluzione delle dispute, attraverso un processo di arbitrato che garantisce confidenzialità, efficienza e decisioni vincolanti. La nostra expertise copre un ampio spettro di controversie arbitrali legate agli appalti e ai lavori pubblici, permettendoci di offrire una rappresentanza legale su misura che risponde specificamente alle esigenze e agli obiettivi dei nostri clienti.</p>
+
+                <p class="py-4">Scegliendo lo studio Giuseppe Inglese per la gestione delle vostre dispute arbitrali, avrete la certezza di affidarvi a un team di avvocati esperti e dedicati, che si impegnano a perseguire la migliore strategia per risolvere la vostra controversia in modo efficace. Siamo dotati delle competenze necessarie per guidarvi attraverso ogni fase del processo arbitrale, dalla redazione degli atti arbitrali alla conduzione dell'arbitrato, fino all'ottenimento di una decisione finale.</p>
+
+                <p class="mt-4 mb-16">Il nostro approccio è incentrato sulla trasparenza, sulla comunicazione aperta e sulla costruzione di una forte relazione di fiducia con i nostri clienti, assicurando che ogni azione intrapresa sia nel vostro migliore interesse. Con lo studio legale Giuseppe Inglese al vostro fianco, potete contare su una rappresentanza legale di eccellenza, che vi guiderà verso una risoluzione delle dispute rapida, giusta e soddisfacente.</p>
               </div>
             </div>
         </div>

@@ -2,14 +2,19 @@
     <AppLayout title="Leggi articolo">
     
     <div  class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="md:col-span-2 space-y-6">
+    
+      <div class="md:col-span-2 space-y-6">
         <div class="px-6 lg:px-8">
             <div class="mx-auto max-w-3xl text-base leading-7">
-              <h1 class="mt-2 text-3xl font-bold tracking-tight text-info sm:text-4xl">Fase di esecuzione degli appalti</h1>
+              <h1 class="mt-2 text-3xl font-bold tracking-tight text-info sm:text-4xl">Assistenza Legale nei Procedimenti ANAC</h1>
               <div class="mt-6 max-w-2xl">
-                <p>Il nostro studio è specializzato nell'offrire un'assistenza senza precedenti, che si estende attraverso tutte le fasi dello sviluppo dei progetti. Ci occupiamo di ogni aspetto, dalla gestione delle consegne fino alla conclusione con il collaudo finale, assicurando che ogni dettaglio sia curato alla perfezione. La nostra gamma di servizi comprende la gestione accurata di sospensioni, varianti, e subappalti, nonché la risoluzione di eventuali riserve. Siamo esperti nella contabilità di progetto, nella revisione dei prezzi, nella risoluzione di controversie e nel recesso, garantendo sempre una gestione conforme agli standard più elevati. </p>
-                <p class="py-4">Offriamo inoltre la negoziazione di accordi bonari e transazioni, mirando a risolvere le questioni in modo efficace e vantaggioso per tutte le parti coinvolte. I nostri servizi sono progettati su misura per il Responsabile Unico del Procedimento (RUP), le imprese/operatori economici e i professionisti tecnici, fornendo loro le competenze necessarie per navigare con successo nel complesso panorama dei progetti.</p>
-                <p class="mt-4 mb-16">La nostra promessa è quella di offrire un supporto completo e personalizzato, che permette ai nostri clienti di concentrarsi sulle loro competenze chiave mentre noi ci prendiamo cura di ogni aspetto burocratico e gestionale del progetto. Attraverso la nostra esperienza e dedizione, garantiamo una gestione del progetto efficiente, trasparente e conforme agli standard richiesti, assicurando al contempo il successo e la soddisfazione del cliente.</p>
+                <p>Lo studio legale Giuseppe Inglese si posiziona come leader nell'offrire consulenza legale specializzata e rappresentanza nei procedimenti davanti all’Autorità Nazionale Anticorruzione (ANAC), con un focus particolare sulle dinamiche dei Partenariati Pubblico-Privati (PPP) e del Project Financing. Il nostro team di avvocati altamente qualificati è dedicato a guidare i clienti attraverso la complessità delle normative di settore, garantendo che ogni progetto non solo rispetti pienamente le leggi vigenti, ma sia anche strutturato per il successo a lungo termine.</p>
+
+                <p class="py-4">Nell’ambito dei PPP e del Project Financing, la conformità con le norme ANAC assume un'importanza cruciale, data la loro natura innovativa e la stretta interazione tra il settore pubblico e quello privato. La nostra esperienza ci permette di fornire consulenze precise e strategiche, assicurando una difesa efficace in ogni fase del procedimento, dalla pianificazione e proposta iniziale fino alla realizzazione e gestione del progetto.</p>
+
+                <p class="py-4">Attraverso un'approfondita valutazione delle esigenze e degli obiettivi specifici dei nostri clienti, sviluppiamo soluzioni legali personalizzate che affrontano i potenziali rischi e ottimizzano le opportunità di successo. Ci impegniamo a offrire una rappresentanza che non solo soddisfi i requisiti normativi, ma che promuova anche l'efficienza, la trasparenza e l'innovazione nei progetti PPP e di Project Financing.</p>
+
+                <p class="mt-4 mb-16">Affidandovi allo studio legale Giuseppe Inglese, avrete la certezza di collaborare con un partner che comprende profondamente le sfide e le opportunità dei partenariati pubblico-privato e del finanziamento di progetto. Siamo dedicati a supportare i nostri clienti nella navigazione delle complessità legali e normative, assicurando che ogni progetto sia realizzato in conformità con le più elevate aspettative di integrità e trasparenza.</p>
               </div>
             </div>
         </div>
