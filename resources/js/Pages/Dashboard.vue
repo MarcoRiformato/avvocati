@@ -19,7 +19,7 @@
       Diritto amministrativo & civile
     </p>
     <div class="mt-10 flex items-center justify-center gap-x-6">
-      <a href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Chiama subito</a>
+      <a href="tel:+39010541259" class="btn btn-primary">Chiama subito</a>
     </div>
   </div>
     </div>
@@ -89,8 +89,6 @@
             <button class="btn btn-primary mt-2 mb-4" @click="$inertia.visit(route('services.appalti'))">Assistenza legale per partnenariati e project financing</button>
           </div>
         </div>
-
-
       </div>
 
       <!-- Sidebar for contact information and form -->
