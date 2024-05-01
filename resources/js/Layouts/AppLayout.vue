@@ -1,19 +1,12 @@
 <script setup>
 import { ref } from 'vue';
 import { Head, Link, router } from '@inertiajs/vue3';
-import ApplicationMark from '@/Components/ApplicationMark.vue';
 import Banner from '@/Components/Banner.vue';
 import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
-import CustomHeader from '@/Components/CustomHeader.vue';
 import { defineComponent, h } from 'vue'
-
-import {
-    MagnifyingGlassIcon
-  } from '@heroicons/vue/24/outline'
-import Flyout from '@/Components/Flyout.vue';
 
 defineProps({
 title: String,
@@ -93,7 +86,7 @@ social: [
             <div class="space-x-12 flex items-center">
 
             <!--<button href="#" class="btn btn-primary" @click.prevent="openCalendlyPopup">Contattaci</button>-->
-            <div class="py-2">Chiamaci 📞<br /><b>010 541259</b></div>
+            <div class="py-2 hidden lg:block">Chiamaci 📞<br /><b>010 541259</b></div>
             </div>
         </div>
     
@@ -257,71 +250,81 @@ social: [
     </main>
     </div>
     
-    <footer class="bg-base-200">
-    <div class="mx-auto max-w-7xl overflow-hidden px-6 py-8">
-        <div class="flex justify-center space-x-10">
-        <!-- Settings Dropdown -->
-        <div v-if="$page.props.auth.user" class="ml-3 relative">
-            <Dropdown align="right" width="48">
-                <template #trigger>
-                    <button v-if="$page.props.jetstream.managesProfilePhotos" class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition">
-                        <img class="h-8 w-8 rounded-full object-cover" :src="$page.props.auth.user.profile_photo_url" :alt="$page.props.auth.user.name">
-                    </button>
-
-                    <span v-else class="inline-flex rounded-md">
-                        <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none focus:bg-gray-50 active:bg-gray-50 transition ease-in-out duration-150">
-                            {{ $page.props.auth.user.name }}
-
-                            <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                            </svg>
-                        </button>
-                    </span>
-                </template>
-
-                <template #content>
-                    <!-- Account Management -->
-                    <div class="block px-4 py-2 text-xs text-gray-400">
-                        Manage Account
-                    </div>
-
-                    <DropdownLink :href="route('profile.show')">
-                        Profile
-                    </DropdownLink>
-
-                    <DropdownLink v-if="$page.props.jetstream.hasApiFeatures" :href="route('api-tokens.index')">
-                        API Tokens
-                    </DropdownLink>
-
-                    <div class="border-t border-gray-200" />
-
-                    <!-- Authentication -->
-                    <form @submit.prevent="logout">
-                        <DropdownLink as="button">
-                            Log Out
-                        </DropdownLink>
-                    </form>
-                </template>
-            </Dropdown>
+<footer class="bg-white" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="sr-only">Footer</h2>
+    <div class="mx-auto max-w-7xl px-6 py-8 lg:px-8">
+      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+        <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+          <div class="md:grid md:grid-cols-2 md:gap-8">
+            <div>
+              <h3 class="text-sm font-semibold leading-6 text-gray-900">Appalti pubblici e privati</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                <li class="pt-2">
+                  <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Consulenza alle stazioni appaltanti</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Consulenza alle imprese e operatori economici</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Consulenza ai professionisti tecnici</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Fase di esecuzione degli appalti</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-10 md:mt-0">
+              <h3 class="text-sm font-semibold leading-6 text-gray-900">Assistenza e difesa per enti pubblici, imprese e operatori economici</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                <li class="pt-2">
+                  <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Gestione di contenziosi presso TAR e Consiglio di Stato</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Assistenza legale in Contenziosi civili</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Servizi di arbitrato per appalti e lavori pubblici</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Assistenza legale nei procedimenti ANAC</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:grid md:grid-cols-2 md:gap-8">
+            <div>
+              <h3 class="text-sm font-semibold leading-6 text-gray-900">Soluzioni stragiudiziali per controversie negli appalti pubblici e Collegio Consultivo Tecnico</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                <li class="pt-2">
+                  <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Soluzioni stragiudiziali delle controversie negli appalti pubblici</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Collegio Consultivo Tecnico</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold leading-6 text-gray-900">Partenariato Pubblico-Privato e Project Financing</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                <li class="pt-2">
+                  <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Gestione di contenziosi presso TAR e Consiglio di Stato</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Assistenza legale in contenziosi civili</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Servizi di arbitrato per appalti e lavori pubblici</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Assistenza legale nei procedimenti ANAC</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div v-else class="space-x-4">
-            <!--<Link :href="route('login')" class="">
-                Accedi
-            </Link>
-            <Link :href="route('register')" class="">
-                Registrati
-            </Link>-->
-        </div>
-        <NavLink v-if="$page.props.auth.user && $page.props.auth.user.is_admin !== 0" :href="route('admin.admindashboard')" :active="route().current('admin.admindashboard')">
-            Sezione admin
-        </NavLink>
-        <a v-for="item in navigation.social" :key="item.name" target="_blank" :href="item.href" class=" hover:text-gray-500">
-            <span class="sr-only">{{ item.name }}</span>
-            <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-        </a>
-        </div>
-        <p class="mt-10 text-center text-xs leading-5 ">&copy; 2024 - Riformato Marco</p>
+      </div>
     </div>
-    </footer>
-    </div>
+</footer>
+
+</div>
 </template>
