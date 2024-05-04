@@ -256,67 +256,67 @@ social: [
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
           <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
+            <div style="background-color: #f3f4f6; padding: 10px;">
               <h3 class="text-sm font-semibold leading-6 text-gray-900">Appalti pubblici e privati</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li class="pt-2">
-                  <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Consulenza alle stazioni appaltanti</a>
+                  <a href="/stazioni" class="text-sm leading-6 text-blue-500 hover:text-blue-800">Consulenza alle stazioni appaltanti</a>
                 </li>
                 <li>
-                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Consulenza alle imprese e operatori economici</a>
+                    <a href="/imprese" class="text-sm leading-6 text-blue-500 hover:text-blue-800">Consulenza alle imprese e operatori economici</a>
                 </li>
                 <li>
-                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Consulenza ai professionisti tecnici</a>
+                    <a href="/professionisti" class="text-sm leading-6 text-blue-500 hover:text-blue-800">Consulenza ai professionisti tecnici</a>
                 </li>
                 <li>
-                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Fase di esecuzione degli appalti</a>
+                    <a href="/esecuzione" class="text-sm leading-6 text-blue-500 hover:text-blue-800">Fase di esecuzione degli appalti</a>
                 </li>
               </ul>
             </div>
-            <div class="mt-10 md:mt-0">
+            <div class="mt-10 md:mt-0" style="background-color: #f3f4f6; padding: 10px;">
               <h3 class="text-sm font-semibold leading-6 text-gray-900">Assistenza e difesa per enti pubblici, imprese e operatori economici</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li class="pt-2">
-                  <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Gestione di contenziosi presso TAR e Consiglio di Stato</a>
+                  <a href="difesa_tar" class="text-sm leading-6 text-blue-500 hover:text-blue-800">Gestione di contenziosi presso TAR e Consiglio di Stato</a>
                 </li>
                 <li>
-                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Assistenza legale in Contenziosi civili</a>
+                    <a href="contenziosi_civili" class="text-sm leading-6 text-blue-500 hover:text-blue-800">Assistenza legale in Contenziosi civili</a>
                 </li>
                 <li>
-                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Servizi di arbitrato per appalti e lavori pubblici</a>
+                    <a href="arbitrati" class="text-sm leading-6 text-blue-500 hover:text-blue-800">Servizi di arbitrato per appalti e lavori pubblici</a>
                 </li>
                 <li>
-                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Assistenza legale nei procedimenti ANAC</a>
+                    <a href="proc_anac" class="text-sm leading-6 text-blue-500 hover:text-blue-800">Assistenza legale nei procedimenti ANAC</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="md:grid md:grid-cols-2 md:gap-8">
-            <div>
+            <div style="background-color: #f3f4f6; padding: 10px;">
               <h3 class="text-sm font-semibold leading-6 text-gray-900">Soluzioni stragiudiziali per controversie negli appalti pubblici e Collegio Consultivo Tecnico</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li class="pt-2">
-                  <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Soluzioni stragiudiziali delle controversie negli appalti pubblici</a>
+                  <a href="stragiudiziali-appalti" class="text-sm leading-6 text-blue-500 hover:text-blue-800">Soluzioni stragiudiziali delle controversie negli appalti pubblici</a>
                 </li>
                 <li>
-                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Collegio Consultivo Tecnico</a>
+                    <a href="collegio-consultivo-tecnico" class="text-sm leading-6 text-blue-500 hover:text-blue-800">Collegio Consultivo Tecnico</a>
                 </li>
               </ul>
             </div>
-            <div>
+            <div style="background-color: #f3f4f6; padding: 10px;">
               <h3 class="text-sm font-semibold leading-6 text-gray-900">Partenariato Pubblico-Privato e Project Financing</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li class="pt-2">
-                  <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Gestione di contenziosi presso TAR e Consiglio di Stato</a>
+                  <a href="gestione-contenziosi-tar-consiglio-di-stato" class="text-sm leading-6 text-blue-500 hover:text-blue-800">Gestione di contenziosi presso TAR e Consiglio di Stato</a>
                 </li>
                 <li>
-                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Assistenza legale in contenziosi civili</a>
+                    <a href="contenziosi-civili" class="text-sm leading-6 text-blue-500 hover:text-blue-800">Assistenza legale in contenziosi civili</a>
                 </li>
                 <li>
-                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Servizi di arbitrato per appalti e lavori pubblici</a>
+                    <a href="arbitrato-appalti" class="text-sm leading-6 text-blue-500 hover:text-blue-800">Servizi di arbitrato per appalti e lavori pubblici</a>
                 </li>
                 <li>
-                    <a href="#" class="text-sm leading-6 text-blue-500 hover:text-blue-700">Assistenza legale nei procedimenti ANAC</a>
+                    <a href="procedimenti-anac" class="text-sm leading-6 text-blue-500 hover:text-blue-800">Assistenza legale nei procedimenti ANAC</a>
                 </li>
               </ul>
             </div>
@@ -324,6 +324,69 @@ social: [
         </div>
       </div>
     </div>
+    <div class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+      <div class="mx-auto max-w-lg md:grid md:max-w-none md:grid-cols-2 md:gap-8">
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900 sm:text-3xl sm:tracking-tight">Contatti</h2>
+          <div class="mt-3">
+            <p class="text-lg text-gray-500">Dubbi o domande? Contattaci</p>
+          </div>
+          <div class="mt-9">
+            <div class="flex">
+              <div class="flex-shrink-0">
+                <PhoneIcon class="h-6 w-6" aria-hidden="true" />
+              </div>
+              <div class="ml-3 text-base">
+                <p>Tel +39 010 541259</p>
+                <p>Fax +39 010 541353</p>
+                <p class="mt-4">Lun-Ven 9:00-13:30 e 15:00-18:30</p>
+                <p>Via alla Porta degli Archi 3</p>
+                <p>16121 Genova</p>
+                <div>
+                    <p class="mt-4">E-mail: <span onclick="my_modal_2.showModal()" style="color: blue; cursor: pointer; text-decoration: underline;">segreteria@avvocatoinglese.it</span></p>
+
+                    <dialog id="my_modal_2" class="modal">
+                    <div class="modal-box">
+                        <h3 class="font-bold text-lg">Email copiata!</h3>
+                    </div>
+                    <form method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                    </form>
+                    </dialog>
+                </div>
+                <div>
+                    <p class="mt-4">PEC: <span onclick="my_modal_3.showModal()" style="color: blue; cursor: pointer; text-decoration: underline;">giuseppe.inglese@ordineavvgenova.it</span></p>
+
+                    <dialog id="my_modal_3" class="modal">
+                    <div class="modal-box">
+                        <h3 class="font-bold text-lg">PEC copiata!</h3>
+                    </div>
+                    <form method="dialog" class="modal-backdrop">
+                        <button>close</button>
+                    </form>
+                    </dialog>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 sm:mt-16 md:mt-0">
+            <div class="max-w-full overflow-hidden text-red w-500" style="height: 300px;">
+                <div id="google-maps-canvas" class="h-full w-full max-w-full">
+                    <iframe class="h-full w-full border-0" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=avvocato+giuseppe+inglese+genova&key=AIzaSyBa0zawIdg8MW3ZPV43rxx4VvCczwerS2g"></iframe>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="text-decoration-skip-ink: none;" class="text-stone-200 float-left text-lg py-4 relative align-top inline-block w-full bg-secondary">
+  <div class="max-w-full m-0 text-stone-300">
+    <p class="text-center"><span>P.I. 03005360106 |</span><a href="https://www.avvocatogiuseppeinglese.com/null">Informazioni Legali</a><span>|</span><a href="https://www.avvocatogiuseppeinglese.com/null">Privacy Policy e Cookie Policy</a></p>
+  </div>
+</div>
+
 </footer>
 
 </div>

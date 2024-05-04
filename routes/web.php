@@ -59,7 +59,7 @@ Route::get('esecuzione', [ServiceController::class, 'esecuzione'])->name('servic
 Route::get('imprese', [ServiceController::class, 'imprese'])->name('services.detail.imprese');
 
 //Difesa
-Route::get('/contenziosi-tar', function () {
+Route::get('/difesa_tar', function () {
     return Inertia::render('Services/Detail/Difesa/DifesaTar');
 })->name('difesa_tar');
 
@@ -71,7 +71,7 @@ Route::get('/arbitrati', function () {
     return Inertia::render('Services/Detail/Difesa/Arbitrati');
 })->name('arbitrati');
 
-Route::get('/procedimenti-anac', function () {
+Route::get('/proc_anac', function () {
     return Inertia::render('Services/Detail/Difesa/ProcedimentiAnac');
 })->name('proc_anac');
 
@@ -85,17 +85,17 @@ Route::get('/collegio-consultivo-tecnico', function () {
 })->name('cct');
 
 //Partenariato ++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Route::get('/arbitrato-appalti', function () {
-    return Inertia::render('Services/Detail/Partenariati/ArbitratoAppalti');
-})->name('arbitrato_appalti');
+Route::get('/gestione-contenziosi-tar-consiglio-di-stato', function () {
+    return Inertia::render('Services/Detail/Partenariati/ContenziosiTar');
+})->name('contenziosi_tar');
 
 Route::get('/contenziosi-civili', function () {
     return Inertia::render('Services/Detail/Partenariati/ContenziosiCivili');
 })->name('contenziosi_civili');
 
-Route::get('/contenziosi-tar', function () {
-    return Inertia::render('Services/Detail/Partenariati/ContenziosiTar');
-})->name('contenziosi_tar');
+Route::get('/arbitrato-appalti', function () {
+    return Inertia::render('Services/Detail/Partenariati/ArbitratoAppalti');
+})->name('arbitrato-appalti');
 
 Route::get('/procedimenti-anac', function () {
     return Inertia::render('Services/Detail/Partenariati/ProcedimentiAnac');

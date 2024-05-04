@@ -51,7 +51,7 @@
       icon: BuildingLibraryIcon,
       iconForeground: 'text-teal-700',
       iconBackground: 'bg-teal-50',
-      href: 'arbitrato_appalti',
+      href: 'contenziosi_tar',
       description: 'Specializzati nella risoluzione di controversie legate alla legittimità di atti di gara, nonché di provvedimenti di ammissione, esclusione e aggiudicazione di appalti e concessioni. L\'obiettivo è assicurare che ogni fase del processo di gara sia condotta in piena conformità con la legge, garantendo la tutela dei diritti dei nostri clienti.'
     },
     {
@@ -67,7 +67,7 @@
       icon: HandThumbUpIcon,
       iconForeground: 'text-sky-700',
       iconBackground: 'bg-sky-50',
-      href: 'contenziosi_tar',
+      href: 'arbitrato-appalti',
       description: 'Il nostro studio offre servizi di arbitrato, agendo sia come arbitri che come difensori in controversie arbitrali. Siamo esperti nei procedimenti gestiti dalla Camera Arbitrale dei Lavori Pubblici e dalle Camere Arbitrali di Milano e Roma, garantendo una rappresentanza legale esperta e su misura per risolvere le dispute in modo efficace.'
     },
     {

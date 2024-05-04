@@ -6,15 +6,18 @@
       <div class="md:col-span-2 space-y-6">
         <div class="px-6 lg:px-8">
             <div class="mx-auto max-w-3xl text-base leading-7">
-              <h1 class="mt-2 text-3xl font-bold tracking-tight text-info sm:text-4xl">Soluzione Stragiudiziali delle Controversie negli Appalti Pubblici</h1>
+              <h1 class="mt-2 text-3xl font-bold tracking-tight text-info sm:text-4xl">Gestione di Contenziosi presso TAR e Consiglio di Stato</h1>
               <div class="mt-6 max-w-2xl">
-                <p>Lo studio legale Giuseppe Inglese è rinomato per la sua eccellenza nella fornitura di servizi esperti per la soluzione stragiudiziale delle controversie negli appalti pubblici. Comprendiamo l'importanza di risolvere le dispute in modo rapido ed efficiente, evitando il dispendioso e prolungato processo giudiziario. Per questo motivo, ci avvaliamo di tecniche di mediazione, negoziazione e altri metodi alternativi di risoluzione delle dispute (ADR) per ottenere risultati vantaggiosi per tutti i nostri clienti.</p>
+                <p>Nel complesso mondo degli appalti pubblici, la trasparenza e la conformità alla legge non sono solo obbligatorie, ma fondamentali per garantire equità e giustizia. Lo Studio Legale Inglese, con sede a Genova in Via alla Porta degli Archi 3, è il tuo alleato affidabile nella gestione di contenziosi amministrativi presso TAR e Consiglio di Stato.</p>
 
-                <p class="py-4">Il nostro approccio si concentra sul trovare soluzioni pragmatiche che rispondano alle esigenze di tutte le parti coinvolte, mirando a minimizzare i ritardi e i costi associati alla risoluzione delle controversie. Il nostro team di avvocati esperti lavora a stretto contatto con i clienti per comprendere appieno le loro priorità e obiettivi, elaborando strategie su misura che mirano a salvaguardare gli interessi del cliente, mantenendo al contempo relazioni professionali positive.</p>
+                <h2 class="leading-4 text-primary mt-12">Perchè affidarsi allo studio Inglese? </h2>
+                <p class="py-4">La nostra esperienza nel settore degli appalti pubblici ci consente di offrire un supporto legale senza pari, specialmente nei casi di contenzioso legato alla legittimità di atti di gara, provvedimenti di ammissione, esclusione e aggiudicazione. Con una profonda conoscenza delle procedure e delle leggi che regolano le gare pubbliche, assicuriamo che ogni fase del processo sia condotta in piena conformità con la legge, tutelando così i diritti dei nostri clienti.</p>
 
-                <p class="py-4">Attraverso la nostra esperienza e competenza nelle soluzioni stragiudiziali, siamo in grado di guidare efficacemente i nostri clienti attraverso il processo di negoziazione, aiutandoli a raggiungere accordi equi e soddisfacenti senza il bisogno di ricorrere a vie legali formali. Ci impegniamo a fornire una rappresentanza legale che non solo risolve le controversie in modo efficiente, ma che agisce anche con la massima integrità e trasparenza, garantendo ai nostri clienti una gestione ottimale delle loro questioni legali.</p>
+                <h2 class="leading-4 text-primary mt-12">Come operiamo</h2>
+                <p class="py-4">Il nostro approccio è proattivo: non solo rispondiamo alle situazioni di contenzioso una volta che si sono verificate, ma lavoriamo costantemente per prevenire possibili dispute. Offriamo consulenza legale preventiva e continuiamo a monitorare le fasi delle gare per assicurare che tutto si svolga nel rispetto delle normative vigenti.</p>
 
-                <p class="mt-4 mb-16">Affidandovi allo studio legale Giuseppe Inglese per la soluzione stragiudiziale delle vostre controversie negli appalti pubblici, scegliete un partner legale che mette la vostra soddisfazione e il vostro successo al primo posto, assicurando processi di risoluzione delle dispute che sono tanto efficaci quanto rispettosi dei vostri tempi e del vostro budget.</p>
+                <h2 class="text-2xl text-primary mt-12">Contattaci ora</h2>
+                <p class="py-4">Non lasciare al caso la gestione dei tuoi diritti in una gara pubblica. Contatta oggi stesso lo Studio Legale Inglese al numero 010 541259 per una consulenza. Proteggi i tuoi interessi con professionisti esperti e dedicati alla tua causa.</p>
               </div>
             </div>
         </div>
