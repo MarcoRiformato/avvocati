@@ -383,7 +383,7 @@ social: [
   </div>
   <div style="text-decoration-skip-ink: none;" class="text-stone-200 float-left text-lg py-4 relative align-top inline-block w-full bg-secondary">
   <div class="max-w-full m-0 text-stone-300">
-    <p class="text-center"><span>P.I. 03005360106 |</span><a href="https://www.avvocatogiuseppeinglese.com/null">Informazioni Legali</a><span>|</span><a href="https://www.avvocatogiuseppeinglese.com/null">Privacy Policy e Cookie Policy</a></p>
+    <p class="text-center"><span>P.I. 03005360106 |</span><a href="https://www.iubenda.com/privacy-policy/41039110">Privacy policy</a><span>|</span><a href="https://www.iubenda.com/privacy-policy/41039110/cookie-policy">Policy</a></p>
   </div>
 </div>
 

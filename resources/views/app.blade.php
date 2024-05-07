@@ -28,6 +28,13 @@
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         </script>
 
+        <script type="text/javascript">
+        var _iub = _iub || [];
+        _iub.csConfiguration = {"askConsentAtCookiePolicyUpdate":true,"floatingPreferencesButtonDisplay":"bottom-right","perPurposeConsent":true,"siteId":3625299,"whitelabel":false,"cookiePolicyId":41039110,"lang":"it", "banner":{ "acceptButtonDisplay":true,"closeButtonRejects":true,"customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"ownerName":false,"position":"float-bottom-right","showTitle":false }};
+        </script>
+        <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3625299.js"></script>
+        <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
