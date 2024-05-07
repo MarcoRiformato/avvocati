@@ -6,11 +6,21 @@
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
         <title inertia>{{ config('app.name', 'Giuseppe Inglese') }}</title>
 
-        <!-- Hotjar Tracking Code for Dev -->
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZW8M6965HR"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZW8M6965HR');
+        </script>
+
+        <!-- Hotjar Tracking Code for Avvocato Giuseppe Inglese -->
         <script>
             (function(h,o,t,j,a,r){
                 h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-                h._hjSettings={hjid:3876295,hjsv:6};
+                h._hjSettings={hjid:4972095,hjsv:6};
                 a=o.getElementsByTagName('head')[0];
                 r=o.createElement('script');r.async=1;
                 r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
