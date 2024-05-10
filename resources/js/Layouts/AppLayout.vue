@@ -62,7 +62,7 @@ social: [
     <div>
         <nav class="sticky top-0 z-50 border-b border-gray-100 bg-secondary ">
 
-        <div class="container mx-auto flex justify-between items-center hidden sm:flex text-white">
+        <div class="container mx-auto justify-between items-center hidden sm:flex text-white">
             <div class="flex-shrink-0 flex items-center" @click="$inertia.visit(route('/'))">
                 <img src="inglese_logo.png" height="50" width="200" alt="Logo">
             </div>
