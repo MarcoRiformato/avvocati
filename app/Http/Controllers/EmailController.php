@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SendMail;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class EmailController extends Controller
 {
@@ -17,6 +18,8 @@ class EmailController extends Controller
         ];
 
         Mail::to('marco.riformato@gmail.com')->send(new SendMail($details));
-        return response()->json(['message' => 'Email successfully sent']);
+        return Inertia::render('YourComponent', [
+            'message' => 'Email inviata'
+        ]);
     }
 }
