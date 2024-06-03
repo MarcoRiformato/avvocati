@@ -92,25 +92,25 @@
       </div>
 
       <!-- Sidebar for contact information and form -->
-      <div style="height: 600px;" class="bg-neutral-content p-4 rounded-lg shadow-lg " >
+      <div style="height: 600px;" class="bg-neutral-content p-4 rounded-lg shadow-lg">
         <h2 class="text-xl font-bold mb-4 text-info">Se desideri un parere o hai bisogno di assistenza legale, contattaci!</h2>
         <p class="mb-4">Telefona al n. <strong>010 541259</strong> oppure compila il form</p>
-        <form class="space-y-4">
+        <form class="space-y-4" @submit.prevent="sendEmail">
           <div>
             <label for="name" class="block text-sm font-bold">Nome</label>
-            <input type="text" id="name" class="w-full p-2 rounded border border-gray-600" placeholder="Il tuo nome">
+            <input type="text" id="name" v-model="name" class="w-full p-2 rounded border border-gray-600" placeholder="Il tuo nome">
           </div>
           <div>
             <label for="surname" class="block text-sm font-bold">Cognome</label>
-            <input type="text" id="surname" class="w-full p-2 rounded border border-gray-600" placeholder="Il tuo cognome">
+            <input type="text" id="surname" v-model="surname" class="w-full p-2 rounded border border-gray-600" placeholder="Il tuo cognome">
           </div>
           <div>
             <label for="email" class="block text-sm font-bold">Email</label>
-            <input type="email" id="email" class="w-full p-2 rounded border border-gray-600" placeholder="La tua email">
+            <input type="email" id="email" v-model="email" class="w-full p-2 rounded border border-gray-600" placeholder="La tua email">
           </div>
           <div>
             <label for="message" class="block text-sm font-bold">Messaggio</label>
-            <textarea id="message" rows="4" class="w-full p-2 rounded border border-gray-600" placeholder="Il tuo messaggio"></textarea>
+            <textarea id="message" v-model="message" rows="4" class="w-full p-2 rounded border border-gray-600" placeholder="Il tuo messaggio"></textarea>
           </div>
           <button type="submit" class="w-full btn-primary text-white font-bold py-2 px-4 rounded">
             Richiedi informazioni
@@ -206,7 +206,8 @@
 </template>
     
 <script setup>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
+import { Inertia } from '@inertiajs/inertia';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/vue/20/solid'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
@@ -219,6 +220,25 @@ defineProps({
   testimonials: Array,
   cases: Array
 })
+
+const name = ref('');
+const surname = ref('');
+const email = ref('');
+const message = ref('');
+
+watch([name, surname, email, message], () => {
+  console.log("Data:", name.value, surname.value, email.value, message.value);
+}, { deep: true });
+
+const sendEmail = () => {
+  console.log("Sending Data:", name.value, surname.value, email.value, message.value);
+  Inertia.post('/send-email', {
+    name: name.value,
+    surname: surname.value,
+    email: email.value,
+    message: message.value
+  });
+}
 
 const posts = [
   {

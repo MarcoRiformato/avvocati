@@ -11,6 +11,7 @@ use App\Http\Controllers\MediaController;
 use App\Http\Controllers\CaseStudyController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TestimonialController;
+use App\Http\Controllers\EmailController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -45,6 +46,8 @@ Route::get('/lo-studio', function () {
 Route::get('/contatti', function () {
     return Inertia::render('Contacts');
 })->name('contacts');
+
+Route::post('/send-email', [EmailController::class, 'send'])->name('send.email');
 
 //Services index pages
 Route::get('appalti', [ServiceController::class, 'appalti'])->name('services.appalti');
