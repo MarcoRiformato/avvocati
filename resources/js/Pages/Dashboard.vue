@@ -112,7 +112,7 @@
       <div class="mx-auto mt-2 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4 bg-white p-4 rounded-md">
         <img class="col-span-2 w-full lg:col-span-1 max-h-20" style="object-fit: cover; object-position: center;" src="https://www.genovabluedistrict.com/wp-content/uploads/2021/06/loghi-UniGe-v1.jpg" />
         <img class="col-span-2 w-full lg:col-span-1 max-h-20" style="object-fit: contain; object-position: center;" src="https://yt3.googleusercontent.com/ytc/AIdro_kvzMZlgrwXZuQfbxRMdmvukOyWgl_tcl9arl2Sgw=s900-c-k-c0x00ffffff-no-rj" />
-        <img class="col-span-2 max-h-20 w-full object-contain lg:col-span-1" src="https://www.federarchitetti.it/wp-content/uploads/2015/10/logo_Federarchitetti-scaled.jpg"/>
+        <img class="col-span-2 max-h-20 w-full object-contain lg:col-span-1" src="ordine-avvocati-genova.webp"/>
         <img class="col-span-2 max-h-20 w-full object-contain sm:col-start-2 lg:col-span-1" src="AAAL.jpg" />
       </div>
     </div>
