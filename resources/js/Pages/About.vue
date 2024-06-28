@@ -11,7 +11,7 @@
           Lo Studio Legale Inglese, situato nel cuore di Genova, offre consulenza legale in materia di appalti, pubblici e privati, partenariati pubblico privati, project financing e altri contratti.<br/><br/> L’avv. Giuseppe Inglese fondatore e titolare dello studio, è riconosciuto per la sua competenza nel diritto amministrativo e civile contrattuale.<br/><br/> Organizza e partecipa a convegni e corsi di formazione, con un impegno costante per l'aggiornamento professionale. E’ punto di riferimento per enti pubblici e aziende private alla ricerca di consulenza legale di alto livello nelle materie di sua specializzazione. <br/><br/>Si avvale della collaborazione di avvocati e professionisti di esperienza, interni ed esterni allo Studio.
         </p>
       </div>
-      <img src="gruppo.jpeg" alt="" class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36" />
+      <img src="noi.webp" alt="" class="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36" />
     </div>
   </div>
   <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
