@@ -24,11 +24,15 @@
       <h2 class="text-3xl font-bold tracking-tight text-primary sm:text-4xl">Chi siamo</h2>
     </div>
     <ul role="list" class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4">
-      <li v-for="person in team" :key="person.name">
-        <img class="aspect-[14/13] w-full rounded-2xl object-cover" :src="person.imageUrl" alt="" />
+      <li v-for="person in team" :key="person.name" class="bg-white shadow-lg rounded-2xl p-6">
+        <img class="aspect-[14/13] w-full rounded-2xl object-cover mb-4" :src="person.imageUrl" alt="" />
         <h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900">{{ person.name }}</h3>
-        <p class="text-base leading-7 text-gray-600">{{ person.role }}</p>
-        <p class="mt-6 text-base leading-7 text-gray-600">{{ person.bio }}</p>
+        <p class="text-base leading-7 text-indigo-600">{{ person.role }}</p>
+        <p class="mt-4 text-sm leading-6 text-gray-800">{{ person.bio }}</p>
+        <p class="mt-2 text-sm leading-6 text-gray-600"><strong>Data di nascita:</strong> {{ person.birthDate }}</p>
+        <p class="mt-2 text-sm leading-6 text-gray-600"><strong>Laurea:</strong> Nell’anno {{ person.graduationYear }} presso l’Università degli Studi di {{ person.university }}</p>
+        <p class="mt-2 text-sm leading-6 text-gray-600"><strong>Albo:</strong> Iscritto all’albo degli avvocati di {{ person.alboCity }} dal {{ person.registrationYear }}, {{ person.specialization }}</p>
+        <p class="mt-2 text-sm leading-6 text-gray-600"><strong>Aree di indirizzo:</strong> {{ person.areasOfExpertise }}</p>
       </li>
     </ul>
   </div>
@@ -39,32 +43,57 @@
 import AppLayout from '@/Layouts/AppLayout.vue';
 const team = [
   {
-    name: 'Giuseppe Inglese',
+    name: 'Avv. Giuseppe Inglese',
     role: 'Fondatore dello studio',
-    imageUrl:
-      'inglese.jpeg',
-    bio: 'testo'
+    imageUrl: 'inglese.jpeg',
+    bio: 'Fondatore dello studio legale con una vasta esperienza in diritto amministrativo e civile.',
+    birthDate: '13/3/1962',
+    graduationYear: '1986',
+    university: 'Genova',
+    alboCity: 'Genova',
+    registrationYear: '1990',
+    specialization: 'Cassazionista',
+    areasOfExpertise: 'Diritto amministrativo e civile'
   },
   {
-    name: '-',
-    role: '-',
-    imageUrl:
-      'avv1.webp',
-    bio: 'testo'
+    name: 'Avv. Valentina Manica',
+    role: 'Collaboratrice',
+    imageUrl: 'avv1.webp',
+    bio: 'Collabora con lo studio dal 2006 con un focus sul diritto civile.',
+    birthDate: '14/6/1978',
+    graduationYear: '2002',
+    university: 'Genova',
+    alboCity: 'Genova',
+    registrationYear: '2005',
+    specialization: '',
+    areasOfExpertise: 'Diritto civile'
   },
   {
-    name: '-',
-    role: '-',
-    imageUrl:
-      'avv2.webp',
-    bio: 'testo'
+    name: 'Avv. Silvia Guglielminetti',
+    role: 'Collaboratrice',
+    imageUrl: 'avv2.webp',
+    bio: 'Collabora con lo studio dal 2018 con una vasta esperienza in diritto civile.',
+    birthDate: '19/11/1970',
+    graduationYear: '1994',
+    university: 'Genova',
+    alboCity: 'Genova',
+    registrationYear: '1997',
+    specialization: '',
+    areasOfExpertise: 'Diritto civile'
   },
   {
-    name: 'Francesca De Ferrari',
-    role: '-',
-    imageUrl:
-      'deferrari.webp',
-    bio: '-'
+    name: 'Avv. Francesca De Ferrari',
+    role: 'Collaboratrice',
+    imageUrl: 'deferrari.webp',
+    bio: 'Collabora con lo studio dal 2009 con un focus sul diritto amministrativo.',
+    birthDate: '31/12/1984',
+    graduationYear: '2008',
+    university: 'Genova',
+    alboCity: 'Genova',
+    registrationYear: '2011',
+    specialization: '',
+    areasOfExpertise: 'Diritto amministrativo'
   }
-]
+];
+
 </script>
