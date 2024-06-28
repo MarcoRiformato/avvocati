@@ -46,6 +46,11 @@ class ServiceController extends Controller
         return Inertia::render('Services/IndexControversie');
     }
 
+    public function altriServizi()
+    {
+        return Inertia::render('Services/IndexAltri');
+    }
+
     public function stazioni()
     {
         return Inertia::render('Services/Detail/Appalti/StazioniAppaltanti');
@@ -65,6 +70,8 @@ class ServiceController extends Controller
     {
         return Inertia::render('Services/Detail/Appalti/Esecuzione');
     }
+
+    
 
     /**
      * Show the form for creating a new resource.

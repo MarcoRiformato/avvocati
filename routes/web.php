@@ -54,6 +54,7 @@ Route::get('appalti', [ServiceController::class, 'appalti'])->name('services.app
 Route::get('difesa', [ServiceController::class, 'difesa'])->name('services.difesa');
 Route::get('partenariato', [ServiceController::class, 'partenariato'])->name('services.partenariato');
 Route::get('controversie', [ServiceController::class, 'controversie'])->name('services.controversie');
+Route::get('altriServizi', [ServiceController::class, 'altriServizi'])->name('services.altri');
 
 //Appalti
 Route::get('stazioni', [ServiceController::class, 'stazioni'])->name('services.detail.stazioni');
@@ -87,6 +88,11 @@ Route::get('/collegio-consultivo-tecnico', function () {
     return Inertia::render('Services/Detail/Controversie/CCT');
 })->name('cct');
 
+//Altri servizi ++++++++++++++++++++++++++++++++++++++++++++
+Route::get('/altri-servizi', function () {
+    return Inertia::render('Services/Detail/Controversie/CCT');
+})->name('cct');
+
 //Partenariato ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Route::get('/gestione-contenziosi-tar-consiglio-di-stato', function () {
     return Inertia::render('Services/Detail/Partenariati/ContenziosiTar');
@@ -103,6 +109,22 @@ Route::get('/arbitrato-appalti', function () {
 Route::get('/procedimenti-anac', function () {
     return Inertia::render('Services/Detail/Partenariati/ProcedimentiAnac');
 })->name('procedimenti_anac');
+
+// Altri servizi
+
+Route::get('/altri-servizi', function () {
+    return Inertia::render('Services/Detail/Altri/Altri');
+})->name('altri');
+
+Route::get('/contratti-obbligazioni', function () {
+    return Inertia::render('Services/Detail/Altri/Contratti');
+})->name('contratti_obbligazioni');
+
+Route::get('/diritti-reali', function () {
+    return Inertia::render('Services/Detail/Altri/Reali');
+})->name('diritti_reali');
+
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Route::view('/servizi', 'services')->name('services');
 Route::view('/faq', 'faq')->name('faq');

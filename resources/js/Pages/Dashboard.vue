@@ -30,7 +30,7 @@
     <div class="container mx-auto px-4 py-6">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
-        <div class="md:col-span-2 space-y-6">
+      <div class="md:col-span-2 space-y-6">
         <div class="flex bg-neutral-content flex-col md:flex-row rounded-lg shadow-lg overflow-hidden py-5" @click="$inertia.visit(route('services.appalti'))">
           <div class="px-4">
             <h3 class="text-lg font-semibold text-primary">Appalti pubblici e privati</h3>
@@ -67,9 +67,9 @@
           </div>
         </div>
 
-        <div class="flex bg-neutral-content flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.consulenzaGenerale'))">
+        <div class="flex bg-neutral-content flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.altri'))">
           <div class="px-4">
-            <h3 class="text-lg font-semibold text-primary">Consulenza Legale Generale</h3>
+            <h3 class="text-lg font-semibold text-primary">Altri servizi di consulenza</h3>
             <p class="mt-2">
               Lo Studio fornisce consulenza e assistenza in diversi settori del diritto amministrativo, contratti e obbligazioni, responsabilità civile, tutela e recupero del credito, diritti reali, problematiche condominiali e locatizie. Offriamo un supporto completo e personalizzato per affrontare e risolvere le questioni legali più complesse, garantendo un approccio integrato e multidisciplinare per tutelare gli interessi dei nostri Assistiti.
             </p>
@@ -77,6 +77,7 @@
         </div>
       </div>
 
+        <!-- Form -->
         <div style="height: 600px;" class="bg-neutral-content p-4 rounded-lg shadow-lg">
           <h2 class="text-xl font-bold mb-4 text-info">Se desideri un parere o hai bisogno di assistenza legale, contattaci!</h2>
           <p class="mb-4">Telefona al n. <strong>010 541259</strong> oppure compila il form</p>
