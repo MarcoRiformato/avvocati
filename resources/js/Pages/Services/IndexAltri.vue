@@ -53,7 +53,7 @@
       iconForeground: 'text-teal-700',
       iconBackground: 'bg-teal-50',
       href: 'altri',
-      description: 'Lo Studio fornisce consulenza e assistenza stragiudiziale e giudiziale anche nei settori dell’edilizia e dell’urbanistica, dei servizi pubblici, della sanità, degli enti locali, del pubblico impiego.'
+      description: 'Consulenza e assistenza stragiudiziale e giudiziale nei settori dell’edilizia e dell’urbanistica, dei servizi pubblici, della sanità, degli enti locali, del pubblico impiego'
     },
     {
       title: 'Contratti e obbligazioni. Responsabilità civile. Tutela e recupero del credito',
@@ -61,7 +61,7 @@
       iconForeground: 'text-purple-700',
       iconBackground: 'bg-purple-50',
       href: 'contratti_obbligazioni',
-      description: 'Lo Studio presta assistenza e consulenza in materia contrattualistica con riferimento alla redazione, all\'interpretazione, all\'adempimento e all\'esecuzione di atti negoziali e alle pertinenti azioni stragiudiziali e giudiziali a tutela dei propri Assistiti, comprese azioni relative alle diverse ipotesi di responsabilità, inadempimento e risarcimento del danno, contrattuale ed extracontrattuale. Si interessa inoltre di responsabilità civile per il risarcimento del danno patrimoniale e non patrimoniale nonché della tutela e del recupero dei crediti.'
+      description: 'Assistenza e consulenza in materia contrattualistica con riferimento alla redazione, all\'interpretazione, all\'adempimento e all\'esecuzione di atti negoziali e alle pertinenti azioni stragiudiziali e giudiziali a tutela dei propri Assistiti, comprese azioni relative alle diverse ipotesi di responsabilità, inadempimento e risarcimento del danno, contrattuale ed extracontrattuale, patrimoniale e non patrimoniale nonché tutela e recupero dei crediti.'
     },
     {
       title: 'Diritti reali, problematiche condominiali e locatizie',
@@ -69,7 +69,7 @@
       iconForeground: 'text-purple-700',
       iconBackground: 'bg-purple-50',
       href: 'diritti_reali',
-      description: 'Lo Studio affronta problematiche relative alla tutela della proprietà, dei diritti reali e del possesso nonché questioni condominiali e locatizie, mediante assistenza stragiudiziale e giudiziale, ivi comprese le procedure di sfratto e la conseguente fase esecutiva.'
+      description: 'Assistenza nelle problematiche relative alla tutela della proprietà, dei diritti reali e del possesso nonché questioni condominiali e locatizie, mediante assistenza stragiudiziale e giudiziale, ivi comprese le procedure di sfratto e la conseguente fase esecutiva.'
     }
   ];
   </script>
