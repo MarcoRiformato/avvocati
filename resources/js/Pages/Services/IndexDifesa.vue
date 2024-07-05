@@ -52,7 +52,7 @@ const servizi = [
     iconForeground: 'text-teal-700',
     iconBackground: 'bg-teal-50',
     href: 'difesa_tar',
-    description: 'Specializzati nella risoluzione di controversie legate alla legittimità di atti di gara, nonché di provvedimenti di ammissione, esclusione e aggiudicazione di appalti e concessioni. L\'obiettivo è assicurare che ogni fase del processo di gara sia condotta in piena conformità con la legge, garantendo la tutela dei diritti dei nostri clienti.'
+    description: 'Assistenza nelle controversie concernenti la legittimità degli atti di gara nonché di provvedimenti di ammissione, esclusione e aggiudicazione di appalti e concessioni. '
   },
   {
     title: 'Assistenza Legale in Contenziosi Civili',
@@ -60,7 +60,7 @@ const servizi = [
     iconForeground: 'text-purple-700',
     iconBackground: 'bg-purple-50',
     href: 'contenziosi_civili',
-    description: 'Forniamo rappresentanza legale di fronte a Tribunale, Corte d\'Appello e Cassazione per controversie che emergono durante l\'esecuzione di appalti pubblici e privati. Incluse problematiche relative all\'adempimento contrattuale, riserve, risoluzione e recesso del contratto, responsabilità per danni e richieste di risarcimento, assicurando una gestione efficace delle vertenze'
+    description: 'Controversie innanzi a Tribunale, Corte d\'Appello e Cassazione relative all\'esecuzione di appalti pubblici e privati, adempimento, riserve, risoluzione e recesso del contratto, responsabilità per danni e richieste di risarcimento'
   },
   {
     title: 'Servizi di Arbitrato per Appalti e Lavori Pubblici',
@@ -68,7 +68,7 @@ const servizi = [
     iconForeground: 'text-sky-700',
     iconBackground: 'bg-sky-50',
     href: 'arbitrati',
-    description: 'Il nostro studio offre servizi di arbitrato, agendo sia come arbitri che come difensori in controversie arbitrali. Siamo esperti nei procedimenti gestiti dalla Camera Arbitrale dei Lavori Pubblici e dalle Camere Arbitrali di Milano e Roma, garantendo una rappresentanza legale esperta e su misura per risolvere le dispute in modo efficace.'
+    description: 'Assistenza in controversie arbitrali nonché svolgimento dell’incarico di Arbitro nei procedimenti gestiti anche dalle Camere Arbitrali di Milano e Roma nonché dalla Camera Arbitrale dei Lavori Pubblici.'
   },
   {
     title: 'Assistenza Legale nei Procedimenti ANAC',
@@ -76,7 +76,7 @@ const servizi = [
     iconForeground: 'text-yellow-700',
     iconBackground: 'bg-yellow-50',
     href: 'proc_anac',
-    description: 'Forniamo consulenza e rappresentanza legale specializzata nei procedimenti davanti all’Autorità Nazionale Anticorruzione (ANAC). Il nostro team di esperti guida i clienti attraverso la complessità delle normative di settore, assicurando conformità e una difesa efficace in ogni fase del procedimento.'
+    description: 'Assistenza nei diversi procedimenti davanti all’Autorità Nazionale Anticorruzione - ANAC.'
   }
 ]
 </script>
