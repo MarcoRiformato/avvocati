@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'laravel/laravel',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '0a1c4eb14c247f677d03eac7f2f65c9ab700aae4',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -48,6 +48,15 @@
             'replaced' => array(
                 0 => '*',
             ),
+        ),
+        'davmixcool/laravel-meta-manager' => array(
+            'pretty_version' => '1.2',
+            'version' => '1.2.0.0',
+            'reference' => '0444400e4a0d97d15e22fd63c0f7f1de9071eeea',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../davmixcool/laravel-meta-manager',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'dflydev/dot-access-data' => array(
             'pretty_version' => 'v3.0.2',
@@ -434,9 +443,9 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '0a1c4eb14c247f677d03eac7f2f65c9ab700aae4',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

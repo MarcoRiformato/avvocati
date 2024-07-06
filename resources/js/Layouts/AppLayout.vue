@@ -1,6 +1,6 @@
 <script setup>
-import { ref } from 'vue';
-import { Head, Link, router } from '@inertiajs/vue3';
+import { ref, computed } from 'vue';
+import { Head, Link, router, usePage } from '@inertiajs/vue3';
 import Banner from '@/Components/Banner.vue';
 import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
@@ -11,6 +11,9 @@ import { defineComponent, h } from 'vue'
 defineProps({
 title: String,
 });
+
+const page = usePage()
+const meta = computed(() => page.props.meta)
 
 const showingNavigationDropdown = ref(false);
 
@@ -56,7 +59,12 @@ social: [
 <template>
     <div>
     <Head :title="title" />
-    
+    <title>{{ meta.title }}</title>
+    <meta name="description" :content="meta.description">
+    <meta name="keywords" :content="meta.keywords">
+    <meta name="author" :content="meta.author">
+    <meta property="og:title" :content="meta.title">
+    <meta property="og:description" :content="meta.description">
     <Banner />
     
     <div>
