@@ -1,33 +1,85 @@
 <template>
-  <div id="benvenuto" class="relative isolate overflow-hidden -mt-20 h-screen md:h-auto">
-    <transition-group name="fade" tag="div">
-      <img 
-        v-for="(image, index) in images" 
-        :key="image"
-        :src="image" 
-        :alt="`Studio legale image ${index + 1}`"
-        class="absolute inset-0 -z-10 h-full w-full object-cover transition-opacity duration-1000 ease-in-out"
-        :class="{ 'opacity-0': index !== currentIndex, 'opacity-100': index === currentIndex }"
-      />
-    </transition-group>
-    <div class="absolute inset-0 bg-black opacity-50 -z-10"></div>
-    <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-      <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
+  <div class="relative bg-gray-100 overflow-hidden">
+    <!-- Mobile Layout -->
+    <div class="md:hidden">
+      <div class="bg-gray-800 text-white p-4 text-center">
+        <h1 class="text-2xl font-bold">Studio legale<br/>Avv. Giuseppe Inglese</h1>
+        <p class="text-sm mt-2">Diritto amministrativo & civile</p>
+      </div>
+      
+      <div class="relative h-64 overflow-hidden">
+        <transition-group name="fade" tag="div" class="h-full">
+          <div 
+            v-for="(image, index) in images" 
+            :key="image"
+            class="absolute inset-0 transition-opacity duration-1000 ease-in-out"
+            :class="{ 'opacity-0': index !== currentIndex, 'opacity-100': index === currentIndex }"
+          >
+            <img 
+              :src="image" 
+              :alt="`Studio legale image ${index + 1}`"
+              class="w-full h-full object-cover object-center"
+            />
+          </div>
+        </transition-group>
+      </div>
+      
+      <div class="flex justify-center mt-2 mb-4">
+        <button 
+          v-for="(_, index) in images" 
+          :key="index"
+          @click="currentIndex = index"
+          class="w-3 h-3 rounded-full mx-1 transition-colors duration-200 ease-in-out"
+          :class="index === currentIndex ? 'bg-gray-800' : 'bg-gray-400'"
+        ></button>
+      </div>
+      
+      <div class="px-4 py-2">
+        <a href="tel:010541259" class="block w-full bg-gray-800 text-white text-center py-3 rounded-lg font-bold text-lg">
+          Chiamaci: 010 541259
+        </a>
+      </div>
     </div>
-    <div class="mx-auto max-w-2xl py-24 md:py-48 h-full md:h-auto">
-      <div class="text-center p-4 rounded md:text-left md:absolute md:inset-y-0 md:left-0 md:flex md:items-center md:w-1/2 md:p-8">
+
+    <!-- Desktop Layout -->
+    <div class="hidden md:flex md:h-[300px]">
+      <!-- Image Section -->
+      <div class="w-3/5 relative overflow-hidden">
+        <transition-group name="fade" tag="div" class="h-full">
+          <div 
+            v-for="(image, index) in images" 
+            :key="image"
+            class="absolute inset-0 transition-opacity duration-1000 ease-in-out"
+            :class="{ 'opacity-0': index !== currentIndex, 'opacity-100': index === currentIndex }"
+          >
+            <img 
+              :src="image" 
+              :alt="`Studio legale image ${index + 1}`"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </transition-group>
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+          <button 
+            v-for="(_, index) in images" 
+            :key="index"
+            @click="currentIndex = index"
+            class="w-3 h-3 rounded-full transition-colors duration-200 ease-in-out"
+            :class="index === currentIndex ? 'bg-white' : 'bg-gray-400 hover:bg-gray-300'"
+          ></button>
+        </div>
+      </div>
+      
+      <!-- Content Section -->
+      <div class="w-2/5 bg-gray-800 text-white p-6 flex items-center justify-center">
         <div>
-          <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl mt-32 md:mt-0" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">
-            Studio legale<br/>Avv. Giuseppe Inglese
-          </h1>
-          <p class="mt-4 text-lg leading-8 text-gray-300" style="text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);">
-            Diritto amministrativo & civile
+          <h1 class="text-3xl font-bold mb-3">Studio legale<br/>Avv. Giuseppe Inglese</h1>
+          <p class="text-lg mb-4">Diritto amministrativo & civile</p>
+          <p>
+            <a href="tel:010541259" class="text-2xl font-bold hover:underline">010 541259</a>
           </p>
         </div>
       </div>
-    </div>
-    <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-      <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
     </div>
   </div>
 </template>

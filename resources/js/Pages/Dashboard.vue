@@ -3,7 +3,7 @@
   <div class="bg-base-200 overflow-hidden">
     <div class="relative isolate">
   
-      <Carousel/>
+    <Carousel/>
   
     <div class="container mx-auto px-4 py-6">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
