@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-gray-100 overflow-hidden">
+  <div class="relative bg-gray-100 overflow-hidden px-6">
     <!-- Mobile Layout -->
     <div class="md:hidden">
       <div class="bg-gray-800 text-white p-4 text-center">
