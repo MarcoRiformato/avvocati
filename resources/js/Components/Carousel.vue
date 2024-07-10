@@ -90,7 +90,10 @@ import { ref, onMounted, onUnmounted } from 'vue';
 const images = ref([
   'segreteria.webp',
   'gruppo_seduto.jpeg',
-  'sala_riunioni.jpeg'
+  'sala_riunioni.jpeg',
+  'genova.webp',
+  'genova2.webp',
+  'genova3.webp'
 ]);
 
 const currentIndex = ref(0);
