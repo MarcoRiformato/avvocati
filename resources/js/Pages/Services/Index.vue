@@ -4,64 +4,50 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <!-- Main content area for cards -->
       <div class="md:col-span-2 space-y-6">
-        
-        <!-- Card 1 -->
-        <div class="flex bg-neutral-content flex-col md:flex-row rounded-lg shadow-lg overflow-hidden py-5" @click="$inertia.visit(route('services.appalti'))" >
-          <div class="md:w-1/3">
-            <img class="object-cover w-full h-48" src="https://www.bcmlawyers.com/wp-content/uploads/2012/09/contract-law.jpg" alt="Diritto di Famiglia">
-          </div>
+        <div class="flex bg-neutral-content flex-col md:flex-row rounded-lg shadow-lg overflow-hidden py-5" @click="$inertia.visit(route('services.appalti'))">
           <div class="px-4">
             <h3 class="text-lg font-semibold text-primary">Appalti pubblici e privati</h3>
-            <p class="mt-2">              
-              Gestiamo contenziosi su atti di gara e aggiudicazioni davanti a Tribunali Amministrativi e Consiglio di Stato, offrendo consulenza per tutte le fasi di gara e esecuzione di appalti e concessioni. Supportiamo nella redazione di documenti, assistenza contrattuale, e consulenza su Partenariato Pubblico Privato e procedure ANAC.
+            <p class="mt-2">
+              Lo Studio si occupa di contenziosi relativi a procedure di gara e affidamenti di appalti e concessioni davanti ai Tribunali Amministrativi Regionali e al Consiglio di Stato, prestando consulenza a enti pubblici per la predisposizione degli atti gara e lo svolgimento delle procedure, nonché a imprese, società di ingegneria e professionisti per la partecipazione e presentazione di proposte di Partenariato Pubblico Privato, anche mediante Consorzi e Raggruppamenti Temporanei di imprese (RTI/ATI). Inoltre, offre consulenza e assistenza a enti e privati per l'esecuzione di appalti e concessioni, gestione di subappalti e forniture, acquisizione di benefici fiscali (bonus edilizi), procedure concorsuali, riconoscimento delle riserve e risoluzione delle controversie tramite accordi bonari e Collegi Consultivi Tecnici.
             </p>
-            <button class="btn btn-primary mt-2" @click="$inertia.visit(route('services.appalti'))">Assistenza legale per appalti pubblici e privati</button>
           </div>
         </div>
 
-        <!-- Card 2 -->
         <div class="flex bg-neutral-content flex-col md:flex-row rounded-lg shadow-lg overflow-hidden py-5" @click="$inertia.visit(route('services.difesa'))">
-          <div class="md:w-1/3">
-            <img class="object-cover bg-neutral-content w-full h-48" src="https://www.bcmlawyers.com/wp-content/uploads/2012/09/contract-law.jpg" alt="Tutela dei minori e delle persone fragili">
-          </div>
           <div class="px-4">
             <h3 class="text-lg font-semibold text-primary">Assistenza e difesa per enti pubblici, imprese e operatori economici</h3>
             <p class="mt-2">
-              Specializzati in contenziosi legati agli appalti pubblici e privati, offriamo assistenza completa davanti ai TAR, Consiglio di Stato, tribunali ordinari, e nelle procedure arbitrali. Gestiamo controversie su legittimità di atti di gara, esecuzione contrattuale, risarcimenti, e procedimenti ANAC, assicurando difesa qualificata ed efficace.
+              Lo Studio è specializzato nei contenziosi legati agli appalti pubblici e privati, offre assistenza completa davanti ai TAR, al Consiglio di Stato, a Tribunali civili, Corti d’Appello e Cassazione, nei giudizi arbitrali anche davanti alle diverse Camere Arbitrali nonché nei procedimenti avviati dall’ANAC, assicurando difesa qualificata ed efficace.
             </p>
-            <button class="btn btn-primary mt-2" @click="$inertia.visit(route('services.difesa'))">Assistenza legale per enti pubblici e imprese</button>
           </div>
         </div>
 
-        <!-- Card 3 -->
         <div class="flex bg-neutral-content flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.controversie'))">
-          <div class="md:w-1/3">
-            <img class="object-cover bg-neutral-content w-full h-48" src="https://www.bcmlawyers.com/wp-content/uploads/2012/09/contract-law.jpg" alt="Tutela dei minori e delle persone fragili">
-          </div>
           <div class="px-4">
             <h3 class="text-lg font-semibold text-primary">Soluzioni stragiudiziali per controversie negli appalti pubblici e Collegio Consultivo Tecnico</h3>
             <p class="mt-2">
-              Approccio integrato alla risoluzione delle controversie negli appalti pubblici e assistenza tecnica specializzata. Inclusione di soluzioni stragiudiziali per le controversie, supporto attraverso il Collegio Consultivo Tecnico e facilitazione dell'accordo bonario sulle riserve dell'appaltatore. Competenze volte alla prevenzione dei conflitti e alla loro gestione efficace, garantendo il rispetto degli interessi e degli obiettivi dei progetti
+              Lo Studio offre un approccio integrato alla risoluzione stragiudiziale delle controversie negli appalti pubblici e assistenza specializzata nelle fasi di affidamento ed esecuzione, compresa l’attività del Collegio Consultivo Tecnico e il tentativo di accordo bonario sulle riserve dell'appaltatore. Ha competenze volte alla prevenzione dei conflitti e alla loro gestione efficace, garantendo il rispetto degli interessi e degli obiettivi dei propri Assistiti.
             </p>
-            <button class="btn btn-primary mt-2 mb-4" @click="$inertia.visit(route('services.appalti'))">Assistenza legale per gestione controversie e consulense tecniche</button>
           </div>
         </div>
 
-        <!-- Card 4 -->
         <div class="flex bg-neutral-content flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.partenariato'))">
-          <div class="md:w-1/3">
-            <img class="object-cover bg-neutral-content w-full h-48" src="https://www.bcmlawyers.com/wp-content/uploads/2012/09/contract-law.jpg" alt="Tutela dei minori e delle persone fragili">
-          </div>
           <div class="px-4">
             <h3 class="text-lg font-semibold text-primary">Partenariato Pubblico-Privato e Project Financing</h3>
             <p class="mt-2">
-              Focalizzazione sulla strutturazione, negoziazione e gestione di accordi di partenariato pubblico-privato (PPP) e operazioni di project financing. Copertura di tutti gli aspetti legali relativi allo sviluppo, finanziamento, realizzazione e gestione di progetti infrastrutturali e di servizio, navigazione delle complessità normative e contrattuali. Competenza in modelli di finanziamento innovativi, valutazione dei rischi e strategie di implementazione.
+              Lo Studio ha maturato esperienza nella strutturazione, negoziazione e gestione di procedure di Partenariato Pubblico Privato (PPP) e in particolare di operazioni di project financing e leasing in costruendo. Garantisce assistenza per gli aspetti legali relativi allo sviluppo, al finanziamento, alla realizzazione e alla gestione di progetti di opere pubbliche e di servizi.
             </p>
-            <button class="btn btn-primary mt-2 mb-4" @click="$inertia.visit(route('services.appalti'))">Assistenza legale per partnenariati e project financing</button>
           </div>
         </div>
 
-
+        <div class="flex bg-neutral-content flex-col md:flex-row rounded-lg shadow-lg overflow-hidden" @click="$inertia.visit(route('services.altri'))">
+          <div class="px-4">
+            <h3 class="text-lg font-semibold text-primary">Consulenza Legale Generale</h3>
+            <p class="mt-2">
+              Lo Studio fornisce consulenza e assistenza in diversi settori del diritto amministrativo, contratti e obbligazioni, responsabilità civile, tutela e recupero del credito, diritti reali, problematiche condominiali e locatizie. Offriamo un supporto completo e personalizzato per affrontare e risolvere le questioni legali più complesse, garantendo un approccio integrato e multidisciplinare per tutelare gli interessi dei nostri Assistiti.
+            </p>
+          </div>
+        </div>
       </div>
 
       <!-- Sidebar for contact information and form -->

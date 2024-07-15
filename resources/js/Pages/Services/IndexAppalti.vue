@@ -53,7 +53,7 @@ const servizi = [
     iconForeground: 'text-teal-700',
     iconBackground: 'bg-teal-50',
     href: "services.detail.stazioni",
-    description: 'Supporto al Responsabile Unico del Procedimento (RUP), assistenza nella programmazione e progettazione, redazione degli atti di gara, e gestione di tutte le fasi della gara. Esclusione o ammissione dei concorrenti, verifica dell anomalia dell offerta e gestisce l intero processo di aggiudicazione.'
+    description: 'Supporto al Responsabile Unico del Procedimento (RUP), assistenza nella programmazione e progettazione, redazione degli atti di gara, e gestione di tutte le fasi della gara. Esclusione o ammissione dei concorrenti, verifica dell\' anomalia dell offerta,aggiudicazione.'
   },
   {
     title: 'Consulenza alle imprese / operatori economici',
@@ -61,7 +61,7 @@ const servizi = [
     iconForeground: 'text-purple-700',
     iconBackground: 'bg-purple-50',
     href: "services.detail.imprese",
-    description: 'Assistenza completa nelle procedure di gara, inclusi la partecipazione, il soccorso istruttorio e la redazione dei giustificativi per la congruità dell\’offerta'
+    description: 'Assistenza nelle procedure di gara, partecipazione, soccorso istruttorio, redazione delle giustificazioni per la congruità dell’offerta'
   },
   {
     title: 'Consulenza ai professionisti tecnici',
@@ -69,7 +69,7 @@ const servizi = [
     iconForeground: 'text-sky-700',
     iconBackground: 'bg-sky-50',
     href: "services.detail.professionisti",
-    description: 'Assistenza completa per ogni fase del progetto, dalla programmazione e gettazione fino alla direzione dei lavori, coordinamento della sicurezza e collaudo durante la gara'
+    description: 'Assistenza nelle procedure di gara e nell’esecuzione dell’appalto, programmazione, progettazione, direzione dei lavori, coordinamento della sicurezza, collaudo'
   },
   {
     title: 'Fase di esecuzione degli appalti',
@@ -77,7 +77,7 @@ const servizi = [
     iconForeground: 'text-yellow-700',
     iconBackground: 'bg-yellow-50',
     href: "services.detail.esecuzione",
-    description: 'Assistenza completa che copre tutte le fasi di esecuzione dei progetti, inclusa la gestione di consegne, sospensioni, varianti, subappalti, riserve, contabilità, revisione dei prezzi, risoluzione dei contenziosi, recesso, fino al collaudo e alla negoziazione di accordi bonari o transazioni. Servizi rivolti al Responsabile Unico del Procedimento (RUP), alle imprese/operatori economici e ai professionisti tecnici, per una gestione efficiente e conforme agli standard richiesti'
+    description: 'Assistenza al RUP e alle stazioni appaltanti, a imprese/operatori economici e a professionisti tecnici nell’esecuzione degli appalti, consegna, sospensioni, varianti, subappalti, riserve, contabilità, revisione dei prezzi, risoluzione, recesso, collaudo, accordi bonari, transazioni, CCT.'
   }
 ]
 </script>

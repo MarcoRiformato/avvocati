@@ -45,12 +45,12 @@
   
   const servizi = [
     {
-      title: 'Soluzione Stragiudiziali delle Controversie negli Appalti Pubblici',
+      title: 'Definizione stragiudiziale delle Controversie negli Appalti Pubblici',
       icon: PuzzlePieceIcon,
       iconForeground: 'text-teal-700',
       iconBackground: 'bg-teal-50',
       href: 'stragiudiziali_appalti',
-      description: ' Offriamo servizi esperti per la risoluzione stragiudiziale di tali controversie, puntando a soluzioni rapide, efficienti e meno onerose rispetto al tradizionale percorso giudiziario. Attraverso la mediazione, la negoziazione e altri metodi alternativi di risoluzione delle dispute, miriamo a raggiungere accordi vantaggiosi per tutte le parti coinvolte, minimizzando i ritardi e i costi.'
+      description: ' Assistenza nella definizione stragiudiziale delle controversie relative all’esecuzione di appalti pubblici,  puntando a soluzioni rapide, efficienti e meno onerose rispetto al tradizionale percorso giudiziario. Attraverso il tentativo di accordo bonario, la mediazione e altri metodi alternativi di risoluzione delle dispute, miriamo a raggiungere soluzioni vantaggiose minimizzando  ritardi e costi.'
     },
     {
       title: 'Collegio Consultivo Tecnico',
@@ -58,7 +58,7 @@
       iconForeground: 'text-purple-700',
       iconBackground: 'bg-purple-50',
       href: 'cct',
-      description: 'Forniamo consulenze e perizie di alta qualità per supportare le decisioni in fase di contenzioso o durante la valutazione di complessità progettuali. Attraverso un\'analisi dettagliata e un approccio basato sull\'eccellenza tecnica, contribuiamo a risolvere le questioni in sospeso, assicurando che le opere rispettino gli standard richiesti e le aspettative delle parti.'
+      description: 'Componenti di Collegi Consultivi Tecnici negli appalti di lavori pubblici per supportare le decisioni più rilevanti nella fase di esecuzione del contratto.'
     }
   ]
   </script>

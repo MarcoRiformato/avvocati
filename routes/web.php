@@ -54,6 +54,7 @@ Route::get('appalti', [ServiceController::class, 'appalti'])->name('services.app
 Route::get('difesa', [ServiceController::class, 'difesa'])->name('services.difesa');
 Route::get('partenariato', [ServiceController::class, 'partenariato'])->name('services.partenariato');
 Route::get('controversie', [ServiceController::class, 'controversie'])->name('services.controversie');
+Route::get('altriServizi', [ServiceController::class, 'altriServizi'])->name('services.altri');
 
 //Appalti
 Route::get('stazioni', [ServiceController::class, 'stazioni'])->name('services.detail.stazioni');
@@ -63,46 +64,145 @@ Route::get('imprese', [ServiceController::class, 'imprese'])->name('services.det
 
 //Difesa
 Route::get('/difesa_tar', function () {
-    return Inertia::render('Services/Detail/Difesa/DifesaTar');
+    return Inertia::render('Services/Detail/Difesa/DifesaTar', [
+        'meta' => [
+            'title' => 'Contenzioso TAR e Consiglio di Stato | Studio Legale Giuseppe Inglese',
+            'description' => 'Assistenza legale specializzata in contenziosi presso TAR e Consiglio di Stato. Consulenza su legittimità degli atti di gara, ammissioni, esclusioni e aggiudicazioni di appalti e concessioni a Genova.',
+            'keywords' => 'TAR, Consiglio di Stato, contenzioso amministrativo, appalti, concessioni, atti di gara, Genova, assistenza legale',
+        ],
+    ]);
 })->name('difesa_tar');
 
 Route::get('/contenziosi-civili', function () {
-    return Inertia::render('Services/Detail/Difesa/ContenziosiCivili');
+    return Inertia::render('Services/Detail/Difesa/ContenziosiCivili', [
+        'meta' => [
+            'title' => 'Contenziosi Civili in Appalti | Studio Legale Giuseppe Inglese',
+            'description' => 'Assistenza legale in contenziosi civili relativi all\'esecuzione di appalti pubblici e privati. Gestione di controversie su adempimento, riserve, risoluzione contrattuale e risarcimento danni a Genova.',
+            'keywords' => 'contenziosi civili, appalti pubblici, appalti privati, risoluzione contrattuale, risarcimento danni, Tribunale, Corte d\'Appello, Cassazione, Genova',
+        ],
+    ]);
 })->name('contenziosi_civili');
 
 Route::get('/arbitrati', function () {
-    return Inertia::render('Services/Detail/Difesa/Arbitrati');
+    return Inertia::render('Services/Detail/Difesa/Arbitrati', [
+        'meta' => [
+            'title' => 'Arbitrato in Appalti e Lavori Pubblici | Studio Legale Giuseppe Inglese',
+            'description' => 'Servizi di arbitrato per appalti e lavori pubblici. Assistenza in controversie arbitrali e incarichi di Arbitro presso Camere Arbitrali di Milano, Roma e Camera Arbitrale dei Lavori Pubblici.',
+            'keywords' => 'arbitrato, appalti, lavori pubblici, controversie arbitrali, Camera Arbitrale, Milano, Roma, Genova, assistenza legale',
+        ],
+    ]);
 })->name('arbitrati');
 
 Route::get('/proc_anac', function () {
-    return Inertia::render('Services/Detail/Difesa/ProcedimentiAnac');
+    return Inertia::render('Services/Detail/Difesa/ProcedimentiAnac', [
+        'meta' => [
+            'title' => 'Assistenza Legale nei Procedimenti ANAC | Studio Legale Giuseppe Inglese',
+            'description' => 'Consulenza e assistenza legale specializzata nei procedimenti davanti all\'Autorità Nazionale Anticorruzione (ANAC) a Genova. Supporto in tutte le fasi del procedimento.',
+            'keywords' => 'ANAC, Autorità Nazionale Anticorruzione, procedimenti amministrativi, anticorruzione, appalti pubblici, Genova, assistenza legale',
+        ],
+    ]);
 })->name('proc_anac');
 
 //Controversie
 Route::get('/stragiudiziali-appalti', function () {
-    return Inertia::render('Services/Detail/Controversie/StragiudizialiAppalti');
+    return Inertia::render('Services/Detail/Controversie/StragiudizialiAppalti', [
+        'meta' => [
+            'title' => 'Risoluzione Stragiudiziale delle Controversie negli Appalti Pubblici | Studio Legale Giuseppe Inglese',
+            'description' => 'Assistenza legale specializzata nella definizione stragiudiziale delle controversie relative all\'esecuzione di appalti pubblici a Genova. Soluzioni rapide ed efficienti attraverso accordi bonari e mediazione.',
+            'keywords' => 'risoluzione stragiudiziale, controversie appalti pubblici, accordo bonario, mediazione, Genova, assistenza legale, appalti',
+        ],
+    ]);
 })->name('stragiudiziali_appalti');
 
 Route::get('/collegio-consultivo-tecnico', function () {
+    return Inertia::render('Services/Detail/Controversie/CCT', [
+        'meta' => [
+            'title' => 'Collegio Consultivo Tecnico per Appalti Pubblici | Studio Legale Giuseppe Inglese',
+            'description' => 'Servizi di componenti di Collegi Consultivi Tecnici per appalti di lavori pubblici a Genova. Supporto decisionale specializzato nella fase di esecuzione del contratto.',
+            'keywords' => 'Collegio Consultivo Tecnico, CCT, appalti pubblici, lavori pubblici, esecuzione contratto, Genova, assistenza legale',
+        ],
+    ]);
+})->name('cct');
+
+//Altri servizi ++++++++++++++++++++++++++++++++++++++++++++
+Route::get('/altri-servizi', function () {
     return Inertia::render('Services/Detail/Controversie/CCT');
 })->name('cct');
 
 //Partenariato ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Route::get('/gestione-contenziosi-tar-consiglio-di-stato', function () {
-    return Inertia::render('Services/Detail/Partenariati/ContenziosiTar');
+    return Inertia::render('Services/Detail/Partenariati/ContenziosiTar', [
+        'meta' => [
+            'title' => 'Contenziosi TAR e Consiglio di Stato | Studio Legale Giuseppe Inglese',
+            'description' => 'Assistenza legale specializzata in contenziosi presso TAR e Consiglio di Stato a Genova. Gestione di controversie su legittimità degli atti di gara, ammissioni, esclusioni e aggiudicazioni di appalti e concessioni.',
+            'keywords' => 'TAR, Consiglio di Stato, contenziosi amministrativi, appalti, concessioni, atti di gara, Genova, assistenza legale',
+        ],
+    ]);
 })->name('contenziosi_tar');
 
 Route::get('/contenziosi-civili', function () {
-    return Inertia::render('Services/Detail/Partenariati/ContenziosiCivili');
+    return Inertia::render('Services/Detail/Partenariati/ContenziosiCivili', [
+        'meta' => [
+            'title' => 'Contenziosi Civili in Appalti | Studio Legale Giuseppe Inglese',
+            'description' => 'Assistenza legale in contenziosi civili relativi all\'esecuzione di appalti pubblici e privati a Genova. Gestione di controversie su adempimento, riserve, risoluzione contrattuale e risarcimento danni.',
+            'keywords' => 'contenziosi civili, appalti pubblici, appalti privati, risoluzione contrattuale, risarcimento danni, Tribunale, Corte d\'Appello, Cassazione, Genova',
+        ],
+    ]);
 })->name('contenziosi_civili');
 
 Route::get('/arbitrato-appalti', function () {
-    return Inertia::render('Services/Detail/Partenariati/ArbitratoAppalti');
+    return Inertia::render('Services/Detail/Partenariati/ArbitratoAppalti', [
+        'meta' => [
+            'title' => 'Arbitrato in Appalti e Lavori Pubblici | Studio Legale Giuseppe Inglese',
+            'description' => 'Servizi di arbitrato per appalti e lavori pubblici a Genova. Assistenza in controversie arbitrali e incarichi di Arbitro presso Camere Arbitrali di Milano, Roma e Camera Arbitrale dei Lavori Pubblici.',
+            'keywords' => 'arbitrato, appalti, lavori pubblici, controversie arbitrali, Camera Arbitrale, Milano, Roma, Genova, assistenza legale',
+        ],
+    ]);
 })->name('arbitrato-appalti');
 
 Route::get('/procedimenti-anac', function () {
-    return Inertia::render('Services/Detail/Partenariati/ProcedimentiAnac');
+    return Inertia::render('Services/Detail/Partenariati/ProcedimentiAnac', [
+        'meta' => [
+            'title' => 'Assistenza Legale nei Procedimenti ANAC | Studio Legale Giuseppe Inglese',
+            'description' => 'Consulenza e assistenza legale specializzata nei procedimenti davanti all\'Autorità Nazionale Anticorruzione (ANAC) a Genova. Supporto in tutte le fasi del procedimento.',
+            'keywords' => 'ANAC, Autorità Nazionale Anticorruzione, procedimenti amministrativi, anticorruzione, appalti pubblici, Genova, assistenza legale',
+        ],
+    ]);
 })->name('procedimenti_anac');
+
+// Altri servizi
+
+Route::get('/altri-servizi', function () {
+    return Inertia::render('Services/Detail/Altri/Altri', [
+        'meta' => [
+            'title' => 'Altri Servizi di Diritto Amministrativo | Studio Legale Giuseppe Inglese',
+            'description' => 'Consulenza e assistenza legale in vari settori del diritto amministrativo a Genova. Specializzati in edilizia, urbanistica, servizi pubblici, sanità, enti locali e pubblico impiego.',
+            'keywords' => 'diritto amministrativo, edilizia, urbanistica, servizi pubblici, sanità, enti locali, pubblico impiego, Genova, assistenza legale',
+        ],
+    ]);
+})->name('altri');
+
+Route::get('/contratti-obbligazioni', function () {
+    return Inertia::render('Services/Detail/Altri/Contratti', [
+        'meta' => [
+            'title' => 'Contratti, Obbligazioni e Responsabilità Civile | Studio Legale Giuseppe Inglese',
+            'description' => 'Assistenza legale specializzata in contrattualistica, responsabilità civile e recupero crediti a Genova. Consulenza su redazione, interpretazione e adempimento di contratti, azioni per inadempimento e risarcimento danni.',
+            'keywords' => 'contratti, obbligazioni, responsabilità civile, recupero crediti, risarcimento danni, inadempimento, Genova, assistenza legale',
+        ],
+    ]);
+})->name('contratti_obbligazioni');
+
+Route::get('/diritti-reali', function () {
+    return Inertia::render('Services/Detail/Altri/Reali', [
+        'meta' => [
+            'title' => 'Diritti Reali, Condominio e Locazioni | Studio Legale Giuseppe Inglese',
+            'description' => 'Assistenza legale in materia di diritti reali, problematiche condominiali e locatizie a Genova. Gestione di controversie sulla proprietà, possesso, sfratti e relative procedure esecutive.',
+            'keywords' => 'diritti reali, condominio, locazioni, proprietà, possesso, sfratto, procedure esecutive, Genova, assistenza legale',
+        ],
+    ]);
+})->name('diritti_reali');
+
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Route::view('/servizi', 'services')->name('services');
 Route::view('/faq', 'faq')->name('faq');

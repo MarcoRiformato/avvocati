@@ -28,43 +28,104 @@ class ServiceController extends Controller
 
     public function appalti()
     {
-        return Inertia::render('Services/IndexAppalti');
+        return Inertia::render('Services/IndexAppalti', [
+            'meta' => [
+                'title' => 'Servizi Appalti Pubblici e Privati | Studio Legale Giuseppe Inglese',
+                'description' => 'Consulenza legale specializzata in appalti pubblici e privati. Assistenza per enti pubblici, imprese e professionisti in gare, affidamenti e partenariati pubblico-privati a Genova.',
+                'keywords' => 'appalti pubblici, appalti privati, gare, affidamenti, partenariato pubblico privato, Genova, consulenza legale',
+            ],
+        ]);
     }
-
+    
     public function difesa()
     {
-        return Inertia::render('Services/IndexDifesa');
+        return Inertia::render('Services/IndexDifesa', [
+            'meta' => [
+                'title' => 'Assistenza e Difesa Legale | Studio Legale Giuseppe Inglese',
+                'description' => 'Assistenza e difesa qualificata per enti pubblici, imprese e operatori economici in contenziosi legati agli appalti. Rappresentanza legale davanti a TAR, Consiglio di Stato, e altri tribunali a Genova.',
+                'keywords' => 'difesa legale, contenziosi appalti, TAR, Consiglio di Stato, tribunali civili, Genova, assistenza legale',
+            ],
+        ]);
     }
-
+    
     public function partenariato()
     {
-        return Inertia::render('Services/IndexPartenariato');
+        return Inertia::render('Services/IndexPartenariato', [
+            'meta' => [
+                'title' => 'Partenariato Pubblico-Privato e Project Financing | Studio Legale Giuseppe Inglese',
+                'description' => 'Consulenza legale specializzata in Partenariato Pubblico Privato (PPP) e project financing. Assistenza nella strutturazione, negoziazione e gestione di progetti di opere pubbliche e servizi a Genova.',
+                'keywords' => 'partenariato pubblico privato, PPP, project financing, leasing in costruendo, opere pubbliche, Genova, consulenza legale',
+            ],
+        ]);
     }
-
+    
     public function controversie()
     {
-        return Inertia::render('Services/IndexControversie');
+        return Inertia::render('Services/IndexControversie', [
+            'meta' => [
+                'title' => 'Risoluzione Stragiudiziale delle Controversie | Studio Legale Giuseppe Inglese',
+                'description' => 'Soluzioni stragiudiziali per controversie negli appalti pubblici. Assistenza specializzata con Collegio Consultivo Tecnico e accordi bonari per la risoluzione efficace dei conflitti a Genova.',
+                'keywords' => 'controversie appalti, risoluzione stragiudiziale, Collegio Consultivo Tecnico, accordo bonario, Genova, assistenza legale',
+            ],
+        ]);
+    }
+    
+    public function altriServizi()
+    {
+        return Inertia::render('Services/IndexAltri', [
+            'meta' => [
+                'title' => 'Consulenza Legale Generale | Studio Legale Giuseppe Inglese',
+                'description' => 'Consulenza legale generale in diritto amministrativo, contratti, responsabilità civile, recupero crediti, diritti reali e problematiche condominiali a Genova. Supporto legale completo e personalizzato.',
+                'keywords' => 'consulenza legale, diritto amministrativo, contratti, responsabilità civile, recupero crediti, diritti reali, condominio, Genova',
+            ],
+        ]);
     }
 
     public function stazioni()
     {
-        return Inertia::render('Services/Detail/Appalti/StazioniAppaltanti');
+        return Inertia::render('Services/Detail/Appalti/StazioniAppaltanti', [
+            'meta' => [
+                'title' => 'Consulenza alle Stazioni Appaltanti | Studio Legale Giuseppe Inglese',
+                'description' => 'Supporto legale al RUP, assistenza nella programmazione, progettazione e gestione di gare d\'appalto. Consulenza su esclusione, ammissione dei concorrenti, verifica dell\'anomalia dell\'offerta e aggiudicazione a Genova.',
+                'keywords' => 'stazioni appaltanti, RUP, gare d\'appalto, atti di gara, anomalia offerta, aggiudicazione, Genova, consulenza legale',
+            ],
+        ]);
     }
-
+    
     public function imprese()
     {
-        return Inertia::render('Services/Detail/Appalti/ConsulenzaImprese');
+        return Inertia::render('Services/Detail/Appalti/ConsulenzaImprese', [
+            'meta' => [
+                'title' => 'Consulenza Legale per Imprese e Operatori Economici | Studio Legale Giuseppe Inglese',
+                'description' => 'Assistenza legale specializzata per imprese e operatori economici nelle procedure di gara, partecipazione, soccorso istruttorio e giustificazioni per la congruità dell\'offerta a Genova.',
+                'keywords' => 'imprese, operatori economici, procedure di gara, soccorso istruttorio, congruità offerta, Genova, assistenza legale',
+            ],
+        ]);
     }
-
+    
     public function professionisti()
     {
-        return Inertia::render('Services/Detail/Appalti/ConsulenzaProfessionisti');
+        return Inertia::render('Services/Detail/Appalti/ConsulenzaProfessionisti', [
+            'meta' => [
+                'title' => 'Consulenza Legale per Professionisti Tecnici | Studio Legale Giuseppe Inglese',
+                'description' => 'Assistenza legale per professionisti tecnici nelle procedure di gara, esecuzione dell\'appalto, programmazione, progettazione, direzione lavori, sicurezza e collaudo a Genova.',
+                'keywords' => 'professionisti tecnici, procedure di gara, esecuzione appalto, direzione lavori, sicurezza, collaudo, Genova, consulenza legale',
+            ],
+        ]);
     }
-
+    
     public function esecuzione()
     {
-        return Inertia::render('Services/Detail/Appalti/Esecuzione');
+        return Inertia::render('Services/Detail/Appalti/Esecuzione', [
+            'meta' => [
+                'title' => 'Consulenza Legale nella Fase di Esecuzione degli Appalti | Studio Legale Giuseppe Inglese',
+                'description' => 'Assistenza legale completa nella fase di esecuzione degli appalti per RUP, stazioni appaltanti, imprese e professionisti. Gestione di varianti, subappalti, riserve, revisione prezzi, CCT e altro a Genova.',
+                'keywords' => 'esecuzione appalti, varianti, subappalti, riserve, revisione prezzi, CCT, accordi bonari, Genova, assistenza legale',
+            ],
+        ]);
     }
+
+    
 
     /**
      * Show the form for creating a new resource.
