@@ -88,11 +88,11 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const images = ref([
-  'segreteria.webp',
-  'gruppo_seduto.jpeg',
-  'sala_riunioni.jpeg',
-  'genova.webp',
   'genova2.webp',
+  'gruppo_seduto.jpeg',
+  'genova.webp',
+  'sala_riunioni.jpeg',
+  'segreteria.webp',
   'genova3.webp'
 ]);
 
