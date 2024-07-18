@@ -18,6 +18,31 @@ class SendMail extends Mailable
         $this->details = $details;
     }
 
+    public function envelope()
+    {
+        return new Envelope(
+            subject: 'My Test Email',
+        );
+    }
+
+    public function content()
+    {
+        return new Content(
+            view: 'view.name',
+            with: [
+                'name' => $this->details->name,
+                'surname' => $this->details->surname,
+                'email' => $this->details->email,
+                'message' => $this->details->message,
+            ]
+        );
+    }
+
+    public function attachments()
+    {
+        return [];
+    }
+
     public function build()
     {
         return $this->subject('New Contact Request')->view('emails.sendEmail');
