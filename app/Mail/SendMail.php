@@ -3,9 +3,12 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Content;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Mail\Mailables\Envelope;
+use Illuminate\Mail\Mailables\Attachment;
+use Illuminate\Contracts\Queue\ShouldQueue;
 
 class SendMail extends Mailable
 {
@@ -21,19 +24,19 @@ class SendMail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'My Test Email',
+            subject: 'Nuova Richiesta di Contatto',
         );
     }
 
     public function content()
     {
         return new Content(
-            view: 'view.name',
+            view: 'emails.sendEmail',
             with: [
-                'name' => $this->details->name,
-                'surname' => $this->details->surname,
-                'email' => $this->details->email,
-                'message' => $this->details->message,
+                'name' => $this->details['name'],
+                'surname' => $this->details['surname'],
+                'email' => $this->details['email'],
+                'message' => $this->details['message'],
             ]
         );
     }
@@ -43,9 +46,9 @@ class SendMail extends Mailable
         return [];
     }
 
-    public function build()
-    {
-        return $this->subject('New Contact Request')->view('emails.sendEmail');
-    }
+    // public function build()
+    // {
+    //     return $this->subject('New Contact Request')->view('emails.sendEmail');
+    // }
 }
 

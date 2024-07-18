@@ -18,6 +18,7 @@ class EmailController extends Controller
         ];
 
         Mail::to('marco.riformato@gmail.com')->send(new SendMail($details));
+
         return Inertia::render('YourComponent', [
             'message' => 'Email inviata'
         ]);
